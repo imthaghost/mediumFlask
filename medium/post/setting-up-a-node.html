@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from nodepress.com.ng/post/setting-up-a-node.js-app-on-a-linux-ami-on-an-aws-ec2-instance-with-nginx by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jan 2020 17:31:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Meta tags -->
+    <title>Nodepress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog.">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://nodepress.s3.eu-west-2.amazonaws.com/nodejs-new-pantone-white-a965.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="../index.html" />
+    <link rel="alternate" href="../index.html" hreflang="en-US" />
+    <link rel="shortcut icon" href="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS ICON-2c44.png" type="image/x-icon">
+    <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "WebSite",
+              "name": "Nodepress",
+              "url": "http://nodepress.com.ng",
+              "description": "Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog.",
+              "image": "https://nodepress.s3.eu-west-2.amazonaws.com/nodejs-new-pantone-white-a965.png"
+            }
+        </script>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nodepress" />
+    <meta property="og:url" content="http://nodepress.com.ng" />
+    <meta property="og:image" content="https://nodepress.s3.eu-west-2.amazonaws.com/nodejs-new-pantone-white-a965.png" />
+    <meta property="og:description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog.">
+    <meta property="og:site_name" content="Nodepress" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Nodepress" />
+    <meta name="twitter:creator" content="@Nodepress" />
+    <meta name="twitter:title" content="Nodepress" />
+    <meta name="twitter:description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog." />
+    <meta name="twitter:image" content="https://nodepress.s3.eu-west-2.amazonaws.com/nodejs-new-pantone-white-a965.png" />
+    <meta name="twitter:domain" content="http://nodepress.com.ng" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://nodepress.s3.eu-west-2.amazonaws.com/nodejs-new-pantone-white-a965.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap, Font Awesome, Aminate, Owl Carausel, Normalize CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- Site CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/widgets.css" rel="stylesheet">
+    <link href="../css/color-default.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <link href="../icofont/icofont.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/video.css" rel="stylesheet">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;display=swap" rel="stylesheet">
+
+    <!-- Icons fonts-->
+    <link href="../css/fontello.css" rel="stylesheet">
+    
+</head>
+
+<body class="single">
+    <div class="top-scroll-bar"></div>
+    <!--Mobile navigation-->
+    <div class="sticky-header fixed d-lg-none d-md-block">
+            <div class="text-right">
+                <div class="container mobile-menu-fixed pr-5">
+                    
+                    <h1 class="logo-small navbar-brand">
+                        <a href="../index.html" class="logo text-capitalize">
+                            <img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="blur-up lazyload" alt="Nodepress" />
+                        </a>
+                    </h1>
+                     
+
+                    <ul class="social-network heading navbar-nav d-lg-flex align-items-center" 
+                        style="margin-right: 1rem !important;">
+                        <li>
+                            <a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a>
+                        </li>
+                    </ul>
+
+                    <a href="javascript:void(0)" class="menu-toggle-icon">
+                        <span class="lines"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobi-menu">
+                <div class="mobi-menu__logo">
+                    <h1 class="logo navbar-brand"><a href="../index.html" class="logo text-capitalize">
+                        
+                            <img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="img-fluid blur-up lazyload">
+                        
+                    </a></h1>
+                </div>
+                <form action="https://nodepress.com.ng/search" method="get" class="menu-search-form d-lg-flex">
+                    <input type="text" class="search_field" placeholder="Search..." value="" name="q" />
+                </form>
+                <nav>
+                    <ul>
+                    
+                        <li class=""><a href="../index.html">Home</a></li>
+                    
+                        <li class=""><a href="../category/Read%20Everything%20about%20technology.html">Tech</a></li>
+                    
+                        <li class=""><a href="../category/programming.html">Programming</a></li>
+                    
+                        <li class=""><a href="../category/personal.html">Personal</a></li>
+                    
+                        <li class=""><a href="../category/top-stories.html">Top Stories</a></li>
+                    
+                        <li class=""><a href="../category/Health.html">Health</a></li>
+                    
+                        <li class=""><a href="../category/world.html">World</a></li>
+                    
+                        <li class=""><a href="../pages/about-us.html">About us</a></li>
+                    
+                        <li class=""><a href="../author/naskko_tech.html">Admin</a></li>
+                    
+                        <li class=""><a href="../contact.html">Contact</a></li>
+                    
+                    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    <!--Mobile navigation-->
+    <div id="wrapper">
+        <header id="header" class="d-lg-block d-none">
+            <div class="container">
+                <div class="align-items-center w-100">
+                    <h1 class="logo float-left navbar-brand"><a href="../index.html" class="logo">
+                            
+                            <img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="blur-up lazyload" alt="Nodepress">
+                            
+                        </a></h1>
+                        <div class="header-right float-right w-50">                    
+                            <div class="d-inline-flex float-right text-right align-items-center">                        
+                                <ul class="social-network heading navbar-nav d-lg-flex align-items-center">                       
+                                    <li><a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a></li>
+                                </ul>
+                                <ul class="top-menu heading navbar-nav w-100 d-lg-flex align-items-center">
+                                    <li><a href="../contact.html" class="btn">Contact</a></li>
+                                </ul>
+                                
+                            <a href="../login.html" class="author-avatar">Login</a>
+                            
+                </div>
+                <form action="https://nodepress.com.ng/search" method="get" class="search-form d-lg-flex float-right">
+                    <a href="javascript:void(0)" class="searh-toggle">
+                        <i class="icon-search"></i>
+                    </a>
+                    <input type="text" class="search_field" placeholder="Search..." value="" name="q">
+                </form>
+            </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <nav id="main-menu" class="stick d-lg-block d-none">
+            <div class="container">
+                <div class="menu-primary">
+                    <ul>
+                        
+                            <li class=""><a href="../index.html">Home</a></li>
+                        
+                            <li class=""><a href="../category/Read%20Everything%20about%20technology.html">Tech</a></li>
+                        
+                            <li class=""><a href="../category/programming.html">Programming</a></li>
+                        
+                            <li class=""><a href="../category/personal.html">Personal</a></li>
+                        
+                            <li class=""><a href="../category/top-stories.html">Top Stories</a></li>
+                        
+                            <li class=""><a href="../category/Health.html">Health</a></li>
+                        
+                            <li class=""><a href="../category/world.html">World</a></li>
+                        
+                            <li class=""><a href="../pages/about-us.html">About us</a></li>
+                        
+                            <li class=""><a href="../author/naskko_tech.html">Admin</a></li>
+                        
+                            <li class=""><a href="../contact.html">Contact</a></li>
+                        
+                        
+                    </ul>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=351605375694793&autoLogAppEvents=1"></script>
+    <script>
+
+        function getmonth(data) {
+            switch (data) {
+                case 0:
+                    return 'Jan';
+                    break;
+                case 1:
+                    return 'Feb';
+                    break;
+                case 2:
+                    return 'March';
+                    break;
+                case 3:
+                    return 'Apr';
+                    break;
+                case 4:
+                    return 'May';
+                    break;
+                case 5:
+                    return 'Jun';
+                    break;
+                case 6:
+                    return 'Jul';
+                    break;
+                case 7:
+                    return 'Aug';
+                    break;
+                case 8:
+                    return 'Sep';
+                    break;
+                case 9:
+                    return 'Oct';
+                    break;
+                case 10:
+                    return 'Nov';
+                    break;
+                case 11:
+                    return 'Dec';
+                    break;
+                default: break;
+            }
+        };
+    </script>
+    <style>
+        .entry-main-content img {
+            max-width: 100% !important;
+            object-fit: cover !important;
+            height: auto !important;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        table {
+            max-width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-collapse: collapse;
+            white-space: nowrap;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+            border: none;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        /* @media screen and (min-width: 435px){
+        .avatar{
+            height: 114px !important; 
+            width: 114px !important; 
+            object-fit: cover;
+        }
+    } */
+        @media screen and (max-width: 700px) {
+            .padd {
+                padding-left: 1.5rem !important;
+            }
+        }
+
+        .social-network {
+            float: right
+        }
+
+        .social-network a:hover,
+        .top-menu a:hover,
+        .searh-toggle:hover {
+            color: rgba(0, 0, 0, .7)
+        }
+
+        .social-network {
+            z-index: 2
+        }
+
+        footer .social-network {
+            margin-bottom: 1rem;
+            margin-top: -5px
+        }
+
+        .social-network a {
+            color: rgba(0, 0, 0, .54);
+            border-radius: 50%;
+            font-size: 12px;
+            margin-left: .2rem;
+            border: 1px solid rgba(0, 0, 0, .34);
+            width: 26px;
+            height: 26px;
+            line-height: 25px;
+            text-align: center;
+            padding: 0;
+            display: inline-block
+        }
+
+        .tags-wrap a {
+            background: rgba(0, 0, 0, .05);
+            border-radius: 3px;
+            font-size: .875rem;
+            padding: 6px 12px;
+            margin-right: 3px;
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+        a.nav-item.nav-link.active {
+        border-top: solid 2px #87be8f !important;
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    }
+
+    a.nav-item.nav-link {
+        border-radius: 0;
+    }
+    </style>
+    <!-- single post start -->
+    <main id="content">
+        <div class="container">
+            <div class="entry-header">
+                <div class="mb-5">
+                    
+    
+    
+                    <h1 class="m_b_2rem" style="font-weight: 500;">
+                        Setting up a Node.js app on a Linux AMI on an AWS EC2 instance with Nginx
+                    </h1>
+                    <div class="entry-meta align-items-center">
+                        <a class="author-avatar" href="../author/naskko_tech.html">
+                            <div class="u-relative u-inlineBlock u-flex0"><img
+                                    data-src="https://gravatar.com/avatar/09dc6e9745b56c0d044fe211605d6138?s=200&amp;d=retro"
+                                    style="height: 48px !important; width: 48px !important;"
+                                    class="avatar-image avatar-image--smaller blur-up lazyload" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Go to the profile of Olohundare Nasirudeen ">
+                                <div class="avatar-halo u-absolute u-textColorGreenNormal svgIcon"
+                                    style="width: calc(100% + 10px); height: calc(100% + 10px); top:-5px; left:-5px">
+                                    <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.53538374,19.9430227 C11.180401,8.78497536 22.6271155,1.6 35.3571429,1.6 C48.0871702,1.6 59.5338847,8.78497536 65.178902,19.9430227 L66.2496695,19.401306 C60.4023065,7.84329843 48.5440457,0.4 35.3571429,0.4 C22.17024,0.4 10.3119792,7.84329843 4.46461626,19.401306 L5.53538374,19.9430227 Z">
+                                        </path>
+                                        <path
+                                            d="M65.178902,49.9077131 C59.5338847,61.0657604 48.0871702,68.2507358 35.3571429,68.2507358 C22.6271155,68.2507358 11.180401,61.0657604 5.53538374,49.9077131 L4.46461626,50.4494298 C10.3119792,62.0074373 22.17024,69.4507358 35.3571429,69.4507358 C48.5440457,69.4507358 60.4023065,62.0074373 66.2496695,50.4494298 L65.178902,49.9077131 Z">
+                                        </path>
+                                    </svg></div>
+                            </div>
+                            <a href="../author/naskko_tech.html"
+                                class="text-capitalize">Olohundare
+                                Nasirudeen</a> in <a href="../category/Read%20Everything%20about%20technology.html"
+                                class="text-capitalize">Tech</a><br>
+                            <span>
+                                <script>document.write(getmonth(parseInt('8')))</script>
+                                20</span>
+                            <span class="middotDivider"></span>
+                            <span class="readingTime"
+                                title="14 min read">14 min read</span>
+                            <span class="svgIcon svgIcon--star">
+                                <svg class="svgIcon-use" width="15" height="15">
+                                    <path
+                                        d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="middotDivider"></span>
+                            
+                            <span>62 Views</span>
+                            
+                    </div>
+                </div>
+            </div>
+            <!--end single header-->
+            <figure class="image zoom mb-5 text-center">
+                <img alt="Setting up a Node.js app on a Linux AMI on an AWS EC2 instance with Nginx" class="blur-up lazyload" data-src="https://nodepress.s3.eu-west-2.amazonaws.com/nodejs-new-pantone-white-a965.png" />
+            </figure>
+            <!--figure-->
+            <article class="entry-wraper mb-5">
+                <div class="entry-left-col">
+                    <div class="social-sticky">
+                        <a href="#"><i class="icon-facebook"></i></a>
+                        <a href="#"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-heart"></i></a>
+                        <a href="#"><i class="icon-paper-plane"></i></a>
+
+                    </div>
+                </div>
+                <div class="entry-main-content dropcap" style="overflow: hidden;">
+                    
+
+                    
+                    <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<section class="in io ip iq ir">
+<div class="y is x cs cq cr">
+<h1 id="5a49" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Introduction</h1>
+<p id="a929" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph=""><a class="bb cn ku kv kw kx" href="https://nodejs.org/en/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">Node.js</em></strong></a> is a JavaScript runtime environment that allows one to run JS on the server. It is built on the open-source <a class="bb cn ku kv kw kx" href="https://developers.google.com/v8/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">V8 JavaScript engine</em></strong></a> used in Chrome and written in C++ which executes JS in a standalone environment.</p>
+<p id="9c9e" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph=""><a class="bb cn ku kv kw kx" href="https://aws.amazon.com/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">AWS</em></strong></a> (Amazon Web Services), a subsidiary of Amazon, is a cloud computing platform which provides resources for computation such as EC2 instances, various database and storage facilities as well as networking and content delivery options.</p>
+<p id="3928" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph=""><a class="bb cn ku kv kw kx" href="https://www.nginx.com/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">Nginx</em></strong></a> is a free and open-source HTTP server which doubles up as a reverse proxy server or as a mail proxy server. It is a high performance server with simple configuration options and low resource consumption.</p>
+<p id="26a9" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph=""><a class="bb cn ku kv kw kx" href="https://aws.amazon.com/ec2/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">EC2</em></strong></a> (Elastic Compute Cloud) is a web service which provides computing power in the form of scalable server instances. Multiple EC2 instances are run on the same machine inside Amazon&rsquo;s computing infrastructure. When an EC2 instance is initiated, a set amount of resources (OS, RAM, Disk Space etc., chosen at the time of initiation) are allotted to the user from the machine it runs on. This allows sharing of resources between multiple users.</p>
+<p id="1309" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph=""><a class="bb cn ku kv kw kx" href="https://aws.amazon.com/amazon-linux-ami/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">Linux AMI</em></strong></a> is a copy of Linux (image) provided by AWS which can be used for free on an EC2 instance as an OS. It can contain pre-installed packages such as Python, MySQL, Node.js etc., depending on the chosen AMI.</p>
+<h1 id="4282" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Things to do</h1>
+<ol class="">
+<li id="7210" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt lf lg lh" data-selectable-paragraph="">Create an AWS account</li>
+<li id="3b95" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Launch an EC2 instance</li>
+<li id="aa7b" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">SSH into your instance</li>
+<li id="4e59" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Install Node.js</li>
+<li id="9ae9" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Install Git and clone repository from GitHub</li>
+<li id="9e67" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Start the node.js app</li>
+<li id="99e0" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Keep the app running</li>
+<li id="7ced" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Move the app to port 80 (not really)</li>
+<li id="ec11" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Configure Nginx to autostart on instance reboot</li>
+</ol>
+<h1 id="47f1" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Create an AWS account</h1>
+<p id="e418" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">Go to <a class="bb cn ku kv kw kx" href="https://aws.amazon.com/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">AWS</em></strong></a>, click on <strong class="ki ky"><em class="kz">Create an AWS account</em></strong>. If you are already registered, sign in, else create a new account. A new account lets you try the free tier for 12 months. Choose <strong class="ki ky"><em class="kz">Personal Account</em></strong> unless you have a business setup for which you will need the company details.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w ln">
+<div class="lz l dg ma">
+<div class="mb l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*y6Qmrx8juIZS2BFmiVWw_Q.png?q=20" alt="" width="993" height="680" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/993/1*y6Qmrx8juIZS2BFmiVWw_Q.png" alt="" width="993" height="680" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Create a personal AWS account</strong></figcaption>
+</figure>
+<p id="fe1c" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">You will have to enter your card details for a small refundable charge to verify your identity. Once the registration is confirmed, you can go to the console.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w mj">
+<div class="lz l dg ma">
+<div class="mk l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*qZuA5CjmI1DwtcXMoAxOdA.png?q=20" alt="" width="1330" height="661" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1330/1*qZuA5CjmI1DwtcXMoAxOdA.png" alt="" width="1330" height="661" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">AWS Service Dashboard (after registration)</strong></figcaption>
+</figure>
+<h1 id="15d6" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Launch an EC2 instance</h1>
+<p id="c9cd" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">Now that the account is setup, you are ready to launch an EC2 instance. Select EC2 from the Services dropdown (top-left), click on <strong class="ki ky"><em class="kz">Launch Instance</em></strong> and select <strong class="ki ky"><em class="kz">Free Tier Only</em></strong>.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w ml">
+<div class="lz l dg ma">
+<div class="mm l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*yqITa9p2Eo-5NKqn6eUJBw.png?q=20" alt="" width="1358" height="620" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1358/1*yqITa9p2Eo-5NKqn6eUJBw.png" alt="" width="1358" height="620" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Amazon Linux AMI on an EC2 instance (Free tier)</strong></figcaption>
+</figure>
+<p id="95a2" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Select <strong class="ki ky"><em class="kz">Amazon Linux AMI</em></strong> (which is usually the first option). On the next screen, select <strong class="ki ky"><em class="kz">t2.micro</em></strong> (will be highlighted as Free tier eligible).</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w mn">
+<div class="lz l dg ma">
+<div class="mo l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*oHSjU9HrxjA0nbdsxNusqg.png?q=20" alt="" width="1360" height="655" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1360/1*oHSjU9HrxjA0nbdsxNusqg.png" alt="" width="1360" height="655" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Free tier t2 micro EC2 instance &mdash; 1 GB RAM and up to 30 GB free storage space</strong></figcaption>
+</figure>
+<p id="4fa5" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Select <strong class="ki ky"><em class="kz">Review and Launch</em></strong> (other settings can be configured later if needed). The next screen might show a warning about the security of the instance and changing security group settings. You can ignore this for now. The only open port is 22 by default which is used for SSH access to the instance. Go ahead and click <strong class="ki ky"><em class="kz">Launch</em></strong>.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w mp">
+<div class="lz l dg ma">
+<div class="mq l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*WLMTWqq0l_R3TQau6czLPw.png?q=20" alt="" width="1352" height="655" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1352/1*WLMTWqq0l_R3TQau6czLPw.png" alt="" width="1352" height="655" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Warning about security group settings &mdash; can be ignored and launched</strong></figcaption>
+</figure>
+<p id="1930" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">On the next screen, you will be asked to create a key pair which allows you to SSH into your instance. Follow the instructions to create a custom name key pair and store it somewhere on your PC where you can access it later and in the future too.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w mr">
+<div class="lz l dg ma">
+<div class="ms l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*3OGIOsdQrH5Y3oeqlPiDwA.png?q=20" alt="" width="1356" height="696" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1356/1*3OGIOsdQrH5Y3oeqlPiDwA.png" alt="" width="1356" height="696" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Create a key pair for SSH access</strong></figcaption>
+</figure>
+<p id="fd12" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Select <strong class="ki ky"><em class="kz">Launch Instances</em></strong> and wait for your instance to be launched. On the final screen, you can select <strong class="ki ky"><em class="kz">View Instances</em></strong> to go to your EC2 dashboard where you will see the instance up and running in a few minutes.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w mt">
+<div class="lz l dg ma">
+<div class="mu l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*6KSRky7KSTJbtThuqD2sXw.png?q=20" alt="" width="1359" height="663" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1359/1*6KSRky7KSTJbtThuqD2sXw.png" alt="" width="1359" height="663" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky"><em class="mv">Instance Launched</em></strong></figcaption>
+</figure>
+<p id="71ed" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Your EC2 instance will be running now and you will be automatically assigned a <strong class="ki ky"><em class="kz">Public DNS</em></strong> and an <strong class="ki ky"><em class="kz">IPv4 Public IP</em></strong> which you will use to SSH into the instance.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w mw">
+<div class="lz l dg ma">
+<div class="mx l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*_opNV5AHl2A3PTkTmi2xbA.png?q=20" alt="" width="1357" height="652" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1357/1*_opNV5AHl2A3PTkTmi2xbA.png" alt="" width="1357" height="652" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky"><em class="mv">Instance running on a Public IP</em></strong></figcaption>
+</figure>
+<h1 id="0502" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">SSH into your instance</h1>
+<p id="f454" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">Depending on the OS you are using on your PC, there are different methods to SSH into your instance. You can see the applicable method by clicking on <strong class="ki ky"><em class="kz">Connect</em></strong> in the above screen. Since I use Windows OS, I use a third party SSH client called PuTTY to connect to the instance. You can follow the <a class="bb cn ku kv kw kx" href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">official tutorial</em></strong></a> on AWS docs for using PuTTY as the SSH client.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="v w my">
+<div class="lz l dg ma">
+<div class="mz l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*YU1IfwwsOeV3_y-P3Jy-wA.png?q=20" alt="" width="694" height="617" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/694/1*YU1IfwwsOeV3_y-P3Jy-wA.png" alt="" width="694" height="617" /></div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky"><em class="mv">Connect to your instance</em></strong></figcaption>
+</figure>
+<p id="2f39" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">The key pair that you saved while creating the EC2 instance will be used now to connect via SSH. Once you have established the connection you will see a terminal similar to this.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="v w na">
+<div class="lz l dg ma">
+<div class="nb l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*FetfhCxO51g4-U95qHnOkg.png?q=20" alt="" width="658" height="416" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/658/1*FetfhCxO51g4-U95qHnOkg.png" alt="" width="658" height="416" /></div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">SSH connection established with the EC2 instance</strong></figcaption>
+</figure>
+<h2 id="3885" class="nc ju fs bs br gk nd ne nf ng nh ni nj nk nl nm nn" data-selectable-paragraph="">PuTTY frequent disconnection / timeout</h2>
+<p id="ced4" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">If you use PuTTY, you will see that the terminal frequently becomes non-responsive because of a session timeout. You can change the session settings to keep the connection alive by going to the category <strong class="ki ky"><em class="kz">Connection</em></strong> of the loaded session and change the value of <strong class="ki ky"><em class="kz">Seconds between keepalives</em></strong> to <strong class="ki ky"><em class="kz">30</em></strong>. This will enable sending empty packets to the remote server via SSH every 30 seconds to keep the session alive.</p>
+<h1 id="75d4" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Install Node.js</h1>
+<p id="b7de" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">Now that we are connected to the instance, we can start installing the required packages in the environment for your node.js app to work. We will be using <a class="bb cn ku kv kw kx" href="https://github.com/creationix/nvm" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">NVM</em></strong> </a>(Node Version Manager) to install node.js as it provides a neat way to manage multiple node.js versions on the instance if required. Run the following code in the terminal to get NVM and install it.</p>
+<pre class="lo lp lq lr ls he ep no"><span id="7061" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph=""><mark class="rj rk dk">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</mark></span></pre>
+<p id="38ce" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">The script clones the nvm repository to ~/.nvm and adds the source line to your profile (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc). Now, run <code class="ma nt nu nv np b">nvm --version</code>. The terminal will show <strong class="ki ky"><em class="kz">command not found</em></strong> as the code has been added to your profile but hasn&rsquo;t run yet. It runs on every login, so login again by creating a new session. Run <code class="ma nt nu nv np b">nvm --version</code> again and this time you should be able to see the installed version of NVM.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="v w nw">
+<div class="lz l dg ma">
+<div class="nx l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*TAUfBfL3wpbegfnF9h39AA.png?q=20" alt="" width="660" height="417" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/660/1*TAUfBfL3wpbegfnF9h39AA.png" alt="" width="660" height="417" /></div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">NVM installation</strong></figcaption>
+</figure>
+<p id="6ad6" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">To install node, you can either use <code class="ma nt nu nv np b">nvm install node</code> to install the latest version of node or use <code class="ma nt nu nv np b">nvm install &lt;node_version&gt;</code> to install a specific version of node. Once node is installed, you can check the installed version with <code class="ma nt nu nv np b">node --version</code>.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="v w ny">
+<div class="lz l dg ma">
+<div class="nz l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*__x_ULKOa2pQMOFk6DvGqg.png?q=20" alt="" width="659" height="416" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/659/1*__x_ULKOa2pQMOFk6DvGqg.png" alt="" width="659" height="416" /></div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Node.js installation</strong></figcaption>
+</figure>
+<h1 id="9b76" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Install Git and clone repository from GitHub</h1>
+<p id="ec08" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">We will install Git to clone your node.js repository from your GitHub account. To install Git, run the following command.</p>
+<pre class="lo lp lq lr ls he ep no"><span id="e408" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">sudo yum install git</span></pre>
+<p id="1ba4" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">This will install the latest version of Git on the instance. Once installation is done, you are ready to clone your repository. Run the following command to clone your repository. Replace <code class="ma nt nu nv np b">&lt;username&gt;</code>with your GitHub username, <code class="ma nt nu nv np b">&lt;repository-name&gt;</code>with the name of your node.js app repository and <code class="ma nt nu nv np b">&lt;folder-name&gt;</code>with the name of the folder you want to clone the repository into. This folder will be created under <code class="ma nt nu nv np b">/home/ec2-user/</code>.</p>
+<pre class="lo lp lq lr ls he ep no"><span id="b28a" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">git clone https://github.com/&lt;username&gt;/&lt;repository-name&gt;.git &lt;folder-name&gt;</span></pre>
+<p id="99fb" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Run <code class="ma nt nu nv np b">cd &lt;folder-name&gt;</code> to move inside this folder and <code class="ma nt nu nv np b">ls</code> to see its contents.</p>
+<h1 id="f7ea" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Start the node.js app</h1>
+<p id="dda5" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">If your start script does not include <code class="ma nt nu nv np b">npm install</code> you should run it manually first, otherwise you can directly issue the command to start the app which should install the dependencies automatically. There are several ways to start the app depending on how you have set it up. Choose one which suits you.</p>
+<pre class="lo lp lq lr ls he ep no"><span id="71f6" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">node server.js<br />node app.js<br />node ./bin/www<br />npm start</span></pre>
+<p id="1664" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">The app will now run at the port number that you have specified in the start script. It could be 3000, 8000, 8080 etc. Make a note of this port number and enter the public DNS of the instance with the port number in the browser to see the app output. I use port 3000, you can replace it with yours.</p>
+<pre class="lo lp lq lr ls he ep no"><span id="ca6c" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">http://ec2-54-191-104-59.us-west-2.compute.amazonaws.com:3000</span></pre>
+<p id="ef46" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">As you will see, this will not work and there would be nothing to show on the page and the browser connection will timeout. This is because we haven&rsquo;t opened port 3000 for access to public. This is where the Security Group comes in. In the AWS management console, go to <strong class="ki ky"><em class="kz">Security Groups</em></strong>, select the one not named &lsquo;default&rsquo; (launch-wizard-1 or similar) and edit the <strong class="ki ky"><em class="kz">Inbound </em></strong>rules<strong class="ki ky"><em class="kz">.</em></strong></p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w oa">
+<div class="lz l dg ma">
+<div class="ob l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*07PnlnkoK-24Yb2gbasLyw.png?q=20" alt="" width="1363" height="438" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1363/1*07PnlnkoK-24Yb2gbasLyw.png" alt="" width="1363" height="438" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Security Groups for the EC2 instance</strong></figcaption>
+</figure>
+<p id="9fa7" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Add a <strong class="ki ky"><em class="kz">new custom TCP rule</em></strong> with port range <strong class="ki ky"><em class="kz">3000</em></strong> and accessible from everywhere (<strong class="ki ky"><em class="kz">0.0.0.0/0</em></strong>).</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w oc">
+<div class="lz l dg ma">
+<div class="od l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*iIlzYZXjFdVTOxYnCm5zWQ.png?q=20" alt="" width="997" height="325" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/997/1*iIlzYZXjFdVTOxYnCm5zWQ.png" alt="" width="997" height="325" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Inbound rules for the EC2 instance</strong></figcaption>
+</figure>
+<p id="9f7e" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Access the URL again and you should be able to see the app content now.</p>
+<h1 id="4a35" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Keep the app running</h1>
+<p id="3142" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">The app will run as long as you have the terminal open and you have not stopped it manually. But as soon as you close the terminal or press Ctrl-C or its equivalent, the app will stop as its process is not running in the background, it&rsquo;s tied to the active terminal. You can write a script to run the process in the background but you will also have to take care of restarting the process in the background in case it crashes or if you perform a pull from the repository or if you update the app in some other way. But there&rsquo;s an easier way to do all this by using a process manager for node called <a class="bb cn ku kv kw kx" href="http://pm2.keymetrics.io/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">PM2</em></strong></a>. We will focus on the auto-restart and background process functionalities of PM2 here. More functionalities in a later article on continuous integration.</p>
+<p id="5be7" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Kill all the running node processes (if any) &mdash; <code class="ma nt nu nv np b">killall -9 node</code>. Install PM2 globally with the following command:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="f9ca" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">npm install pm2 -g</span></pre>
+<p id="9b21" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Move to the cloned folder and execute one of the following commands depending on how you had started the app before:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="3b23" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">pm2 start server.js<br />pm2 start app.js<br />pm2 start ./bin/www<br />pm2 start npm --name "&lt;name_the_process_anything_you_want&gt;" -- start</span></pre>
+<p id="653a" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Now even if you close the terminal and check the url in the browser, the app will be running. Sweet! For automatically running PM2 when the server restarts, issue the following command:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="6bf4" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">pm2 startup</span></pre>
+<p id="6a20" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">This will output a script in the terminal which you need to run, copy the script that it outputs and run it in the terminal window. Now, save all the currently running processes so that they can be run again whenever PM2 restarts either manually or by a script with the following command:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="e580" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">pm2 save</span></pre>
+<p id="e423" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Now you can try rebooting the instance and visit the url and see if the app works or not. To see a list of the currently active node processes with their process names, run <code class="ma nt nu nv np b">pm2 list</code> and to monitor any one of the processes run <code class="ma nt nu nv np b">pm2 monit</code>.</p>
+<h1 id="2cce" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Move the app to port 80 (not really)</h1>
+<p id="885e" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">The URL for our app contains the port number 3000 which if you have surfed the web a lot will appear a bit out of the place because you don&rsquo;t usually see such numbers in the URLs, reason being the websites are generally served on the standard port 80 used for HTTP requests and browsers assume it by default.</p>
+<p id="f243" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Currently our node server is running on a publicly open port which is not a particularly brilliant idea as we are directly exposing the application server to internet traffic and also reducing performance by <a class="bb cn ku kv kw kx" href="https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">not taking advantages</em></strong></a> of load balancing or serving static content efficiently.</p>
+<p id="5263" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">A better way to manage this is to use Nginx as a reverse proxy server in front of all other application servers. It will act as an efficient web server routing multiple requests on port 80 to different application servers based on the requested domain or even route high volume internet traffic to the same domain on port 80 to multiple instances of the application server listening on different private ports to perform load balancing in case of application server overloading or crashing. Nginx also takes care of <a class="bb cn ku kv kw kx" href="https://www.nginx.com/resources/glossary/reverse-proxy-server/" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">SSL encryption</em></strong></a> instead of letting Node do all the work.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w oe">
+<div class="lz l dg ma">
+<div class="of l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*NFejJ5lJR3nyRLqGicdGbw.png?q=20" alt="" width="742" height="257" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/742/1*NFejJ5lJR3nyRLqGicdGbw.png" alt="" width="742" height="257" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Setting up Nginx in front of the application servers. Image courtesy - </strong><a class="bb cn ku kv kw kx" href="https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/" target="_blank" rel="noopener"><strong class="br ky">Floyd Smith</strong></a></figcaption>
+</figure>
+<p id="f727" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Let&rsquo;s install Nginx first:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="f0a9" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">sudo yum install nginx</span></pre>
+<p id="8d1d" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">and verify the installed version with <code class="ma nt nu nv np b">nginx -v</code>.</p>
+<p id="b9f3" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Open port 80 by adding another inbound rule to the security group.</p>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w og">
+<div class="lz l dg ma">
+<div class="oh l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*vEiEHoHc8Wpihh7DBDiffw.png?q=20" alt="" width="1003" height="362" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1003/1*vEiEHoHc8Wpihh7DBDiffw.png" alt="" width="1003" height="362" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">Open port 80 for public access</strong></figcaption>
+</figure>
+<p id="9fb6" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Enter the public DNS or the public IP of your EC2 instance in the browser now without a port and you should see the default Nginx welcome page.</p>
+<pre class="lo lp lq lr ls he ep no"><span id="5fe0" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">http://ec2-54-191-104-59.us-west-2.compute.amazonaws.com</span></pre>
+<figure class="lo lp lq lr ls ea v w paragraph-image">
+<div class="lt lu dg lv x">
+<div class="v w oi">
+<div class="lz l dg ma">
+<div class="oj l">
+<div class="cu lw fq n o fp x jk lx ly"><img class="fq n o fp x mc md va vb" role="presentation" src="https://miro.medium.com/max/60/1*RbcJHpPp3yYQwjZWRTrYRQ.png?q=20" alt="" width="1297" height="390" /></div>
+<img class="rg rh fq n o fp x fn" role="presentation" src="https://miro.medium.com/max/1297/1*RbcJHpPp3yYQwjZWRTrYRQ.png" alt="" width="1297" height="390" /></div>
+</div>
+</div>
+</div>
+<figcaption class="bw du mf mg hg cs v w mh mi br dt" data-selectable-paragraph=""><strong class="br ky">The default Nginx welcome page</strong></figcaption>
+</figure>
+<p id="3d21" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Now, we are not really going to move the app to listen on port 80, the app will still be running on port 3000. We will install Nginx in front of the application server, run it on port 80 so that it can intercept all internet traffic and route it to port 3000 where the required application server will be listening if the HTTP headers match (more details in the next article on serving the site on HTTPS). A nice explanation of why we should be doing this is available <a class="bb cn ku kv kw kx" href="https://stackoverflow.com/a/16770780" target="_blank" rel="noopener"><strong class="ki ky"><em class="kz">here</em></strong></a>.</p>
+<p id="52b6" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">To use port 80 to route requests to the application server on port 3000, we will edit the nginx configuration file &mdash; nginx.conf as follows.</p>
+<p id="d95e" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Open the nginx.conf file with an editor in the terminal:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="b242" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">sudo nano /etc/nginx/nginx.conf</span></pre>
+<p id="a65d" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">If there&rsquo;s no server block listening on port 80, add one or change it if it already exists to look like this:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="a60d" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">server {<br />   listen         80 default_server;<br />   listen         [::]:80 default_server;<br />   server_name    localhost;<br />   root           /usr/share/nginx/html;</span><span id="4b9c" class="nc ju fs bs np b du ok ol om on oo nr l ns" data-selectable-paragraph="">   location / {<br />       proxy_pass http://127.0.0.1:3000;<br />       proxy_http_version 1.1;<br />       proxy_set_header Upgrade $http_upgrade;<br />       proxy_set_header Connection 'upgrade';<br />       proxy_set_header Host $host;<br />       proxy_cache_bypass $http_upgrade;<br />   }<br />}</span></pre>
+<p id="bb1d" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Since we have a single server block listening on port 80, all traffic will be routed from here itself regardless of the value of the server_name directive. The location directive has been changed to point to the resource from where the content has to be served, in our case it is the node.js application server running on the private localhost IP 127.0.0.1 and port 3000. Ignore the other directives for now.</p>
+<p id="8c94" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Save the configuration and restart the server with the following command:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="4bd9" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">sudo service nginx restart</span></pre>
+<p id="0e8c" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">You will now have all HTTP traffic available on port 80 forwarded to port 3000. You should close port 3000 to public access by removing it from the security group settings. Visit the URL again in the browser without the port and you will be able to see the app content now instead of the default Nginx welcome page.</p>
+<h1 id="5258" class="jt ju fs bs br gk jv jw jx jy jz ka kb kc kd ke kf" data-selectable-paragraph="">Configure Nginx to autostart on instance reboot</h1>
+<p id="e572" class="kg kh fs bs ki b kj kk kl km kn ko kp kq kr ks kt" data-selectable-paragraph="">There&rsquo;s just one last thing to take care of before we wrap up. We need to configure Nginx to start automatically if the instance is rebooted. Execute the following command to do this:</p>
+<pre class="lo lp lq lr ls he ep no"><span id="18d9" class="nc ju fs bs np b du nq nr l ns" data-selectable-paragraph="">sudo chkconfig nginx on</span></pre>
+<p id="61b5" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">You can close the session, reboot the instance and visit the URL again. You should see the app being served on port 80.</p>
+<p id="4128" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">And now we are done! Pheww!!</p>
+</div>
+</section>
+<hr class="op dt gl oq or hg os ot ou ov ow" />
+<section class="in io ip iq ir">
+<div class="y is x cs cq cr">
+<p id="16dc" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">Since, we have the app being served on port 80 now, we will take care of the following stuff in the next article:</p>
+<ol class="">
+<li id="1182" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt lf lg lh" data-selectable-paragraph="">Buy and register a domain name</li>
+<li id="3f48" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Serve the website on the registered domain</li>
+<li id="595f" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Obtain an SSL certificate for the registered domain</li>
+<li id="75be" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Install the SSL certificate on the server</li>
+<li id="dd87" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Run SSL test for the website</li>
+<li id="7db4" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Update security parameters on the website</li>
+<li id="53ce" class="kg kh fs bs ki b kj li kl lj kn lk kp ll kr lm kt lf lg lh" data-selectable-paragraph="">Automatically renew the certificate</li>
+</ol>
+<p id="7b88" class="kg kh fs bs ki b kj la kl lb kn lc kp ld kr le kt" data-selectable-paragraph="">If you are stuck at any point in the sections above or if I have made a mistake somewhere or missed an essential point, do let me know in the comments.</p>
+</div>
+</section>
+</body>
+
+<!-- Mirrored from nodepress.com.ng/post/setting-up-a-node.js-app-on-a-linux-ami-on-an-aws-ec2-instance-with-nginx by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jan 2020 17:31:19 GMT -->
+</html>
+                </div>
+                
+                <div class="entry-bottom row" style="font-size: .875rem;">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="tags-wrap heading">
+                            <span class="tags">
+                                
+                                
+                                <a href="../tags/nodejs.html" class="mb-3" rel="tag">nodejs</a>
+                                
+                                
+                                
+                                <a href="../tags/aws.html" class="mb-3" rel="tag">AWS</a>
+                                
+                                
+                                
+                                <a href="../tags/amazon%20linux.html" class="mb-3" rel="tag">amazon linux</a>
+                                
+                                
+                                
+                                <a href="../tags/ec2.html" class="mb-3" rel="tag">ec2</a>
+                                
+                                
+                                
+                                <a href="../tags/nginx.html" class="mb-3" rel="tag">nginx</a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 social-network text-center text-sm-right"
+                        style="margin: 1.5rem 0; color: #757575;">
+                        Share this post
+                        <a class="fb"
+                            href="https://www.facebook.com/sharer.php?u=http://nodepress.com.ng/post/setting-up-a-node.js-app-on-a-linux-ami-on-an-aws-ec2-instance-with-nginx"
+                            title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="tw"
+                            href="https://twitter.com/intent/tweet?source=http://nodepress.com.ng/post/setting-up-a-node.js-app-on-a-linux-ami-on-an-aws-ec2-instance-with-nginx"
+                            target="_blank" title="Tweet"><i class="fa fa-twitter"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=http://nodepress.com.ng/post/setting-up-a-node.js-app-on-a-linux-ami-on-an-aws-ec2-instance-with-nginx"
+                            target="_blank" title="Pin it"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <hr>
+                <div class="box box-author m_b_2rem">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="post-author row-flex">
+                                <div class="author-img">
+                                    <svg width="82" height="92" viewBox="0 0 82 92" class="fo ef mj mk ml mm ej">
+                                        <path
+                                            d="M1.58 26.29C8.86 11.67 23.78 1.65 41 1.65V.35C23.26.35 7.9 10.67.42 25.71l1.16.58zM41 1.65c17.22 0 32.14 10.02 39.42 24.64l1.16-.58C74.1 10.67 58.74.35 41 .35v1.3zm39.42 64.06C73.14 80.33 58.22 90.35 41 90.35v1.3c17.74 0 33.1-10.32 40.58-25.36l-1.16-.58zM41 90.35c-17.22 0-32.14-10.02-39.42-24.64l-1.16.58C7.9 81.33 23.26 91.65 41 91.65v-1.3z">
+                                        </path>
+                                    </svg>
+                                    <img alt="Olohundare Nasirudeen"
+                                        class="blur-up avatar lazyload" data-src="https://gravatar.com/avatar/09dc6e9745b56c0d044fe211605d6138?s=200&amp;d=retro">
+                                </div>
+                                <div class="author-content">
+                                    <div class="top-author">
+                                        <small><span>WRITTEN BY</span></small>
+                                        <h5 class="heading-font"><a href="../author/naskko_tech.html"
+                                                title="Olohundare Nasirudeen"
+                                                rel="author" class="text-capitalize">Olohundare
+                                                Nasirudeen</a></h5>
+                                    </div>
+                                    <p class="d-none d-md-block">Hello, my name is nasirudeen and i love coding.</p>
+                                    
+                                    <div class="content-social-author">
+                                        <a target="_blank" class="author-social"
+                                            href="https://www.facebook.com/dev-nasirudeen"><i
+                                                class="icofont-facebook"></i> </a>
+                                        <a target="_blank" class="author-social"
+                                            href="https://www.twitter.com/iamnasirudeen"><i
+                                                class="icofont-twitter"></i> </a>
+                                        <a target="_blank" class="author-social"
+                                            href="https://www.instagram.com/naskko_tech"> <i
+                                                class="icofont-instagram"></i> </a>
+                                        <a target="_blank" class="author-social"
+                                            href="https://www.pinterest.com/"> <i
+                                                class="icofont-pinterest"></i> </a>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <!--entry-content-->
+
+            <!--Begin post related-->
+            <div class="related-posts mb-5">
+                <h4 class="spanborder text-center">
+                    <span>Maybe you are interested</span>
+                </h4>
+                <div class="row justify-content-between">
+                    <div class="divider-2"></div>
+                    
+                    <article class="col-md-4">
+                        <div class="mb-3 d-flex row">
+                            <figure class="col-md-5"><a href="how-to-delegate-work-so-it-actually-gets-done.html"><img
+                                        alt="How to Delegate Work So It Actually Gets Done"
+                                        class="blur-up lazyload"
+                                        data-src="https://nodepress.s3.eu-west-2.amazonaws.com/delegation-936f.jpeg"
+                                        style="height: 128px; width: 100%; object-fit: cover;"></a></figure>
+                            <div class="entry-content col-md-7 pl-md-0">
+                                <h5 class="entry-title mb-3"><a
+                                        href="how-to-delegate-work-so-it-actually-gets-done.html">How to Delegate Work So It Actually Gets Done
+                                    </a></h5>
+                                <div class="entry-meta align-items-center">
+                                    <a href="../author/Naskko_Tech-2.html">Olohundare
+                                        Oluwakayode</a> in <a
+                                        href="../category/personal.html"
+                                        class="text-capitalize">personal</a><br>
+                                    <span>
+                                        <script>document.write(getmonth(parseInt('9')))</script>
+                                        13</span>
+                                    <span class="middotDivider"></span>
+                                    <span class="readingTime" title="3 min read">5 min read</span>
+                                    <span class="svgIcon svgIcon--star">
+                                        <svg class="svgIcon-use" width="15" height="15">
+                                            <path
+                                                d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="col-md-4">
+                        <div class="mb-3 d-flex row">
+                            <figure class="col-md-5"><a href="the-end-of-php.html"><img
+                                        alt="The End of PHP?"
+                                        class="blur-up lazyload"
+                                        data-src="https://nodepress.s3.eu-west-2.amazonaws.com/php4-00a8.jpeg"
+                                        style="height: 128px; width: 100%; object-fit: cover;"></a></figure>
+                            <div class="entry-content col-md-7 pl-md-0">
+                                <h5 class="entry-title mb-3"><a
+                                        href="the-end-of-php.html">The End of PHP?
+                                    </a></h5>
+                                <div class="entry-meta align-items-center">
+                                    <a href="../author/Naskko_Tech-2.html">Olohundare
+                                        Oluwakayode</a> in <a
+                                        href="../category/Read%20Everything%20about%20technology.html"
+                                        class="text-capitalize">Tech</a><br>
+                                    <span>
+                                        <script>document.write(getmonth(parseInt('9')))</script>
+                                        13</span>
+                                    <span class="middotDivider"></span>
+                                    <span class="readingTime" title="3 min read">3 min read</span>
+                                    <span class="svgIcon svgIcon--star">
+                                        <svg class="svgIcon-use" width="15" height="15">
+                                            <path
+                                                d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="col-md-4">
+                        <div class="mb-3 d-flex row">
+                            <figure class="col-md-5"><a href="the-most-underrated-productivity-technique-is-also-the-simplest.html"><img
+                                        alt="The Most Underrated Productivity Technique Is Also the Simplest"
+                                        class="blur-up lazyload"
+                                        data-src="https://nodepress.s3.eu-west-2.amazonaws.com/p1-f163.jpeg"
+                                        style="height: 128px; width: 100%; object-fit: cover;"></a></figure>
+                            <div class="entry-content col-md-7 pl-md-0">
+                                <h5 class="entry-title mb-3"><a
+                                        href="the-most-underrated-productivity-technique-is-also-the-simplest.html">The Most Underrated Productivity Technique Is Also the Simplest
+                                    </a></h5>
+                                <div class="entry-meta align-items-center">
+                                    <a href="../author/Naskko_Tech-2.html">Olohundare
+                                        Oluwakayode</a> in <a
+                                        href="../category/top-stories.html"
+                                        class="text-capitalize">top stories</a><br>
+                                    <span>
+                                        <script>document.write(getmonth(parseInt('9')))</script>
+                                        13</span>
+                                    <span class="middotDivider"></span>
+                                    <span class="readingTime" title="3 min read">2 min read</span>
+                                    <span class="svgIcon svgIcon--star">
+                                        <svg class="svgIcon-use" width="15" height="15">
+                                            <path
+                                                d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+            <!--End post related-->
+
+            <!--Begin Comment-->
+            
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <button class="btn btn-outline-info btn-lg btn-block" id="showAll"><small>See responses
+                            (0)</small></button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="single-comment comments_wrap">
+            <nav class="mt-3">
+                        <div class="nav nav-tabs nav-fill shadow-sm" id="nav-tab" role="tablist">
+                            
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">
+                                Comments</a>
+                            
+                            
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Facebook Comments</a>
+                            
+                        </div>
+                </nav>
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <section id="comments">
+                    <div class="comments-inner clr">
+                        <ol class="commentlist">
+                            
+                        </ol>
+                        <div id="respond" class="comment-respond mt-5">
+                            <h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
+                            <form action="https://nodepress.com.ng/comment" method="POST" id="commentForm" class="commentForm">
+                                <input type="hidden" name="articleId" id="articleId" value="5d84c22b07b5fa111ee06217">
+                                <input type="hidden" name="slug" id="slug" value="setting-up-a-node.js-app-on-a-linux-ami-on-an-aws-ec2-instance-with-nginx">
+                                <p class="comment-notes">
+                                    <span id="email-notes">Your email address will not be published.</span> Required
+                                    fields are marked <span class="required">*</span>
+                                </p>
+                                <p class="comment-form-comment">
+                                    <label for="comment">Comment</label>
+                                    <textarea id="comment" name="comment" id="comment" cols="45" rows="8"
+                                        maxlength="65525" required></textarea>
+                                </p>
+                                <div class="row">
+                                    <div class="comment-form-author col-sm-12 col-md-6">
+                                        <p>
+                                            <label for="author">Name*</label>
+                                            <input name="name" type="text" id="name" value="" size="30"
+                                                aria-required="true" required>
+                                        </p>
+                                    </div>
+                                    <div class="comment-form-email col-sm-12 col-md-6">
+                                        <p>
+                                            <label for="email">Email*</label>
+                                            <input id="email" name="email" type="email" id="email" value="" size="30"
+                                                aria-required="true" required>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="form-submit">
+                                    <input name="submit" type="submit" id="submit"
+                                        class="submit btn btn-success btn-block" value="Post Comment">
+                                </p>
+                            </form>
+                        </div>
+                        <!-- #respond -->
+                    </div>
+                </section>
+                    </div>
+                    
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="fb-comments" data-href="" data-width=""
+                                data-numposts="5"></div>
+                        </div>
+                        <script>document.querySelector('.fb-comments').setAttribute('data-href', `${document.location.origin}`)</script>
+                        
+                </div>
+            </div>
+            
+            <!--End Comment-->
+        </div>
+        <!--container-->
+    </main>
+            <footer class="mt-5">
+                <div class="container">
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col-md-6 copyright text-xs-center">            
+                            <p>Copyright by Naskkotech. Powered by Nodepress.</a></p>
+                        </div>
+                        <div class="col-md-6">           
+                            <ul class="social-network inline text-md-right text-sm-center">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.twitter.com/iamnasirudeen"><i class="icon-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="icon-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </footer>
+        </div> <!--#wrapper-->
+
+        <a href="#" class="back-to-top heading"><i class="icon-left-open-big"></i><span  class="d-lg-inline d-md-none">Top</span></a>
+        
+        <!--Scripts-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135022290-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135022290-2');
+</script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/jquery-scrolltofixed-min.js"></script>
+        <script src="../js/theia-sticky-sidebar.js"></script>
+		<script src="../js/owl-carousel.2.3.0.min.js"></script>
+        <script src="../js/sweetalert.min.js"></script>
+        <script src="../js/lazy.min.js"></script>
+        <script src="../js/lazy-hooks.min.js"></script>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
+    
+    
+    <script>
+        let n = `
+                            <form action="/newsletter" method="POST" class="newsletterForm bg-white mt-3 mb-3" style="color: rgba(0,0,0,0.8);border-radius: 4px;box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);">
+                                <div class="mb-5">
+                                <div class="row justify-content-between">
+                                <div class="col-md-2 d-none d-md-block">
+                                    <img class="blur-up lazyload" data-src="../img/newsbg.png">
+                                </div>
+                                    <div class="col-md-3 mb-2 mb-md-0 p-3 padd">
+                                        <h5 class="font-weight-bold secondfont mb-3 mt-0">Newsletter Subscription</h5>
+                                        <p class="small-text">Get the latest news right in your inbox. We never spam!</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="row pt-4 pb-4 pr-4 padd">
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="email" class="form-control" name="email" placeholder="Enter your e-mail address" required>
+                                            </div>
+                                            <div class="col-md-12 mt-2">
+                                                <button type="submit" class="btn btn-success btn-block">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+                            `
+        if ('true == true') {
+            $('.entry-main-content p').last().prepend(n)
+        }
+        document.querySelector('.entry-main-content').querySelectorAll('a').forEach(a => a.setAttribute('target', '_blank'))
+        $('.single-comment').hide();
+        $('#showAll').click(e => {
+            $('.single-comment').fadeIn();
+            $('#showAll').hide();
+        })
+
+        const form = document.querySelector('#commentForm');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            let comment = document.querySelector('#comment').value;
+            let name = document.querySelector('#name').value;
+            let email = document.querySelector('#email').value;
+            let slug = document.querySelector('#slug').value;
+            let articleId = document.querySelector('#articleId').value;
+
+            const data = {
+                comment: comment,
+                name: name,
+                email: email,
+                slug: slug,
+                articleId: articleId,
+            };
+
+            fetch(form.getAttribute('action'), {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then(response => response.text())
+                .then(data => {
+                    console.log(data)
+                    swal('Success', data, 'success');
+                    form.reset()
+                })
+                .catch(e => {
+                    swal('Oops', "There was an error processing that, pls check your internet connection and try again", 'error');
+                })
+        })
+        
+        $('.comment-reply-link').click(e => {
+            e.preventDefault();
+            $('.commentForm').attr('action', '/reply');
+            $('.commentForm').attr('id', ''); 
+        });
+    </script>

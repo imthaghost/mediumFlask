@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from nodepress.com.ng/post/this-headline-could-save-your-life by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jan 2020 17:31:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Meta tags -->
+    <title>Nodepress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog.">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://nodepress.s3.amazonaws.com/nemo-img-7-8d8f.jpg">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="../index.html" />
+    <link rel="alternate" href="../index.html" hreflang="en-US" />
+    <link rel="shortcut icon" href="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS ICON-2c44.png" type="image/x-icon">
+    <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "WebSite",
+              "name": "Nodepress",
+              "url": "http://nodepress.com.ng",
+              "description": "Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog.",
+              "image": "https://nodepress.s3.amazonaws.com/nemo-img-7-8d8f.jpg"
+            }
+        </script>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nodepress" />
+    <meta property="og:url" content="http://nodepress.com.ng" />
+    <meta property="og:image" content="https://nodepress.s3.amazonaws.com/nemo-img-7-8d8f.jpg" />
+    <meta property="og:description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog.">
+    <meta property="og:site_name" content="Nodepress" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Nodepress" />
+    <meta name="twitter:creator" content="@Nodepress" />
+    <meta name="twitter:title" content="Nodepress" />
+    <meta name="twitter:description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog." />
+    <meta name="twitter:image" content="https://nodepress.s3.amazonaws.com/nemo-img-7-8d8f.jpg" />
+    <meta name="twitter:domain" content="http://nodepress.com.ng" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://nodepress.s3.amazonaws.com/nemo-img-7-8d8f.jpg">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap, Font Awesome, Aminate, Owl Carausel, Normalize CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- Site CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/widgets.css" rel="stylesheet">
+    <link href="../css/color-default.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <link href="../icofont/icofont.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/video.css" rel="stylesheet">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;display=swap" rel="stylesheet">
+
+    <!-- Icons fonts-->
+    <link href="../css/fontello.css" rel="stylesheet">
+    
+</head>
+
+<body class="single">
+    <div class="top-scroll-bar"></div>
+    <!--Mobile navigation-->
+    <div class="sticky-header fixed d-lg-none d-md-block">
+            <div class="text-right">
+                <div class="container mobile-menu-fixed pr-5">
+                    
+                    <h1 class="logo-small navbar-brand">
+                        <a href="../index.html" class="logo text-capitalize">
+                            <img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="blur-up lazyload" alt="Nodepress" />
+                        </a>
+                    </h1>
+                     
+
+                    <ul class="social-network heading navbar-nav d-lg-flex align-items-center" 
+                        style="margin-right: 1rem !important;">
+                        <li>
+                            <a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a>
+                        </li>
+                    </ul>
+
+                    <a href="javascript:void(0)" class="menu-toggle-icon">
+                        <span class="lines"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mobi-menu">
+                <div class="mobi-menu__logo">
+                    <h1 class="logo navbar-brand"><a href="../index.html" class="logo text-capitalize">
+                        
+                            <img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="img-fluid blur-up lazyload">
+                        
+                    </a></h1>
+                </div>
+                <form action="https://nodepress.com.ng/search" method="get" class="menu-search-form d-lg-flex">
+                    <input type="text" class="search_field" placeholder="Search..." value="" name="q" />
+                </form>
+                <nav>
+                    <ul>
+                    
+                        <li class=""><a href="../index.html">Home</a></li>
+                    
+                        <li class=""><a href="../category/Read%20Everything%20about%20technology.html">Tech</a></li>
+                    
+                        <li class=""><a href="../category/programming.html">Programming</a></li>
+                    
+                        <li class=""><a href="../category/personal.html">Personal</a></li>
+                    
+                        <li class=""><a href="../category/top-stories.html">Top Stories</a></li>
+                    
+                        <li class=""><a href="../category/Health.html">Health</a></li>
+                    
+                        <li class=""><a href="../category/world.html">World</a></li>
+                    
+                        <li class=""><a href="../pages/about-us.html">About us</a></li>
+                    
+                        <li class=""><a href="../author/naskko_tech.html">Admin</a></li>
+                    
+                        <li class=""><a href="../contact.html">Contact</a></li>
+                    
+                    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    <!--Mobile navigation-->
+    <div id="wrapper">
+        <header id="header" class="d-lg-block d-none">
+            <div class="container">
+                <div class="align-items-center w-100">
+                    <h1 class="logo float-left navbar-brand"><a href="../index.html" class="logo">
+                            
+                            <img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="blur-up lazyload" alt="Nodepress">
+                            
+                        </a></h1>
+                        <div class="header-right float-right w-50">                    
+                            <div class="d-inline-flex float-right text-right align-items-center">                        
+                                <ul class="social-network heading navbar-nav d-lg-flex align-items-center">                       
+                                    <li><a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a></li>
+                                </ul>
+                                <ul class="top-menu heading navbar-nav w-100 d-lg-flex align-items-center">
+                                    <li><a href="../contact.html" class="btn">Contact</a></li>
+                                </ul>
+                                
+                            <a href="../login.html" class="author-avatar">Login</a>
+                            
+                </div>
+                <form action="https://nodepress.com.ng/search" method="get" class="search-form d-lg-flex float-right">
+                    <a href="javascript:void(0)" class="searh-toggle">
+                        <i class="icon-search"></i>
+                    </a>
+                    <input type="text" class="search_field" placeholder="Search..." value="" name="q">
+                </form>
+            </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <nav id="main-menu" class="stick d-lg-block d-none">
+            <div class="container">
+                <div class="menu-primary">
+                    <ul>
+                        
+                            <li class=""><a href="../index.html">Home</a></li>
+                        
+                            <li class=""><a href="../category/Read%20Everything%20about%20technology.html">Tech</a></li>
+                        
+                            <li class=""><a href="../category/programming.html">Programming</a></li>
+                        
+                            <li class=""><a href="../category/personal.html">Personal</a></li>
+                        
+                            <li class=""><a href="../category/top-stories.html">Top Stories</a></li>
+                        
+                            <li class=""><a href="../category/Health.html">Health</a></li>
+                        
+                            <li class=""><a href="../category/world.html">World</a></li>
+                        
+                            <li class=""><a href="../pages/about-us.html">About us</a></li>
+                        
+                            <li class=""><a href="../author/naskko_tech.html">Admin</a></li>
+                        
+                            <li class=""><a href="../contact.html">Contact</a></li>
+                        
+                        
+                    </ul>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=351605375694793&autoLogAppEvents=1"></script>
+    <script>
+
+        function getmonth(data) {
+            switch (data) {
+                case 0:
+                    return 'Jan';
+                    break;
+                case 1:
+                    return 'Feb';
+                    break;
+                case 2:
+                    return 'March';
+                    break;
+                case 3:
+                    return 'Apr';
+                    break;
+                case 4:
+                    return 'May';
+                    break;
+                case 5:
+                    return 'Jun';
+                    break;
+                case 6:
+                    return 'Jul';
+                    break;
+                case 7:
+                    return 'Aug';
+                    break;
+                case 8:
+                    return 'Sep';
+                    break;
+                case 9:
+                    return 'Oct';
+                    break;
+                case 10:
+                    return 'Nov';
+                    break;
+                case 11:
+                    return 'Dec';
+                    break;
+                default: break;
+            }
+        };
+    </script>
+    <style>
+        .entry-main-content img {
+            max-width: 100% !important;
+            object-fit: cover !important;
+            height: auto !important;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        table {
+            max-width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-collapse: collapse;
+            white-space: nowrap;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+            border: none;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        /* @media screen and (min-width: 435px){
+        .avatar{
+            height: 114px !important; 
+            width: 114px !important; 
+            object-fit: cover;
+        }
+    } */
+        @media screen and (max-width: 700px) {
+            .padd {
+                padding-left: 1.5rem !important;
+            }
+        }
+
+        .social-network {
+            float: right
+        }
+
+        .social-network a:hover,
+        .top-menu a:hover,
+        .searh-toggle:hover {
+            color: rgba(0, 0, 0, .7)
+        }
+
+        .social-network {
+            z-index: 2
+        }
+
+        footer .social-network {
+            margin-bottom: 1rem;
+            margin-top: -5px
+        }
+
+        .social-network a {
+            color: rgba(0, 0, 0, .54);
+            border-radius: 50%;
+            font-size: 12px;
+            margin-left: .2rem;
+            border: 1px solid rgba(0, 0, 0, .34);
+            width: 26px;
+            height: 26px;
+            line-height: 25px;
+            text-align: center;
+            padding: 0;
+            display: inline-block
+        }
+
+        .tags-wrap a {
+            background: rgba(0, 0, 0, .05);
+            border-radius: 3px;
+            font-size: .875rem;
+            padding: 6px 12px;
+            margin-right: 3px;
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+        a.nav-item.nav-link.active {
+        border-top: solid 2px #87be8f !important;
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    }
+
+    a.nav-item.nav-link {
+        border-radius: 0;
+    }
+    </style>
+    <!-- single post start -->
+    <main id="content">
+        <div class="container">
+            <div class="entry-header">
+                <div class="mb-5">
+                    
+    
+    
+                    <h1 class="m_b_2rem" style="font-weight: 500;">
+                        This headline could save your life
+                    </h1>
+                    <div class="entry-meta align-items-center">
+                        <a class="author-avatar" href="../author/naskko_tech.html">
+                            <div class="u-relative u-inlineBlock u-flex0"><img
+                                    data-src="https://gravatar.com/avatar/09dc6e9745b56c0d044fe211605d6138?s=200&amp;d=retro"
+                                    style="height: 48px !important; width: 48px !important;"
+                                    class="avatar-image avatar-image--smaller blur-up lazyload" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Go to the profile of Olohundare Nasirudeen ">
+                                <div class="avatar-halo u-absolute u-textColorGreenNormal svgIcon"
+                                    style="width: calc(100% + 10px); height: calc(100% + 10px); top:-5px; left:-5px">
+                                    <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.53538374,19.9430227 C11.180401,8.78497536 22.6271155,1.6 35.3571429,1.6 C48.0871702,1.6 59.5338847,8.78497536 65.178902,19.9430227 L66.2496695,19.401306 C60.4023065,7.84329843 48.5440457,0.4 35.3571429,0.4 C22.17024,0.4 10.3119792,7.84329843 4.46461626,19.401306 L5.53538374,19.9430227 Z">
+                                        </path>
+                                        <path
+                                            d="M65.178902,49.9077131 C59.5338847,61.0657604 48.0871702,68.2507358 35.3571429,68.2507358 C22.6271155,68.2507358 11.180401,61.0657604 5.53538374,49.9077131 L4.46461626,50.4494298 C10.3119792,62.0074373 22.17024,69.4507358 35.3571429,69.4507358 C48.5440457,69.4507358 60.4023065,62.0074373 66.2496695,50.4494298 L65.178902,49.9077131 Z">
+                                        </path>
+                                    </svg></div>
+                            </div>
+                            <a href="../author/naskko_tech.html"
+                                class="text-capitalize">Olohundare
+                                Nasirudeen</a> in <a href="../category/world.html"
+                                class="text-capitalize">world</a><br>
+                            <span>
+                                <script>document.write(getmonth(parseInt('8')))</script>
+                                19</span>
+                            <span class="middotDivider"></span>
+                            <span class="readingTime"
+                                title="1 min read">1 min read</span>
+                            <span class="svgIcon svgIcon--star">
+                                <svg class="svgIcon-use" width="15" height="15">
+                                    <path
+                                        d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="middotDivider"></span>
+                            
+                            <span>9 Views</span>
+                            
+                    </div>
+                </div>
+            </div>
+            <!--end single header-->
+            <figure class="image zoom mb-5 text-center">
+                <img alt="This headline could save your life" class="blur-up lazyload" data-src="https://nodepress.s3.amazonaws.com/nemo-img-7-8d8f.jpg" />
+            </figure>
+            <!--figure-->
+            <article class="entry-wraper mb-5">
+                <div class="entry-left-col">
+                    <div class="social-sticky">
+                        <a href="#"><i class="icon-facebook"></i></a>
+                        <a href="#"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-heart"></i></a>
+                        <a href="#"><i class="icon-paper-plane"></i></a>
+
+                    </div>
+                </div>
+                <div class="entry-main-content dropcap" style="overflow: hidden;">
+                    
+
+                    
+                    <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>F<span style="background-color: #ffffff; color: #292929; font-family: Lora, serif; font-size: 20px;">rail far and far mercifully according up threw much one that unicorn instead one however ecstatic over falcon arose inside aside inside led dear affecting reined whispered more felt hey much along blushed bled more ocelot ritual wedded more and this the dim gosh supply darn one far jeez cassowary circa this wherever contrary alas jeez hello cowardly much.</span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 1.5rem; padding: 0px; color: #292929; font-family: Lora, serif; font-size: 20px; background-color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br style="box-sizing: border-box; margin: 0px; padding: 0px;" />tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<figure class="wp-block-image alignwide" style="box-sizing: border-box; margin: 0px 0px 1em 400px; padding: 1rem 0px 0px; display: block; max-width: 100%; transform: translateX(-50%); width: 800px; color: #292929; font-family: Lora, serif; font-size: 20px; background-color: #ffffff;"><img class="wp-image-960" style="box-sizing: border-box; margin: 0px; padding: 0px; vertical-align: middle; border-style: none; max-width: 100%; height: 600.781px; width: 800px;" src="http://demos.alithemes.com/merinda/wp-content/uploads/2019/01/nemo-img-6-1024x769.jpg" sizes="(max-width: 1024px) 100vw, 1024px" srcset="http://demos.alithemes.com/merinda/wp-content/uploads/2019/01/nemo-img-6-1024x769.jpg 1024w, http://demos.alithemes.com/merinda/wp-content/uploads/2019/01/nemo-img-6-300x225.jpg 300w, http://demos.alithemes.com/merinda/wp-content/uploads/2019/01/nemo-img-6-768x577.jpg 768w, http://demos.alithemes.com/merinda/wp-content/uploads/2019/01/nemo-img-6.jpg 1400w" alt="" /></figure>
+<p style="box-sizing: border-box; margin: 0px 0px 1.5rem; padding: 0px; color: #292929; font-family: Lora, serif; font-size: 20px; background-color: #ffffff;">Less far snuffed more frighteningly much falcon wasp waspishly noble this dreamed that jeez a that below stretched minimal excluding one well clapped insanely wide rationally rethought due frowning far far ouch dishonestly some frowned and mumbled far python far this splashed in in less and more notorious nerveless until arousing one.</p>
+<blockquote class="wp-block-quote" style="box-sizing: border-box; margin: 20px 0px; padding: 0px 30px 0px 1em; position: relative; font-style: italic; color: #292929; font-family: Lora, serif; font-size: 20px; background-color: #ffffff; border-left-width: 5px !important;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px;">This and and circa labrador far dreadful overheard circa flawless some pragmatic much since less coyly this and while fiendish less jeepers cat as haphazardly inside this rational a circa yikes bled tiger more because compulsive anteater sleazily gibbered memorable however oh some one diplomatic away yikes oh therefore much that the far gosh dwelled yikes across insincerely the matter-of-factly much far wherever this.</p>
+</blockquote>
+<h2 style="box-sizing: border-box; margin: 1.2em 0px 0.5em; padding: 0px; font-weight: 400; line-height: 1.2em; font-size: 2.294em; clear: both; text-rendering: optimizelegibility; letter-spacing: -0.75px; font-family: Lora; color: #292929; background-color: #ffffff;">And excellent and that some</h2>
+<p style="box-sizing: border-box; margin: 0px 0px 1.5rem; padding: 0px; color: #292929; font-family: Lora, serif; font-size: 20px; background-color: #ffffff;">less aboard less hence iguana belatedly this one oh more unsafe inclusive impotent vague hey and meadowlark far well plankton cobra beyond one tuneful more flabby eminently up more</p>
+<ul style="box-sizing: border-box; margin: 0px 0px 1.5rem; padding: 0px 0px 0px 1rem; list-style-position: initial; list-style-image: initial; color: #292929; font-family: Lora, serif; font-size: 20px; background-color: #ffffff;">
+<li style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: disc;">between goldfish much leered</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: disc;">and baleful far goodness</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: disc;">swept panther much while</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: disc;">fractious this crud one cheered cow.</li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px 0px 1.5rem; padding: 0px; color: #292929; font-family: Lora, serif; font-size: 20px; background-color: #ffffff;"><span style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;">Far however</span>&nbsp;then much quetzal more archaically otter off but cried mallard emotional craven much puerilely where this ironic poked crud gnu yet much some nutria far and fluently morbidly wasp far but perceptible tolerable however pessimistic much much a overhung and next.</p>
+</body>
+
+<!-- Mirrored from nodepress.com.ng/post/this-headline-could-save-your-life by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jan 2020 17:31:39 GMT -->
+</html>
+                </div>
+                
+                <div class="entry-bottom row" style="font-size: .875rem;">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="tags-wrap heading">
+                            <span class="tags">
+                                
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 social-network text-center text-sm-right"
+                        style="margin: 1.5rem 0; color: #757575;">
+                        Share this post
+                        <a class="fb"
+                            href="https://www.facebook.com/sharer.php?u=http://nodepress.com.ng/post/this-headline-could-save-your-life"
+                            title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="tw"
+                            href="https://twitter.com/intent/tweet?source=http://nodepress.com.ng/post/this-headline-could-save-your-life"
+                            target="_blank" title="Tweet"><i class="fa fa-twitter"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=http://nodepress.com.ng/post/this-headline-could-save-your-life"
+                            target="_blank" title="Pin it"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <hr>
+                <div class="box box-author m_b_2rem">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="post-author row-flex">
+                                <div class="author-img">
+                                    <svg width="82" height="92" viewBox="0 0 82 92" class="fo ef mj mk ml mm ej">
+                                        <path
+                                            d="M1.58 26.29C8.86 11.67 23.78 1.65 41 1.65V.35C23.26.35 7.9 10.67.42 25.71l1.16.58zM41 1.65c17.22 0 32.14 10.02 39.42 24.64l1.16-.58C74.1 10.67 58.74.35 41 .35v1.3zm39.42 64.06C73.14 80.33 58.22 90.35 41 90.35v1.3c17.74 0 33.1-10.32 40.58-25.36l-1.16-.58zM41 90.35c-17.22 0-32.14-10.02-39.42-24.64l-1.16.58C7.9 81.33 23.26 91.65 41 91.65v-1.3z">
+                                        </path>
+                                    </svg>
+                                    <img alt="Olohundare Nasirudeen"
+                                        class="blur-up avatar lazyload" data-src="https://gravatar.com/avatar/09dc6e9745b56c0d044fe211605d6138?s=200&amp;d=retro">
+                                </div>
+                                <div class="author-content">
+                                    <div class="top-author">
+                                        <small><span>WRITTEN BY</span></small>
+                                        <h5 class="heading-font"><a href="../author/naskko_tech.html"
+                                                title="Olohundare Nasirudeen"
+                                                rel="author" class="text-capitalize">Olohundare
+                                                Nasirudeen</a></h5>
+                                    </div>
+                                    <p class="d-none d-md-block">Hello, my name is nasirudeen and i love coding.</p>
+                                    
+                                    <div class="content-social-author">
+                                        <a target="_blank" class="author-social"
+                                            href="https://www.facebook.com/dev-nasirudeen"><i
+                                                class="icofont-facebook"></i> </a>
+                                        <a target="_blank" class="author-social"
+                                            href="https://www.twitter.com/iamnasirudeen"><i
+                                                class="icofont-twitter"></i> </a>
+                                        <a target="_blank" class="author-social"
+                                            href="https://www.instagram.com/naskko_tech"> <i
+                                                class="icofont-instagram"></i> </a>
+                                        <a target="_blank" class="author-social"
+                                            href="https://www.pinterest.com/"> <i
+                                                class="icofont-pinterest"></i> </a>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <!--entry-content-->
+
+            <!--Begin post related-->
+            <div class="related-posts mb-5">
+                <h4 class="spanborder text-center">
+                    <span>Maybe you are interested</span>
+                </h4>
+                <div class="row justify-content-between">
+                    <div class="divider-2"></div>
+                    
+                    <article class="col-md-4">
+                        <div class="mb-3 d-flex row">
+                            <figure class="col-md-5"><a href="how-to-delegate-work-so-it-actually-gets-done.html"><img
+                                        alt="How to Delegate Work So It Actually Gets Done"
+                                        class="blur-up lazyload"
+                                        data-src="https://nodepress.s3.eu-west-2.amazonaws.com/delegation-936f.jpeg"
+                                        style="height: 128px; width: 100%; object-fit: cover;"></a></figure>
+                            <div class="entry-content col-md-7 pl-md-0">
+                                <h5 class="entry-title mb-3"><a
+                                        href="how-to-delegate-work-so-it-actually-gets-done.html">How to Delegate Work So It Actually Gets Done
+                                    </a></h5>
+                                <div class="entry-meta align-items-center">
+                                    <a href="../author/Naskko_Tech-2.html">Olohundare
+                                        Oluwakayode</a> in <a
+                                        href="../category/personal.html"
+                                        class="text-capitalize">personal</a><br>
+                                    <span>
+                                        <script>document.write(getmonth(parseInt('9')))</script>
+                                        13</span>
+                                    <span class="middotDivider"></span>
+                                    <span class="readingTime" title="3 min read">5 min read</span>
+                                    <span class="svgIcon svgIcon--star">
+                                        <svg class="svgIcon-use" width="15" height="15">
+                                            <path
+                                                d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="col-md-4">
+                        <div class="mb-3 d-flex row">
+                            <figure class="col-md-5"><a href="the-end-of-php.html"><img
+                                        alt="The End of PHP?"
+                                        class="blur-up lazyload"
+                                        data-src="https://nodepress.s3.eu-west-2.amazonaws.com/php4-00a8.jpeg"
+                                        style="height: 128px; width: 100%; object-fit: cover;"></a></figure>
+                            <div class="entry-content col-md-7 pl-md-0">
+                                <h5 class="entry-title mb-3"><a
+                                        href="the-end-of-php.html">The End of PHP?
+                                    </a></h5>
+                                <div class="entry-meta align-items-center">
+                                    <a href="../author/Naskko_Tech-2.html">Olohundare
+                                        Oluwakayode</a> in <a
+                                        href="../category/Read%20Everything%20about%20technology.html"
+                                        class="text-capitalize">Tech</a><br>
+                                    <span>
+                                        <script>document.write(getmonth(parseInt('9')))</script>
+                                        13</span>
+                                    <span class="middotDivider"></span>
+                                    <span class="readingTime" title="3 min read">3 min read</span>
+                                    <span class="svgIcon svgIcon--star">
+                                        <svg class="svgIcon-use" width="15" height="15">
+                                            <path
+                                                d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="col-md-4">
+                        <div class="mb-3 d-flex row">
+                            <figure class="col-md-5"><a href="the-most-underrated-productivity-technique-is-also-the-simplest.html"><img
+                                        alt="The Most Underrated Productivity Technique Is Also the Simplest"
+                                        class="blur-up lazyload"
+                                        data-src="https://nodepress.s3.eu-west-2.amazonaws.com/p1-f163.jpeg"
+                                        style="height: 128px; width: 100%; object-fit: cover;"></a></figure>
+                            <div class="entry-content col-md-7 pl-md-0">
+                                <h5 class="entry-title mb-3"><a
+                                        href="the-most-underrated-productivity-technique-is-also-the-simplest.html">The Most Underrated Productivity Technique Is Also the Simplest
+                                    </a></h5>
+                                <div class="entry-meta align-items-center">
+                                    <a href="../author/Naskko_Tech-2.html">Olohundare
+                                        Oluwakayode</a> in <a
+                                        href="../category/top-stories.html"
+                                        class="text-capitalize">top stories</a><br>
+                                    <span>
+                                        <script>document.write(getmonth(parseInt('9')))</script>
+                                        13</span>
+                                    <span class="middotDivider"></span>
+                                    <span class="readingTime" title="3 min read">2 min read</span>
+                                    <span class="svgIcon svgIcon--star">
+                                        <svg class="svgIcon-use" width="15" height="15">
+                                            <path
+                                                d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+            <!--End post related-->
+
+            <!--Begin Comment-->
+            
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <button class="btn btn-outline-info btn-lg btn-block" id="showAll"><small>See responses
+                            (0)</small></button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="single-comment comments_wrap">
+            <nav class="mt-3">
+                        <div class="nav nav-tabs nav-fill shadow-sm" id="nav-tab" role="tablist">
+                            
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">
+                                Comments</a>
+                            
+                            
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Facebook Comments</a>
+                            
+                        </div>
+                </nav>
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <section id="comments">
+                    <div class="comments-inner clr">
+                        <ol class="commentlist">
+                            
+                        </ol>
+                        <div id="respond" class="comment-respond mt-5">
+                            <h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
+                            <form action="https://nodepress.com.ng/comment" method="POST" id="commentForm" class="commentForm">
+                                <input type="hidden" name="articleId" id="articleId" value="5d83a49de2743c5d81b7038c">
+                                <input type="hidden" name="slug" id="slug" value="this-headline-could-save-your-life">
+                                <p class="comment-notes">
+                                    <span id="email-notes">Your email address will not be published.</span> Required
+                                    fields are marked <span class="required">*</span>
+                                </p>
+                                <p class="comment-form-comment">
+                                    <label for="comment">Comment</label>
+                                    <textarea id="comment" name="comment" id="comment" cols="45" rows="8"
+                                        maxlength="65525" required></textarea>
+                                </p>
+                                <div class="row">
+                                    <div class="comment-form-author col-sm-12 col-md-6">
+                                        <p>
+                                            <label for="author">Name*</label>
+                                            <input name="name" type="text" id="name" value="" size="30"
+                                                aria-required="true" required>
+                                        </p>
+                                    </div>
+                                    <div class="comment-form-email col-sm-12 col-md-6">
+                                        <p>
+                                            <label for="email">Email*</label>
+                                            <input id="email" name="email" type="email" id="email" value="" size="30"
+                                                aria-required="true" required>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="form-submit">
+                                    <input name="submit" type="submit" id="submit"
+                                        class="submit btn btn-success btn-block" value="Post Comment">
+                                </p>
+                            </form>
+                        </div>
+                        <!-- #respond -->
+                    </div>
+                </section>
+                    </div>
+                    
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="fb-comments" data-href="" data-width=""
+                                data-numposts="5"></div>
+                        </div>
+                        <script>document.querySelector('.fb-comments').setAttribute('data-href', `${document.location.origin}`)</script>
+                        
+                </div>
+            </div>
+            
+            <!--End Comment-->
+        </div>
+        <!--container-->
+    </main>
+            <footer class="mt-5">
+                <div class="container">
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col-md-6 copyright text-xs-center">            
+                            <p>Copyright by Naskkotech. Powered by Nodepress.</a></p>
+                        </div>
+                        <div class="col-md-6">           
+                            <ul class="social-network inline text-md-right text-sm-center">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.twitter.com/iamnasirudeen"><i class="icon-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="icon-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </footer>
+        </div> <!--#wrapper-->
+
+        <a href="#" class="back-to-top heading"><i class="icon-left-open-big"></i><span  class="d-lg-inline d-md-none">Top</span></a>
+        
+        <!--Scripts-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135022290-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135022290-2');
+</script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/jquery-scrolltofixed-min.js"></script>
+        <script src="../js/theia-sticky-sidebar.js"></script>
+		<script src="../js/owl-carousel.2.3.0.min.js"></script>
+        <script src="../js/sweetalert.min.js"></script>
+        <script src="../js/lazy.min.js"></script>
+        <script src="../js/lazy-hooks.min.js"></script>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
+    
+    
+    <script>
+        let n = `
+                            <form action="/newsletter" method="POST" class="newsletterForm bg-white mt-3 mb-3" style="color: rgba(0,0,0,0.8);border-radius: 4px;box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);">
+                                <div class="mb-5">
+                                <div class="row justify-content-between">
+                                <div class="col-md-2 d-none d-md-block">
+                                    <img class="blur-up lazyload" data-src="../img/newsbg.png">
+                                </div>
+                                    <div class="col-md-3 mb-2 mb-md-0 p-3 padd">
+                                        <h5 class="font-weight-bold secondfont mb-3 mt-0">Newsletter Subscription</h5>
+                                        <p class="small-text">Get the latest news right in your inbox. We never spam!</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="row pt-4 pb-4 pr-4 padd">
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="email" class="form-control" name="email" placeholder="Enter your e-mail address" required>
+                                            </div>
+                                            <div class="col-md-12 mt-2">
+                                                <button type="submit" class="btn btn-success btn-block">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+                            `
+        if ('true == true') {
+            $('.entry-main-content p').last().prepend(n)
+        }
+        document.querySelector('.entry-main-content').querySelectorAll('a').forEach(a => a.setAttribute('target', '_blank'))
+        $('.single-comment').hide();
+        $('#showAll').click(e => {
+            $('.single-comment').fadeIn();
+            $('#showAll').hide();
+        })
+
+        const form = document.querySelector('#commentForm');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            let comment = document.querySelector('#comment').value;
+            let name = document.querySelector('#name').value;
+            let email = document.querySelector('#email').value;
+            let slug = document.querySelector('#slug').value;
+            let articleId = document.querySelector('#articleId').value;
+
+            const data = {
+                comment: comment,
+                name: name,
+                email: email,
+                slug: slug,
+                articleId: articleId,
+            };
+
+            fetch(form.getAttribute('action'), {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then(response => response.text())
+                .then(data => {
+                    console.log(data)
+                    swal('Success', data, 'success');
+                    form.reset()
+                })
+                .catch(e => {
+                    swal('Oops', "There was an error processing that, pls check your internet connection and try again", 'error');
+                })
+        })
+        
+        $('.comment-reply-link').click(e => {
+            e.preventDefault();
+            $('.commentForm').attr('action', '/reply');
+            $('.commentForm').attr('id', ''); 
+        });
+    </script>

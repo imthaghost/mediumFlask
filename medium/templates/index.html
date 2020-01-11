@@ -1,0 +1,3188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+	<title>Medium</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Medium Clone/>
+		<meta name=" msapplication-TileColor" content="#ffffff" />
+	<meta name="theme-color" content="#ffffff" />
+
+	<!-- Bootstrap, Font Awesome, Aminate, Owl Carausel, Normalize CSS -->
+	<link href="static/css/bootstrap.css" rel="stylesheet" />
+	<link href="static/css/owl.carousel.min.css" rel="stylesheet" />
+	<link href="static/css/owl.theme.default.min.css" rel="stylesheet" />
+
+	<!-- Site CSS -->
+	<link href="static/css/style.css" rel="stylesheet" />
+	<link href="static/css/widgets.css" rel="stylesheet" />
+	<link href="static/css/color-default.css" rel="stylesheet" />
+	<link href="static/css/responsive.css" rel="stylesheet" />
+	<link href="static/icofont/icofont.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="static/assets/css/vendor/font-awesome.min.css">
+	<!-- Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=B612+Mono&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;display=swap" rel="stylesheet" />
+
+	<!-- Icons fonts-->
+	<link href="static/css/fontello.css" rel="stylesheet" />
+
+</head>
+
+<body class="single">
+	<div class="top-scroll-bar"></div>
+	<!--Mobile navigation-->
+	<div class="sticky-header fixed d-lg-none d-md-block">
+		<div class="text-right">
+			<div class="container mobile-menu-fixed pr-5">
+
+				<h1 class="logo-small navbar-brand">
+					<a href="index.html" class="logo text-capitalize">
+
+						<img data-src="https://img.icons8.com/color/96/000000/medium-logo.png" class="blur-up lazyload"
+							alt="Medium" />
+					</a>
+				</h1>
+
+
+				<ul class="social-network heading navbar-nav d-lg-flex align-items-center"
+					style="margin-right: 1rem !important;">
+					<li>
+						<a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a>
+					</li>
+				</ul>
+
+				<a href="javascript:void(0)" class="menu-toggle-icon">
+					<span class="lines"></span>
+				</a>
+			</div>
+		</div>
+
+		<div class="mobi-menu">
+			<div class="mobi-menu__logo">
+				<h1 class="logo navbar-brand"><a href="index.html" class="logo text-capitalize">
+
+						<img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png"
+							class="img-fluid blur-up lazyload">
+
+					</a></h1>
+			</div>
+			<form action="https://nodepress.com.ng/search" method="get" class="menu-search-form d-lg-flex">
+				<input type="text" class="search_field" placeholder="Search..." value="" name="q" />
+			</form>
+			<nav>
+				<ul>
+
+					<li class=""><a href="index.html">Home</a></li>
+
+					<li class=""><a href="category/Read%20Everything%20about%20technology.html">Tech</a></li>
+
+					<li class=""><a href="category/programming.html">Programming</a></li>
+
+					<li class=""><a href="category/personal.html">Personal</a></li>
+
+					<li class=""><a href="category/top-stories.html">Top Stories</a></li>
+
+					<li class=""><a href="category/Health.html">Health</a></li>
+
+					<li class=""><a href="category/world.html">World</a></li>
+
+					<li class=""><a href="pages/about-us.html">About us</a></li>
+
+					<li class=""><a href="author/naskko_tech.html">Admin</a></li>
+
+					<li class=""><a href="contact.html">Contact</a></li>
+
+
+					<li class=""><a href="login.html">Login</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!--Mobile navigation-->
+	<div id="wrapper" style="overflow: hidden;">
+		<header id="header" class="d-lg-block d-none">
+			<div class="container">
+				<div class="align-items-center w-100">
+					<h1 class="logo float-left navbar-brand">
+						<a href="index.html" class="logo">
+
+							<img data-src="https://img.icons8.com/color/96/000000/medium-logo.png"
+								class="blur-up lazyload" alt="Medium" />
+
+						</a>
+					</h1>
+					<div class="header-right float-right w-50">
+						<div class="d-inline-flex float-right text-right align-items-center">
+							<ul class="social-network heading navbar-nav d-lg-flex align-items-center">
+								<li>
+									<a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a>
+								</li>
+							</ul>
+							<ul class="top-menu heading navbar-nav w-100 d-lg-flex align-items-center">
+								<li><a href="contact.html" class="btn">Contact</a></li>
+							</ul>
+
+							<a href="login.html" class="author-avatar">Login</a>
+
+						</div>
+						<form action="https://nodepress.com.ng/search" method="get"
+							class="search-form d-lg-flex float-right">
+							<a href="javascript:void(0)" class="searh-toggle">
+								<i class="icon-search"></i>
+							</a>
+							<input type="text" class="search_field" placeholder="Search..." value="" name="q" />
+						</form>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<nav id="main-menu" class="stick d-lg-block d-none">
+				<div class="container">
+					<div class="menu-primary">
+						<ul>
+
+							<li class=""><a href="index.html">Home</a></li>
+
+							<li class=""><a href="category/Read%20Everything%20about%20technology.html">Tech</a></li>
+
+							<li class=""><a href="category/programming.html">Programming</a></li>
+
+							<li class=""><a href="category/personal.html">Personal</a></li>
+
+							<li class=""><a href="category/top-stories.html">Top Stories</a></li>
+
+							<li class=""><a href="category/Health.html">Health</a></li>
+
+							<li class=""><a href="category/world.html">World</a></li>
+
+							<li class=""><a href="pages/about-us.html">About us</a></li>
+
+							<li class=""><a href="author/naskko_tech.html">Admin</a></li>
+
+							<li class=""><a href="contact.html">Contact</a></li>
+
+
+						</ul>
+						<span></span>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<script>
+			function getmonth(data) {
+				switch (data) {
+					case 0:
+						return 'Jan';
+						break;
+					case 1:
+						return 'Feb';
+						break;
+					case 2:
+						return 'March';
+						break;
+					case 3:
+						return 'Apr';
+						break;
+					case 4:
+						return 'May';
+						break;
+					case 5:
+						return 'Jun';
+						break;
+					case 6:
+						return 'Jul';
+						break;
+					case 7:
+						return 'Aug';
+						break;
+					case 8:
+						return 'Sep';
+						break;
+					case 9:
+						return 'Oct';
+						break;
+					case 10:
+						return 'Nov';
+						break;
+					case 11:
+						return 'Dec';
+						break;
+					default:
+						break;
+				}
+			}
+		</script>
+
+		<main id="content">
+
+			<div class="section-featured featured-style-1">
+				<div class="container">
+					<div class="row">
+						<!--begin featured-->
+						<div class="col-sm-12 col-md-9 col-xl-9">
+							<h2 class="spanborder h4">
+								<span>Editor's Picks</span>
+							</h2>
+							<div class="row">
+
+								<div class="col-sm-12 col-md-6">
+									<article class="first mb-3">
+										<figure>
+											<a href="post/how-to-delegate-work-so-it-actually-gets-done.html"><img
+													data-src="https://nodepress.s3.eu-west-2.amazonaws.com/delegation-936f.jpeg"
+													class="blur-up lazyload"
+													alt="How to Delegate Work So It Actually Gets Done" /></a>
+										</figure>
+										<h3 class="entry-title mb-3">
+											<a href="post/how-to-delegate-work-so-it-actually-gets-done.html">How to
+												Delegate Work So It Actually Gets Done</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												Like many founders, when I started my first business, I was new to
+												managing people. I loved getting stuff done and getting my hands dirty,
+												so the idea of delegating work to others was unnatural. I’d always
+												rather do it myself.
+
+												When I did have to delegate, it often left me feeling frustrated. I’d
+												find out later that the work hadn’t turned out as I’d expected, or it
+												wasn’t even close to completion. I took it personally, and it weighed on
+												my mind. I felt that if I wanted something done right, I had to do it
+												myself. And as my workload increased, I rapidly approached burnout.
+
+												THE PROBLEM WITH MY APPROACH
+												A few years ago, I realized I had been delegating all wrong. At the
+												time, I had been in the process of hiring a senior marketer and had
+												asked our office manager to research recruiting agencies, get in touch
+												with each of them, and report back to me.
+
+												A couple of days later, the office manager gave me an update: He’d
+												emailed several agencies, but most of them hadn’t responded. My heart
+												sank. This didn’t help me one bit.
+
+												“Did you follow up with a phone call?” I asked.
+
+												“Sorry,” he replied. “I’ve only got limited time available. I just have
+												too many other priorities.”
+
+												Later, I reflected on this situation with a mentor. The manager had done
+												what I’d told him to do. Yet, here I was, frustrated and knowing that
+												somehow the way I delegated wasn’t working out for me. My mentor then
+												gave me some wise advice that has totally changed the way I assign
+												projects.
+
+												DELEGATE PROBLEMS, NOT TASKS
+												When you’re in execution mode, you naturally think in terms of critical
+												tasks, but good delegation requires you to think in terms of outcomes. I
+												realized that theproblemof filling my calendar with qualified candidates
+												hadn’t been explicitly delegated — just the task of contacting
+												recruiters. But if that specific problem had been assigned to be solved,
+												I could’ve been on my way to interviewing and hiring the right person
+												for the job.
+
+												The best workers tend to love to solve problems — and they hate being
+												micromanaged.
+
+												Once you identify the core problem to delegate, check that it actually
+												solves your problem. For example, interviewing candidates throughout the
+												following week would have given me a scheduling problem. What I really
+												wanted was to set aside a single morning for interviews.
+
+												COACH, DON’T INSTRUCT
+												Delegating problems is only the first step. The next part is even more
+												important: to help the person you’re delegating to findtheirsolution.
+												The job of a coach is to help others work through their problems and
+												find their own solutions. When I started coaching founders, I learned
+												some great people-management techniques that I wish I’d known earlier in
+												my career.
+
+												The simplest and most relevant one is the GROW framework, created by Sir
+												John Whitmore. Here’s how to use the GROW model when delegating
+												problems:
+
+												1. GOAL: ESTABLISH THE GOAL
+												Once you’ve delegated the problem, ask your employee to explain what a
+												good result would look and feel like. Answer any questions they ask to
+												help them understand what outcomes would resolve the problem. Once the
+												goal is clear, make sure they write it down.
+
+												2. REALITY: EXAMINE THE CURRENT REALITY
+												Before jumping into solutions, allow your employee to get a handle on
+												the situation. Use the following questions:
+
+												* Where are we now in relation to the goal?
+												* What’s working and what isn’t working?
+												* Is anything stopping you from making progress?
+
+												3. OPTIONS: EXPLORE THE OPTIONS
+												Next, you want to help your employee examine different options that
+												could address the problem. Pose questions like:
+
+												* What are your options?
+												* What else could you do?
+												* Who do you know who has encountered a similar situation?
+
+												As with any brainstorm, don’t shoot down any options just yet.
+
+												4. WILL: ESTABLISH THE WILL
+												Finally, get a commitment from the employee and help them map out their
+												next steps. Again, let them come up with solutions by asking questions:
+
+												* What do you think you need to do right now?
+												* How will you know when you have done it?
+												* What resources can help you?
+
+												Scaling your business requires effective delegation. As you grow your
+												company, the need to adopt a coaching relationship with your direct
+												reports intensifies. The best workers tend to love to solve problems —
+												and they hate being micromanaged. This is especially true ifyou’re
+												hiring people who are better than you
+												[https://medium.dave-bailey.com/what-stops-startups-hiring-a-players-785cfbf6040f?source=friends_link&amp;sk=4c8f2636f5284d7b34699d3fd41bbc95].
+
+												Effective delegation is also great for keeping your employees motivated.
+												Solving problems helps people connect with their purpose, learn new
+												things, and stay in control of their own destiny.
+
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+												Oluwakayode</a>
+											in
+											<a href="category/personal.html" class="text-capitalize">personal</a><br />
+											<span>
+												<script>
+													document.write(
+														getmonth(parseInt('9'))
+													);
+												</script>
+												13
+											</span>
+											<span class="middotDivider"> </span>
+											<span class="readingTime" title="5 min read">
+												5 min read
+											</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</article>
+									<a class="btn btn-green d-inline-block mb-4 mb-md-0"
+										href="post4834.html?featured=true">All Featured</a>
+								</div>
+
+								<div class="col-sm-12 col-md-6">
+
+									<article class="post-has-bg">
+										<div class="mb-3 d-flex row">
+											<figure class="col-4 col-md-4">
+												<a href="post/the-end-of-php.html"><img
+														style="height: 154px; width: 100%; object-fit: cover;"
+														alt="The End of PHP?"
+														data-src="https://nodepress.s3.eu-west-2.amazonaws.com/php4-00a8.jpeg"
+														class="blur-up lazyload" /></a>
+											</figure>
+											<div class="entry-content col-8 col-md-8 pl-md-0">
+												<h5 class="entry-title mb-3">
+													<a href="post/the-end-of-php.html">The End of PHP?</a>
+												</h5>
+												<div class="entry-meta align-items-center">
+													<a href="author/Naskko_Tech-2.html"
+														class="text-capitalize">Olohundare Oluwakayode</a>
+													in
+													<a href="category/Read%20Everything%20about%20technology.html"
+														class="text-capitalize">Tech</a><br />
+													<span>
+														<script>
+															document.write(
+																getmonth(parseInt('9'))
+															);
+														</script>
+														13
+													</span>
+													<span class="middotDivider"></span>
+													<span class="readingTime" title="3 min read">
+														3 min read
+													</span>
+													<span class="svgIcon svgIcon--star">
+														<svg class="svgIcon-use" width="15" height="15">
+															<path
+																d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+															</path>
+														</svg>
+													</span>
+												</div>
+											</div>
+										</div>
+									</article>
+
+									<article>
+										<div class="mb-3 d-flex row">
+											<figure class="col-4 col-md-4">
+												<a
+													href="post/the-most-underrated-productivity-technique-is-also-the-simplest.html"><img
+														alt="The Most Underrated Productivity Technique Is Also the Simplest"
+														style="height: 139.48px; width: 104px; object-fit: cover;"
+														data-src="https://nodepress.s3.eu-west-2.amazonaws.com/p1-f163.jpeg"
+														class="blur-up lazyload" /></a>
+											</figure>
+											<div class="entry-content col-8 col-md-8 pl-md-0">
+												<h5 class="entry-title mb-3">
+													<a
+														href="post/the-most-underrated-productivity-technique-is-also-the-simplest.html">The
+														Most Underrated Productivity Technique Is Also the Simplest</a>
+												</h5>
+												<div class="entry-meta align-items-center">
+													<a href="author/Naskko_Tech-2.html">Olohundare Oluwakayode</a>
+													in
+													<a href="category/top-stories.html" class="text-capitalize">top
+														stories</a><br />
+													<span>
+														<script>
+															document.write(
+																getmonth(parseInt('9'))
+															);
+														</script>
+														13
+													</span>
+													<span class="middotDivider"></span>
+													<span class="readingTime" title="2 min read">2 min read</span>
+													<span class="svgIcon svgIcon--star">
+														<svg class="svgIcon-use" width="15" height="15">
+															<path
+																d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+															</path>
+														</svg>
+													</span>
+												</div>
+											</div>
+										</div>
+									</article>
+
+									<article>
+										<div class="mb-3 d-flex row">
+											<figure class="col-4 col-md-4">
+												<a href="post/%5bmusic%5d-zlatan-x-ivd-%e2%80%93-bolanle.html"><img
+														alt="[Music] Zlatan x IVD – Bolanle"
+														style="height: 139.48px; width: 104px; object-fit: cover;"
+														data-src="https://res.cloudinary.com/naskko-technologies/image/upload/v1569340081/m1ah7nbttfkbnoi8rwlz.jpg"
+														class="blur-up lazyload" /></a>
+											</figure>
+											<div class="entry-content col-8 col-md-8 pl-md-0">
+												<h5 class="entry-title mb-3">
+													<a href="post/%5bmusic%5d-zlatan-x-ivd-%e2%80%93-bolanle.html">[Music]
+														Zlatan x IVD – Bolanle</a>
+												</h5>
+												<div class="entry-meta align-items-center">
+													<a href="author/Naskko_Tech-2.html">Olohundare Oluwakayode</a>
+													in
+													<a href="category/Music.html"
+														class="text-capitalize">music</a><br />
+													<span>
+														<script>
+															document.write(
+																getmonth(parseInt('8'))
+															);
+														</script>
+														24
+													</span>
+													<span class="middotDivider"></span>
+													<span class="readingTime" title="1 min read">1 min read</span>
+													<span class="svgIcon svgIcon--star">
+														<svg class="svgIcon-use" width="15" height="15">
+															<path
+																d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+															</path>
+														</svg>
+													</span>
+												</div>
+											</div>
+										</div>
+									</article>
+
+								</div>
+							</div>
+						</div>
+						<!--end featured-->
+
+						<!--begin Trending-->
+						<div class="col-sm-12 col-md-3 col-xl-3">
+							<div class="sidebar-widget latest-tpl-4">
+								<h4 class="spanborder">
+									<span>Breaking News</span>
+								</h4>
+								<ol>
+
+									<li class="d-flex">
+										<div class="post-count">01</div>
+										<div class="post-content">
+											<h5 class="entry-title mb-3">
+												<a href="post/how-to-delegate-work-so-it-actually-gets-done.html">How to
+													Delegate Work So It Actually Gets Done</a>
+											</h5>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+													Oluwakayode</a>
+												in
+												<a href="category/personal.html"
+													class="text-capitalize">personal</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('9')));
+													</script>
+													13
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="5 min read">5 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="d-flex">
+										<div class="post-count">02</div>
+										<div class="post-content">
+											<h5 class="entry-title mb-3">
+												<a href="post/the-end-of-php.html">The End of PHP?</a>
+											</h5>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+													Oluwakayode</a>
+												in
+												<a href="category/Read%20Everything%20about%20technology.html"
+													class="text-capitalize">Tech</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('9')));
+													</script>
+													13
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="3 min read">3 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="d-flex">
+										<div class="post-count">03</div>
+										<div class="post-content">
+											<h5 class="entry-title mb-3">
+												<a
+													href="post/the-most-underrated-productivity-technique-is-also-the-simplest.html">The
+													Most Underrated Productivity Technique Is Also the Simplest</a>
+											</h5>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+													Oluwakayode</a>
+												in
+												<a href="category/top-stories.html" class="text-capitalize">top
+													stories</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('9')));
+													</script>
+													13
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="2 min read">2 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="d-flex">
+										<div class="post-count">04</div>
+										<div class="post-content">
+											<h5 class="entry-title mb-3">
+												<a href="post/%5bmusic%5d-zlatan-x-ivd-%e2%80%93-bolanle.html">[Music]
+													Zlatan x IVD – Bolanle</a>
+											</h5>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+													Oluwakayode</a>
+												in
+												<a href="category/Music.html" class="text-capitalize">music</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('8')));
+													</script>
+													24
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="1 min read">1 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</li>
+
+								</ol>
+							</div>
+
+							<a class="link-green" href="post4834.html?featured=true">See all trending<svg
+									class="svgIcon-use" width="19" height="19">
+									<path d="M7.6 5.138L12.03 9.5 7.6 13.862l-.554-.554L10.854 9.5 7.046 5.692"
+										fill-rule="evenodd"></path>
+								</svg></a>
+						</div>
+						<!--end Trending-->
+					</div>
+					<!--end row-->
+					<div class="divider"></div>
+				</div>
+				<!--end container-->
+			</div>
+			<!--section-featured-->
+
+
+			<div class="content-widget">
+				<div class="container">
+					<div class="row justify-content-between post-has-bg ml-0 mr-0">
+						<div class="col-lg-6 col-md-8">
+							<div class="pt-5 pb-5 pl-md-5 pr-5 align-self-center">
+								<div class="capsSubtle mb-2">Most Viewed Post</div>
+								<h2 class="entry-title mb-3">
+									<a href="post/how-to-delegate-work-so-it-actually-gets-done.html">How to Delegate
+										Work So It Actually Gets Done</a>
+								</h2>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										Like many founders, when I started my first business, I was new to managing
+										people. I loved getting stuff done and getting my hands dirty, so the idea of
+										delegating work to others was unnatural. I’d always rather do it myself.
+
+										When I did have to delegate, it often left me feeling frustrated. I’d find out
+										later that the work hadn’t turned out as I’d expected, or it wasn’t even close
+										to completion. I took it personally, and it weighed on my mind. I felt that if I
+										wanted something done right, I had to do it myself. And as my workload
+										increased, I rapidly approached burnout.
+
+										THE PROBLEM WITH MY APPROACH
+										A few years ago, I realized I had been delegating all wrong. At the time, I had
+										been in the process of hiring a senior marketer and had asked our office manager
+										to research recruiting agencies, get in touch with each of them, and report back
+										to me.
+
+										A couple of days later, the office manager gave me an update: He’d emailed
+										several agencies, but most of them hadn’t responded. My heart sank. This didn’t
+										help me one bit.
+
+										“Did you follow up with a phone call?” I asked.
+
+										“Sorry,” he replied. “I’ve only got limited time available. I just have too many
+										other priorities.”
+
+										Later, I reflected on this situation with a mentor. The manager had done what
+										I’d told him to do. Yet, here I was, frustrated and knowing that somehow the way
+										I delegated wasn’t working out for me. My mentor then gave me some wise advice
+										that has totally changed the way I assign projects.
+
+										DELEGATE PROBLEMS, NOT TASKS
+										When you’re in execution mode, you naturally think in terms of critical tasks,
+										but good delegation requires you to think in terms of outcomes. I realized that
+										theproblemof filling my calendar with qualified candidates hadn’t been
+										explicitly delegated — just the task of contacting recruiters. But if that
+										specific problem had been assigned to be solved, I could’ve been on my way to
+										interviewing and hiring the right person for the job.
+
+										The best workers tend to love to solve problems — and they hate being
+										micromanaged.
+
+										Once you identify the core problem to delegate, check that it actually solves
+										your problem. For example, interviewing candidates throughout the following week
+										would have given me a scheduling problem. What I really wanted was to set aside
+										a single morning for interviews.
+
+										COACH, DON’T INSTRUCT
+										Delegating problems is only the first step. The next part is even more
+										important: to help the person you’re delegating to findtheirsolution. The job of
+										a coach is to help others work through their problems and find their own
+										solutions. When I started coaching founders, I learned some great
+										people-management techniques that I wish I’d known earlier in my career.
+
+										The simplest and most relevant one is the GROW framework, created by Sir John
+										Whitmore. Here’s how to use the GROW model when delegating problems:
+
+										1. GOAL: ESTABLISH THE GOAL
+										Once you’ve delegated the problem, ask your employee to explain what a good
+										result would look and feel like. Answer any questions they ask to help them
+										understand what outcomes would resolve the problem. Once the goal is clear, make
+										sure they write it down.
+
+										2. REALITY: EXAMINE THE CURRENT REALITY
+										Before jumping into solutions, allow your employee to get a handle on the
+										situation. Use the following questions:
+
+										* Where are we now in relation to the goal?
+										* What’s working and what isn’t working?
+										* Is anything stopping you from making progress?
+
+										3. OPTIONS: EXPLORE THE OPTIONS
+										Next, you want to help your employee examine different options that could
+										address the problem. Pose questions like:
+
+										* What are your options?
+										* What else could you do?
+										* Who do you know who has encountered a similar situation?
+
+										As with any brainstorm, don’t shoot down any options just yet.
+
+										4. WILL: ESTABLISH THE WILL
+										Finally, get a commitment from the employee and help them map out their next
+										steps. Again, let them come up with solutions by asking questions:
+
+										* What do you think you need to do right now?
+										* How will you know when you have done it?
+										* What resources can help you?
+
+										Scaling your business requires effective delegation. As you grow your company,
+										the need to adopt a coaching relationship with your direct reports intensifies.
+										The best workers tend to love to solve problems — and they hate being
+										micromanaged. This is especially true ifyou’re hiring people who are better than
+										you
+										[https://medium.dave-bailey.com/what-stops-startups-hiring-a-players-785cfbf6040f?source=friends_link&amp;sk=4c8f2636f5284d7b34699d3fd41bbc95].
+
+										Effective delegation is also great for keeping your employees motivated. Solving
+										problems helps people connect with their purpose, learn new things, and stay in
+										control of their own destiny.
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+										Oluwakayode</a>
+									in
+									<a href="category/personal.html" class="text-capitalize">personal</a><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('9')));
+										</script>
+										13
+									</span>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="5 min read">5 min read</span>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+											</path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-4 bgcover d-none d-md-block pl-md-0 ml-0 blur-up lazyload"
+							data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/delegation-936f.jpeg"></div>
+					</div>
+					<div class="divider"></div>
+				</div>
+			</div>
+			<!--content-widget-->
+
+
+			<div class="content-widget">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							<h2 class="spanborder h4">
+								<span>Recommended Posts</span>
+							</h2>
+							<div class="row justify-content-between">
+
+								<article class="col-md-6">
+									<div class="mb-3 d-flex row">
+										<figure class="col-md-5">
+											<a
+												href="post/the-most-underrated-productivity-technique-is-also-the-simplest.html"><img
+													alt="The Most Underrated Productivity Technique Is Also the Simplest"
+													data-src="https://nodepress.s3.eu-west-2.amazonaws.com/p1-f163.jpeg"
+													class="blur-up lazyload"
+													style="height: 168px; width: 100%; object-fit: cover;" /></a>
+										</figure>
+										<div class="entry-content col-md-7 pl-md-0">
+											<h5 class="entry-title mb-3">
+												<a
+													href="post/the-most-underrated-productivity-technique-is-also-the-simplest.html">The
+													Most Underrated Productivity Technique Is Also the Simplest</a>
+											</h5>
+											<div class="entry-excerpt">
+												<p class="over entry-tit">
+													It’s not humanly possible to read every piece of productivity advice
+													that exists, but I think I’ve come close. And at one point or
+													another, I’ve tried most of that advice for myself, no matter how
+													unpleasant or out-there it seemed. There was a time when I took cold
+													showers because I heard it would help me combat procrastination. (It
+													did not.)
+
+													Eventually, there came a moment when I realized that studying all
+													these time-management hacks and calendar systems and multistep
+													strategies was only stalling me from the real work of actually
+													getting things done. I already knew the most powerful productivity
+													technique. It was just a matter of using it.
+
+													There are only two steps:
+
+													1. Physically get in your work position.
+													2. Do one small thing.
+
+													That’s it. That’s the whole thing.
+
+													It’s simple, but it isn’t easy. Oftentimes, we do everything in our
+													power to avoid that first step. We grab another cup of coffee, go
+													for a walk, read a book, run errands. Before I wrote this piece, I
+													meticulously rearranged my bookshelf. I tried to escape. The voice
+													inside my head told me to turn on Netflix.
+
+													But instead, I sat down at my desk. I put my phone away and closed
+													my internet browser. And I started working on theone small thing
+													[https://dariusforoux.com/one-thing/]that I scheduled for the day.
+													Then, like magic, I was working.
+
+													The real secret of this technique is that you must do it again
+													tomorrow, and the next day, and the day after that. Build up
+													momentum and keep it. Author Will Durant may have said it best when
+													he wrote, “We are what we repeatedly do. Excellence, then, is not an
+													act, but a habit.”
+
+													It’s theNon-Zero Day principle
+													[https://www.reddit.com/r/NonZeroDay/]: Just do one thing every day
+													that will help you move toward your goal. As Reddit user ryans01
+													wrote ina post
+													[https://www.reddit.com/r/NonZeroDay/comments/1qbxvz/the_gospel_of_uryans01_helpful_advice_for_anyone/]that
+													inspired the movement, “Didn’t do anything all fucking day and it’s
+													11:58 PM? Write one sentence. One push up. Read one page of that
+													chapter. One. Because one is non zero.”
+
+													We can talk about the newest productivity systems all day, but doing
+													so won’t get the real work done. At some point, you have to sit in
+													your chair and just get started.
+												</p>
+											</div>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html">Olohundare Oluwakayode</a>
+												in
+												<a href="category/top-stories.html" class="text-capitalize">top
+													stories</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('9')));
+													</script>
+													13
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="2 min read">2 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</div>
+								</article>
+
+								<article class="col-md-6">
+									<div class="mb-3 d-flex row">
+										<figure class="col-md-5">
+											<a href="post/%5bmusic%5d-zlatan-x-ivd-%e2%80%93-bolanle.html"><img
+													alt="[Music] Zlatan x IVD – Bolanle"
+													data-src="https://res.cloudinary.com/naskko-technologies/image/upload/v1569340081/m1ah7nbttfkbnoi8rwlz.jpg"
+													class="blur-up lazyload"
+													style="height: 168px; width: 100%; object-fit: cover;" /></a>
+										</figure>
+										<div class="entry-content col-md-7 pl-md-0">
+											<h5 class="entry-title mb-3">
+												<a href="post/%5bmusic%5d-zlatan-x-ivd-%e2%80%93-bolanle.html">[Music]
+													Zlatan x IVD – Bolanle</a>
+											</h5>
+											<div class="entry-excerpt">
+												<p class="over entry-tit">
+													Rave of the moment,Zlatan Ibile
+													[https://www.naijaloaded.com.ng/tag/Zlatan]unlocks a brand new
+													single dubbed, “Bolanle”, featuring Nigerian auto dealerIVD.
+
+													After a series of Social media outbursts about the trips, the said
+													“Bolanle” has got herself indulge in, the song is finally out.
+													Enjoy!!
+
+													Listen &amp; Download “Zlatan x IVD – Bolanle” below:-
+												</p>
+											</div>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html">Olohundare Oluwakayode</a>
+												in
+												<a href="category/Music.html" class="text-capitalize">music</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('8')));
+													</script>
+													24
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="1 min read">1 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</div>
+								</article>
+
+								<article class="col-md-6">
+									<div class="mb-3 d-flex row">
+										<figure class="col-md-5">
+											<a href="post/setting-up-a-node.html"><img
+													alt="Setting up a Node.js app on a Linux AMI on an AWS EC2 instance with Nginx"
+													data-src="https://nodepress.s3.eu-west-2.amazonaws.com/nodejs-new-pantone-white-a965.png"
+													class="blur-up lazyload"
+													style="height: 168px; width: 100%; object-fit: cover;" /></a>
+										</figure>
+										<div class="entry-content col-md-7 pl-md-0">
+											<h5 class="entry-title mb-3">
+												<a href="post/setting-up-a-node.html">Setting up a Node.js app on a
+													Linux AMI on an AWS EC2 instance with Nginx</a>
+											</h5>
+											<div class="entry-excerpt">
+												<p class="over entry-tit">
+													INTRODUCTION
+													Node.js [https://nodejs.org/en/] is a JavaScript runtime environment
+													that allows one to run JS on the server. It is built on the
+													open-source V8 JavaScript engine [https://developers.google.com/v8/]
+													used in Chrome and written in C++ which executes JS in a standalone
+													environment.
+
+													AWS [https://aws.amazon.com/] (Amazon Web Services), a subsidiary of
+													Amazon, is a cloud computing platform which provides resources for
+													computation such as EC2 instances, various database and storage
+													facilities as well as networking and content delivery options.
+
+													Nginx [https://www.nginx.com] is a free and open-source HTTP server
+													which doubles up as a reverse proxy server or as a mail proxy
+													server. It is a high performance server with simple configuration
+													options and low resource consumption.
+
+													EC2 [https://aws.amazon.com/ec2/] (Elastic Compute Cloud) is a web
+													service which provides computing power in the form of scalable
+													server instances. Multiple EC2 instances are run on the same machine
+													inside Amazon’s computing infrastructure. When an EC2 instance is
+													initiated, a set amount of resources (OS, RAM, Disk Space etc.,
+													chosen at the time of initiation) are allotted to the user from the
+													machine it runs on. This allows sharing of resources between
+													multiple users.
+
+													Linux AMI [https://aws.amazon.com/amazon-linux-ami/] is a copy of
+													Linux (image) provided by AWS which can be used for free on an EC2
+													instance as an OS. It can contain pre-installed packages such as
+													Python, MySQL, Node.js etc., depending on the chosen AMI.
+
+													THINGS TO DO
+													1. Create an AWS account
+													2. Launch an EC2 instance
+													3. SSH into your instance
+													4. Install Node.js
+													5. Install Git and clone repository from GitHub
+													6. Start the node.js app
+													7. Keep the app running
+													8. Move the app to port 80 (not really)
+													9. Configure Nginx to autostart on instance reboot
+
+													CREATE AN AWS ACCOUNT
+													Go to AWS [https://aws.amazon.com], click on Create an AWS account.
+													If you are already registered, sign in, else create a new account. A
+													new account lets you try the free tier for 12 months. Choose
+													Personal Account unless you have a business setup for which you will
+													need the company details.
+
+													[https://miro.medium.com/max/60/1*y6Qmrx8juIZS2BFmiVWw_Q.png?q=20][https://miro.medium.com/max/993/1*y6Qmrx8juIZS2BFmiVWw_Q.png]Create
+													a personal AWS accountYou will have to enter your card details for a
+													small refundable charge to verify your identity. Once the
+													registration is confirmed, you can go to the console.
+
+													[https://miro.medium.com/max/60/1*qZuA5CjmI1DwtcXMoAxOdA.png?q=20][https://miro.medium.com/max/1330/1*qZuA5CjmI1DwtcXMoAxOdA.png]AWS
+													Service Dashboard (after registration)LAUNCH AN EC2 INSTANCE
+													Now that the account is setup, you are ready to launch an EC2
+													instance. Select EC2 from the Services dropdown (top-left), click on
+													Launch Instance and select Free Tier Only.
+
+													[https://miro.medium.com/max/60/1*yqITa9p2Eo-5NKqn6eUJBw.png?q=20][https://miro.medium.com/max/1358/1*yqITa9p2Eo-5NKqn6eUJBw.png]Amazon
+													Linux AMI on an EC2 instance (Free tier)Select Amazon Linux AMI
+													(which is usually the first option). On the next screen, select
+													t2.micro (will be highlighted as Free tier eligible).
+
+													[https://miro.medium.com/max/60/1*oHSjU9HrxjA0nbdsxNusqg.png?q=20][https://miro.medium.com/max/1360/1*oHSjU9HrxjA0nbdsxNusqg.png]Free
+													tier t2 micro EC2 instance — 1 GB RAM and up to 30 GB free storage
+													spaceSelect Review and Launch (other settings can be configured
+													later if needed). The next screen might show a warning about the
+													security of the instance and changing security group settings. You
+													can ignore this for now. The only open port is 22 by default which
+													is used for SSH access to the instance. Go ahead and click Launch.
+
+													[https://miro.medium.com/max/60/1*WLMTWqq0l_R3TQau6czLPw.png?q=20][https://miro.medium.com/max/1352/1*WLMTWqq0l_R3TQau6czLPw.png]Warning
+													about security group settings — can be ignored and launchedOn the
+													next screen, you will be asked to create a key pair which allows you
+													to SSH into your instance. Follow the instructions to create a
+													custom name key pair and store it somewhere on your PC where you can
+													access it later and in the future too.
+
+													[https://miro.medium.com/max/60/1*3OGIOsdQrH5Y3oeqlPiDwA.png?q=20][https://miro.medium.com/max/1356/1*3OGIOsdQrH5Y3oeqlPiDwA.png]Create
+													a key pair for SSH accessSelect Launch Instances and wait for your
+													instance to be launched. On the final screen, you can select View
+													Instances to go to your EC2 dashboard where you will see the
+													instance up and running in a few minutes.
+
+													[https://miro.medium.com/max/60/1*6KSRky7KSTJbtThuqD2sXw.png?q=20][https://miro.medium.com/max/1359/1*6KSRky7KSTJbtThuqD2sXw.png]Instance
+													LaunchedYour EC2 instance will be running now and you will be
+													automatically assigned a Public DNS and an IPv4 Public IP which you
+													will use to SSH into the instance.
+
+													[https://miro.medium.com/max/60/1*_opNV5AHl2A3PTkTmi2xbA.png?q=20][https://miro.medium.com/max/1357/1*_opNV5AHl2A3PTkTmi2xbA.png]Instance
+													running on a Public IPSSH INTO YOUR INSTANCE
+													Depending on the OS you are using on your PC, there are different
+													methods to SSH into your instance. You can see the applicable method
+													by clicking on Connect in the above screen. Since I use Windows OS,
+													I use a third party SSH client called PuTTY to connect to the
+													instance. You can follow the official tutorial
+													[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html] on
+													AWS docs for using PuTTY as the SSH client.
+
+													[https://miro.medium.com/max/60/1*YU1IfwwsOeV3_y-P3Jy-wA.png?q=20][https://miro.medium.com/max/694/1*YU1IfwwsOeV3_y-P3Jy-wA.png]Connect
+													to your instanceThe key pair that you saved while creating the EC2
+													instance will be used now to connect via SSH. Once you have
+													established the connection you will see a terminal similar to this.
+
+													[https://miro.medium.com/max/60/1*FetfhCxO51g4-U95qHnOkg.png?q=20][https://miro.medium.com/max/658/1*FetfhCxO51g4-U95qHnOkg.png]SSH
+													connection established with the EC2 instancePUTTY FREQUENT
+													DISCONNECTION / TIMEOUT
+													If you use PuTTY, you will see that the terminal frequently becomes
+													non-responsive because of a session timeout. You can change the
+													session settings to keep the connection alive by going to the
+													category Connection of the loaded session and change the value of
+													Seconds between keepalives to 30. This will enable sending empty
+													packets to the remote server via SSH every 30 seconds to keep the
+													session alive.
+
+													INSTALL NODE.JS
+													Now that we are connected to the instance, we can start installing
+													the required packages in the environment for your node.js app to
+													work. We will be using NVM [https://github.com/creationix/nvm](Node
+													Version Manager) to install node.js as it provides a neat way to
+													manage multiple node.js versions on the instance if required. Run
+													the following code in the terminal to get NVM and install it.
+
+													curl -o-
+													https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh
+													| bash
+
+													The script clones the nvm repository to ~/.nvm and adds the source
+													line to your profile (~/.bash_profile, ~/.zshrc, ~/.profile, or
+													~/.bashrc). Now, run nvm --version. The terminal will show command
+													not found as the code has been added to your profile but hasn’t run
+													yet. It runs on every login, so login again by creating a new
+													session. Run nvm --version again and this time you should be able to
+													see the installed version of NVM.
+
+													[https://miro.medium.com/max/60/1*TAUfBfL3wpbegfnF9h39AA.png?q=20][https://miro.medium.com/max/660/1*TAUfBfL3wpbegfnF9h39AA.png]NVM
+													installationTo install node, you can either use nvm install node to
+													install the latest version of node or use nvm install
+													&lt;node_version&gt; to install a specific version of node. Once
+													node is installed, you can check the installed version with node
+													--version.
+
+													[https://miro.medium.com/max/60/1*__x_ULKOa2pQMOFk6DvGqg.png?q=20][https://miro.medium.com/max/659/1*__x_ULKOa2pQMOFk6DvGqg.png]Node.js
+													installationINSTALL GIT AND CLONE REPOSITORY FROM GITHUB
+													We will install Git to clone your node.js repository from your
+													GitHub account. To install Git, run the following command.
+
+													sudo yum install git
+
+													This will install the latest version of Git on the instance. Once
+													installation is done, you are ready to clone your repository. Run
+													the following command to clone your repository. Replace
+													&lt;username&gt;with your GitHub username,
+													&lt;repository-name&gt;with the name of your node.js app repository
+													and &lt;folder-name&gt;with the name of the folder you want to clone
+													the repository into. This folder will be created under
+													/home/ec2-user/.
+
+													git clone
+													https://github.com/&lt;username&gt;/&lt;repository-name&gt;.git
+													&lt;folder-name&gt;
+
+													Run cd &lt;folder-name&gt; to move inside this folder and ls to see
+													its contents.
+
+													START THE NODE.JS APP
+													If your start script does not include npm install you should run it
+													manually first, otherwise you can directly issue the command to
+													start the app which should install the dependencies automatically.
+													There are several ways to start the app depending on how you have
+													set it up. Choose one which suits you.
+
+													node server.js
+													node app.js
+													node ./bin/www
+													npm start
+
+													The app will now run at the port number that you have specified in
+													the start script. It could be 3000, 8000, 8080 etc. Make a note of
+													this port number and enter the public DNS of the instance with the
+													port number in the browser to see the app output. I use port 3000,
+													you can replace it with yours.
+
+													http://ec2-54-191-104-59.us-west-2.compute.amazonaws.com:3000
+
+													As you will see, this will not work and there would be nothing to
+													show on the page and the browser connection will timeout. This is
+													because we haven’t opened port 3000 for access to public. This is
+													where the Security Group comes in. In the AWS management console, go
+													to Security Groups, select the one not named ‘default’
+													(launch-wizard-1 or similar) and edit the Inbound rules.
+
+													[https://miro.medium.com/max/60/1*07PnlnkoK-24Yb2gbasLyw.png?q=20][https://miro.medium.com/max/1363/1*07PnlnkoK-24Yb2gbasLyw.png]Security
+													Groups for the EC2 instanceAdd a new custom TCP rule with port range
+													3000 and accessible from everywhere (0.0.0.0/0).
+
+													[https://miro.medium.com/max/60/1*iIlzYZXjFdVTOxYnCm5zWQ.png?q=20][https://miro.medium.com/max/997/1*iIlzYZXjFdVTOxYnCm5zWQ.png]Inbound
+													rules for the EC2 instanceAccess the URL again and you should be
+													able to see the app content now.
+
+													KEEP THE APP RUNNING
+													The app will run as long as you have the terminal open and you have
+													not stopped it manually. But as soon as you close the terminal or
+													press Ctrl-C or its equivalent, the app will stop as its process is
+													not running in the background, it’s tied to the active terminal. You
+													can write a script to run the process in the background but you will
+													also have to take care of restarting the process in the background
+													in case it crashes or if you perform a pull from the repository or
+													if you update the app in some other way. But there’s an easier way
+													to do all this by using a process manager for node called PM2
+													[http://pm2.keymetrics.io/]. We will focus on the auto-restart and
+													background process functionalities of PM2 here. More functionalities
+													in a later article on continuous integration.
+
+													Kill all the running node processes (if any) — killall -9 node.
+													Install PM2 globally with the following command:
+
+													npm install pm2 -g
+
+													Move to the cloned folder and execute one of the following commands
+													depending on how you had started the app before:
+
+													pm2 start server.js
+													pm2 start app.js
+													pm2 start ./bin/www
+													pm2 start npm --name
+													&#34;&lt;name_the_process_anything_you_want&gt;&#34; -- start
+
+													Now even if you close the terminal and check the url in the browser,
+													the app will be running. Sweet! For automatically running PM2 when
+													the server restarts, issue the following command:
+
+													pm2 startup
+
+													This will output a script in the terminal which you need to run,
+													copy the script that it outputs and run it in the terminal window.
+													Now, save all the currently running processes so that they can be
+													run again whenever PM2 restarts either manually or by a script with
+													the following command:
+
+													pm2 save
+
+													Now you can try rebooting the instance and visit the url and see if
+													the app works or not. To see a list of the currently active node
+													processes with their process names, run pm2 list and to monitor any
+													one of the processes run pm2 monit.
+
+													MOVE THE APP TO PORT 80 (NOT REALLY)
+													The URL for our app contains the port number 3000 which if you have
+													surfed the web a lot will appear a bit out of the place because you
+													don’t usually see such numbers in the URLs, reason being the
+													websites are generally served on the standard port 80 used for HTTP
+													requests and browsers assume it by default.
+
+													Currently our node server is running on a publicly open port which
+													is not a particularly brilliant idea as we are directly exposing the
+													application server to internet traffic and also reducing performance
+													by not taking advantages
+													[https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/]
+													of load balancing or serving static content efficiently.
+
+													A better way to manage this is to use Nginx as a reverse proxy
+													server in front of all other application servers. It will act as an
+													efficient web server routing multiple requests on port 80 to
+													different application servers based on the requested domain or even
+													route high volume internet traffic to the same domain on port 80 to
+													multiple instances of the application server listening on different
+													private ports to perform load balancing in case of application
+													server overloading or crashing. Nginx also takes care of SSL
+													encryption
+													[https://www.nginx.com/resources/glossary/reverse-proxy-server/]
+													instead of letting Node do all the work.
+
+													[https://miro.medium.com/max/60/1*NFejJ5lJR3nyRLqGicdGbw.png?q=20][https://miro.medium.com/max/742/1*NFejJ5lJR3nyRLqGicdGbw.png]Setting
+													up Nginx in front of the application servers. Image courtesy - Floyd
+													Smith
+													[https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/]Let’s
+													install Nginx first:
+
+													sudo yum install nginx
+
+													and verify the installed version with nginx -v.
+
+													Open port 80 by adding another inbound rule to the security group.
+
+													[https://miro.medium.com/max/60/1*vEiEHoHc8Wpihh7DBDiffw.png?q=20][https://miro.medium.com/max/1003/1*vEiEHoHc8Wpihh7DBDiffw.png]Open
+													port 80 for public accessEnter the public DNS or the public IP of
+													your EC2 instance in the browser now without a port and you should
+													see the default Nginx welcome page.
+
+													http://ec2-54-191-104-59.us-west-2.compute.amazonaws.com
+
+													[https://miro.medium.com/max/60/1*RbcJHpPp3yYQwjZWRTrYRQ.png?q=20][https://miro.medium.com/max/1297/1*RbcJHpPp3yYQwjZWRTrYRQ.png]The
+													default Nginx welcome pageNow, we are not really going to move the
+													app to listen on port 80, the app will still be running on port
+													3000. We will install Nginx in front of the application server, run
+													it on port 80 so that it can intercept all internet traffic and
+													route it to port 3000 where the required application server will be
+													listening if the HTTP headers match (more details in the next
+													article on serving the site on HTTPS). A nice explanation of why we
+													should be doing this is available here
+													[https://stackoverflow.com/a/16770780].
+
+													To use port 80 to route requests to the application server on port
+													3000, we will edit the nginx configuration file — nginx.conf as
+													follows.
+
+													Open the nginx.conf file with an editor in the terminal:
+
+													sudo nano /etc/nginx/nginx.conf
+
+													If there’s no server block listening on port 80, add one or change
+													it if it already exists to look like this:
+
+													server {
+													listen 80 default_server;
+													listen [::]:80 default_server;
+													server_name localhost;
+													root /usr/share/nginx/html; location / {
+													proxy_pass http://127.0.0.1:3000;
+													proxy_http_version 1.1;
+													proxy_set_header Upgrade $http_upgrade;
+													proxy_set_header Connection &#39;upgrade&#39;;
+													proxy_set_header Host $host;
+													proxy_cache_bypass $http_upgrade;
+													}
+													}
+
+													Since we have a single server block listening on port 80, all
+													traffic will be routed from here itself regardless of the value of
+													the server_name directive. The location directive has been changed
+													to point to the resource from where the content has to be served, in
+													our case it is the node.js application server running on the private
+													localhost IP 127.0.0.1 and port 3000. Ignore the other directives
+													for now.
+
+													Save the configuration and restart the server with the following
+													command:
+
+													sudo service nginx restart
+
+													You will now have all HTTP traffic available on port 80 forwarded to
+													port 3000. You should close port 3000 to public access by removing
+													it from the security group settings. Visit the URL again in the
+													browser without the port and you will be able to see the app content
+													now instead of the default Nginx welcome page.
+
+													CONFIGURE NGINX TO AUTOSTART ON INSTANCE REBOOT
+													There’s just one last thing to take care of before we wrap up. We
+													need to configure Nginx to start automatically if the instance is
+													rebooted. Execute the following command to do this:
+
+													sudo chkconfig nginx on
+
+													You can close the session, reboot the instance and visit the URL
+													again. You should see the app being served on port 80.
+
+													And now we are done! Pheww!!
+
+
+
+
+													Since, we have the app being served on port 80 now, we will take
+													care of the following stuff in the next article:
+
+													1. Buy and register a domain name
+													2. Serve the website on the registered domain
+													3. Obtain an SSL certificate for the registered domain
+													4. Install the SSL certificate on the server
+													5. Run SSL test for the website
+													6. Update security parameters on the website
+													7. Automatically renew the certificate
+
+													If you are stuck at any point in the sections above or if I have
+													made a mistake somewhere or missed an essential point, do let me
+													know in the comments.
+												</p>
+											</div>
+											<div class="entry-meta align-items-center">
+												<a href="author/naskko_tech.html">Olohundare Nasirudeen</a>
+												in
+												<a href="category/Read%20Everything%20about%20technology.html"
+													class="text-capitalize">Tech</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('8')));
+													</script>
+													20
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="14 min read">14 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</div>
+								</article>
+
+								<article class="col-md-6">
+									<div class="mb-3 d-flex row">
+										<figure class="col-md-5">
+											<a href="post/how-to-install-node-app-in-cpanel-of-godaddy.html"><img
+													alt="How to install Node app in CPanel of GoDaddy"
+													data-src="https://nodepress.s3.amazonaws.com/cp-6e5a.png"
+													class="blur-up lazyload"
+													style="height: 168px; width: 100%; object-fit: cover;" /></a>
+										</figure>
+										<div class="entry-content col-md-7 pl-md-0">
+											<h5 class="entry-title mb-3">
+												<a href="post/how-to-install-node-app-in-cpanel-of-godaddy.html">How to
+													install Node app in CPanel of GoDaddy</a>
+											</h5>
+											<div class="entry-excerpt">
+												<p class="over entry-tit">
+													Most of us use share host for a very simple web host. Have you ever
+													think about how to host a server on the share host and make your
+													node app instead of using PHP application on GoDaddy?
+
+													# First thing to do:
+
+													wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh |
+													bash
+
+													# Second validate your source file
+
+													source $HOME/.nvm/nvm.shnvm install stable
+
+													# Now check the version of your node and npm
+
+													nvm ls
+
+													You would see something like this:
+
+													[https://miro.medium.com/max/60/1*6IlNccY5MzdHuZ_ACbngiQ.png?q=20][https://miro.medium.com/max/544/1*6IlNccY5MzdHuZ_ACbngiQ.png]#
+													Then, go to public_html folder and create htaccess file and
+
+													cd ~/public_htmlnano .htaccess
+
+													# Copy information below, (3000) is the default port for express,
+													change whatever port that you are going to setu
+
+													RewriteEngine On
+													DirectoryIndex disabled
+													RewriteRule ^$ http://127.0.0.1:3000/ [http://127.0.0.1:3000/] [P,L]
+													RewriteCond %{REQUEST_FILENAME} !-f
+													RewriteCond %{REQUEST_FILENAME} !-d
+													RewriteRule ^(.*)$ http://127.0.0.1:3000/$1
+													[http://127.0.0.1:3000/$1] [P,L]
+
+													# Now your folder should be contain those:
+
+													drwxr-x--- 3 abcdef nobody 4096 Feb 17 23:19 ./
+													drwx--x--x 19 abcdef abcdef 4096 Feb 17 23:17 ../
+													-rw-r--r-- 1 abcdef abcdef 1699 Jul 3 2014 404.shtml
+													drwxr-xr-x 2 abcdef abcdef 4096 Feb 17 23:05 cgi-bin/
+													-rw-r--r-- 1 abcdef abcdef 1963 Jul 3 2014 home.html
+													-rw-rw-r-- 1 abcdef abcdef 208 Feb 17 23:19 .htaccess
+													-rw-r--r-- 1 abcdef abcdef 4282 Jul 3 2014 layout-styles.css
+
+													Once your finish your installation, go to express site to copy some
+													of the startup code
+
+													Express &#34;Hello World&#34; exampleThe example above is actually a
+													working server: Go ahead and click on the URL shown. You&#39;ll get
+													a response, with…expressjs.commkdir myapp
+													cd myapp
+													npm init -y
+													npm install express --save
+													touch index.js
+
+													Don’t forget to copy this code to your index.js file:
+
+													const express = require(&#39;express&#39;)
+													const app = express()
+													const port = 3000app.get(&#39;/&#39;, (req, res) =&gt;
+													res.send(&#39;Hello World!&#39;))app.listen(port, () =&gt;
+													console.log(`Example app listening on port ${port}!`))
+
+													Now you are almost compete everything.
+
+													All you need is to make the server run all the time and no matter it
+													crash or update
+
+													# install the forever start package on your server
+
+													npm i pm2 -g
+
+													# since the pm2 is very handy tool, you just run this command to run
+													the server and restart by adding — watch tag
+
+													pm2 start index.js --watch
+
+													PM2 ·Advanced process manager for production Node.js applications.
+													Load balancer, logs facility, startup script,
+													micro…pm2.keymetrics.io[https://miro.medium.com/max/60/1*VJxla_93J9kjEURMAcCIVA.png?q=20][https://miro.medium.com/max/1234/1*VJxla_93J9kjEURMAcCIVA.png]
+												</p>
+											</div>
+											<div class="entry-meta align-items-center">
+												<a href="author/naskko_tech.html">Olohundare Nasirudeen</a>
+												in
+												<a href="category/Read%20Everything%20about%20technology.html"
+													class="text-capitalize">Tech</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('8')));
+													</script>
+													20
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="3 min read">3 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</div>
+								</article>
+
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="sidebar-widget ads">
+
+								<a href="#"><img
+										style="width: 160px !important; height: 450px !important; object-fit: cover !important;"
+										alt="Nodepress"
+										data-src="http://nodepress.com.ng/media/c22211991dd2869761fbc613bc4f9f26f70cb51b1571396882783.png"
+										class="blur-up lazyload img-fluid"></a>
+
+							</div>
+						</div>
+					</div>
+					<div class="divider-2"></div>
+				</div>
+			</div>
+			<!--content-widget-->
+
+
+			<div class="content-widget">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h2 class="spanborder h4">
+								<span>Most Recent</span>
+							</h2>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<div class="capsSubtle mb-2">Editors' Pick</div>
+
+										<h3 class="entry-title mb-3">
+											<a href="post/how-to-delegate-work-so-it-actually-gets-done.html">How to
+												Delegate Work So It Actually Gets Done
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												Like many founders, when I started my first business, I was new to
+												managing people. I loved getting stuff done and getting my hands dirty,
+												so the idea of delegating work to others was unnatural. I’d always
+												rather do it myself.
+
+												When I did have to delegate, it often left me feeling frustrated. I’d
+												find out later that the work hadn’t turned out as I’d expected, or it
+												wasn’t even close to completion. I took it personally, and it weighed on
+												my mind. I felt that if I wanted something done right, I had to do it
+												myself. And as my workload increased, I rapidly approached burnout.
+
+												THE PROBLEM WITH MY APPROACH
+												A few years ago, I realized I had been delegating all wrong. At the
+												time, I had been in the process of hiring a senior marketer and had
+												asked our office manager to research recruiting agencies, get in touch
+												with each of them, and report back to me.
+
+												A couple of days later, the office manager gave me an update: He’d
+												emailed several agencies, but most of them hadn’t responded. My heart
+												sank. This didn’t help me one bit.
+
+												“Did you follow up with a phone call?” I asked.
+
+												“Sorry,” he replied. “I’ve only got limited time available. I just have
+												too many other priorities.”
+
+												Later, I reflected on this situation with a mentor. The manager had done
+												what I’d told him to do. Yet, here I was, frustrated and knowing that
+												somehow the way I delegated wasn’t working out for me. My mentor then
+												gave me some wise advice that has totally changed the way I assign
+												projects.
+
+												DELEGATE PROBLEMS, NOT TASKS
+												When you’re in execution mode, you naturally think in terms of critical
+												tasks, but good delegation requires you to think in terms of outcomes. I
+												realized that theproblemof filling my calendar with qualified candidates
+												hadn’t been explicitly delegated — just the task of contacting
+												recruiters. But if that specific problem had been assigned to be solved,
+												I could’ve been on my way to interviewing and hiring the right person
+												for the job.
+
+												The best workers tend to love to solve problems — and they hate being
+												micromanaged.
+
+												Once you identify the core problem to delegate, check that it actually
+												solves your problem. For example, interviewing candidates throughout the
+												following week would have given me a scheduling problem. What I really
+												wanted was to set aside a single morning for interviews.
+
+												COACH, DON’T INSTRUCT
+												Delegating problems is only the first step. The next part is even more
+												important: to help the person you’re delegating to findtheirsolution.
+												The job of a coach is to help others work through their problems and
+												find their own solutions. When I started coaching founders, I learned
+												some great people-management techniques that I wish I’d known earlier in
+												my career.
+
+												The simplest and most relevant one is the GROW framework, created by Sir
+												John Whitmore. Here’s how to use the GROW model when delegating
+												problems:
+
+												1. GOAL: ESTABLISH THE GOAL
+												Once you’ve delegated the problem, ask your employee to explain what a
+												good result would look and feel like. Answer any questions they ask to
+												help them understand what outcomes would resolve the problem. Once the
+												goal is clear, make sure they write it down.
+
+												2. REALITY: EXAMINE THE CURRENT REALITY
+												Before jumping into solutions, allow your employee to get a handle on
+												the situation. Use the following questions:
+
+												* Where are we now in relation to the goal?
+												* What’s working and what isn’t working?
+												* Is anything stopping you from making progress?
+
+												3. OPTIONS: EXPLORE THE OPTIONS
+												Next, you want to help your employee examine different options that
+												could address the problem. Pose questions like:
+
+												* What are your options?
+												* What else could you do?
+												* Who do you know who has encountered a similar situation?
+
+												As with any brainstorm, don’t shoot down any options just yet.
+
+												4. WILL: ESTABLISH THE WILL
+												Finally, get a commitment from the employee and help them map out their
+												next steps. Again, let them come up with solutions by asking questions:
+
+												* What do you think you need to do right now?
+												* How will you know when you have done it?
+												* What resources can help you?
+
+												Scaling your business requires effective delegation. As you grow your
+												company, the need to adopt a coaching relationship with your direct
+												reports intensifies. The best workers tend to love to solve problems —
+												and they hate being micromanaged. This is especially true ifyou’re
+												hiring people who are better than you
+												[https://medium.dave-bailey.com/what-stops-startups-hiring-a-players-785cfbf6040f?source=friends_link&amp;sk=4c8f2636f5284d7b34699d3fd41bbc95].
+
+												Effective delegation is also great for keeping your employees motivated.
+												Solving problems helps people connect with their purpose, learn new
+												things, and stay in control of their own destiny.
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+												Oluwakayode</a>
+											in
+											<a href="category/personal.html" class="text-capitalize">personal</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('9')));
+												</script>
+												13
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="5 min read">5 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/delegation-936f.jpeg"></div>
+							</article>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<div class="capsSubtle mb-2">Editors' Pick</div>
+
+										<h3 class="entry-title mb-3">
+											<a href="post/the-end-of-php.html">The End of PHP?
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												A hot topic in recent years is whether PHP is losing its leading
+												position or even going to its end. After all, many internet companies
+												are trying out other languages. Some languages draw our attention
+												greatly. Golang is well known for the coroutine. Java is best for the
+												perfect ecological system. And Python is skilled in computing and
+												artificial intelligence. But surely, PHP won’t go to its grave.
+
+												We will analyze it in the following sections:
+
+												* The Development of PHP
+												* PHP Frameworks
+												* Packagist
+
+												THE DEVELOPMENT OF PHP
+												PHP is always heading forward. Many excellent programmers devote
+												themselves to PHP’s development. As a result, a new version of PHP is
+												released almost every year. The version of 7.3 was released in 2018, and
+												the 7.4 will come out at the end of 2019.
+
+												[https://nodepress.s3.eu-west-2.amazonaws.com/php1-07e2.jpeg]
+
+												The development of PHP is amazing. 7.0 reconstructs the kernel of PHP.
+												And the performance of PHP is boosted by two to three times as the new
+												zend engine is added.
+
+												[https://nodepress.s3.eu-west-2.amazonaws.com/php2-1e2c.jpeg]
+
+												PHP FRAMEWORKS
+												Whether a language is strong enough or not is closely related to its
+												framework. There are frameworks, such as Laravel and Yii, which have
+												been developers’ favorites for many years and projects. Meanwhile,
+												Swoft, though a new framework, attracts our attention and motives us to
+												study it.
+
+												LARAVEL
+												[https://nodepress.s3.eu-west-2.amazonaws.com/laravel-2bc0.jpeg]
+
+												Laravel [https://github.com/laravel/laravel]is a PHP-based web framework
+												for building high-end web applications using its significant and
+												graceful syntaxes. It comes with a strong collection of tools and
+												provides application architecture. Moreover, it includes various
+												characteristics of technologies like ASP.NET MVC, CodeIgniter, Ruby on
+												Rails, and many more. This is an open source framework.
+
+												It facilitates developers by saving time and helps reduce thinking and
+												planning when developing an entire website from scratch. Along with
+												that, Laravel also assists in introducing basic security to your
+												application.
+
+												Hence, all its features can boost your web development pace. If anyone
+												is familiar with the basics of PHP along with some intermediate PHP
+												scripting, then Laravel can craft your work more easily.
+
+												Resources for learning:
+
+												* Laravel 5.4 from Scratch (Laracasts)
+												* Build a task list with Laravel and Vue
+
+												YII
+												[https://nodepress.s3.eu-west-2.amazonaws.com/yii-9326.jpeg]
+
+												Yii [https://github.com/yiisoft/yii2]is a generic Web programming
+												framework, meaning that it can be used for developing all kinds of Web
+												applications using PHP. Because of its component-based architecture and
+												sophisticated caching support, it is especially suitable for developing
+												large-scale applications such as portals, forums, content management
+												systems (CMS), e-commerce projects, RESTful Web services, and so on.
+
+												SWOFT
+												[https://nodepress.s3.eu-west-2.amazonaws.com/swoft-a125.jpeg]
+
+												Swoft [https://github.com/swoft-cloud/swoft]is a PHP high-performance
+												microservice coroutine framework. It has been published for many years
+												and has become the best choice for PHP. It can be like Go, a built-in
+												coroutine web server and common coroutine client, and is resident in
+												memory, independent of traditional PHP-FPM. There are similar Go
+												language operations, similar to the Spring Cloud framework flexible
+												annotations.
+
+												PACKAGIST
+												One way to find out whether the industry still likes PHP is looking into
+												its ecological system: the packagist. As the below figure shows, the
+												number of packagists for PHP has mushroomed with an index growth
+												pattern. By now, the number of packagists has reached 223,217, and the
+												total install number is around 14,827,204,847. The ecological system of
+												PHP is reconstructing faster and faster.
+
+												[https://nodepress.s3.eu-west-2.amazonaws.com/php3-0e4b.jpeg]
+
+												CONCLUSION
+												PHP won’t step into its grave. You should take a look at it, and think
+												about it carefully.
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+												Oluwakayode</a>
+											in
+											<a href="category/Read%20Everything%20about%20technology.html"
+												class="text-capitalize">Tech</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('9')));
+												</script>
+												13
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="3 min read">3 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/php4-00a8.jpeg"></div>
+							</article>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<div class="capsSubtle mb-2">Editors' Pick</div>
+
+										<h3 class="entry-title mb-3">
+											<a
+												href="post/the-most-underrated-productivity-technique-is-also-the-simplest.html">The
+												Most Underrated Productivity Technique Is Also the Simplest
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												It’s not humanly possible to read every piece of productivity advice
+												that exists, but I think I’ve come close. And at one point or another,
+												I’ve tried most of that advice for myself, no matter how unpleasant or
+												out-there it seemed. There was a time when I took cold showers because I
+												heard it would help me combat procrastination. (It did not.)
+
+												Eventually, there came a moment when I realized that studying all these
+												time-management hacks and calendar systems and multistep strategies was
+												only stalling me from the real work of actually getting things done. I
+												already knew the most powerful productivity technique. It was just a
+												matter of using it.
+
+												There are only two steps:
+
+												1. Physically get in your work position.
+												2. Do one small thing.
+
+												That’s it. That’s the whole thing.
+
+												It’s simple, but it isn’t easy. Oftentimes, we do everything in our
+												power to avoid that first step. We grab another cup of coffee, go for a
+												walk, read a book, run errands. Before I wrote this piece, I
+												meticulously rearranged my bookshelf. I tried to escape. The voice
+												inside my head told me to turn on Netflix.
+
+												But instead, I sat down at my desk. I put my phone away and closed my
+												internet browser. And I started working on theone small thing
+												[https://dariusforoux.com/one-thing/]that I scheduled for the day. Then,
+												like magic, I was working.
+
+												The real secret of this technique is that you must do it again tomorrow,
+												and the next day, and the day after that. Build up momentum and keep it.
+												Author Will Durant may have said it best when he wrote, “We are what we
+												repeatedly do. Excellence, then, is not an act, but a habit.”
+
+												It’s theNon-Zero Day principle [https://www.reddit.com/r/NonZeroDay/]:
+												Just do one thing every day that will help you move toward your goal. As
+												Reddit user ryans01 wrote ina post
+												[https://www.reddit.com/r/NonZeroDay/comments/1qbxvz/the_gospel_of_uryans01_helpful_advice_for_anyone/]that
+												inspired the movement, “Didn’t do anything all fucking day and it’s
+												11:58 PM? Write one sentence. One push up. Read one page of that
+												chapter. One. Because one is non zero.”
+
+												We can talk about the newest productivity systems all day, but doing so
+												won’t get the real work done. At some point, you have to sit in your
+												chair and just get started.
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+												Oluwakayode</a>
+											in
+											<a href="category/top-stories.html" class="text-capitalize">top
+												stories</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('9')));
+												</script>
+												13
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="2 min read">2 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/p1-f163.jpeg"></div>
+							</article>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<div class="capsSubtle mb-2">Editors' Pick</div>
+
+										<h3 class="entry-title mb-3">
+											<a href="post/%5bmusic%5d-zlatan-x-ivd-%e2%80%93-bolanle.html">[Music]
+												Zlatan x IVD – Bolanle
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												Rave of the moment,Zlatan Ibile
+												[https://www.naijaloaded.com.ng/tag/Zlatan]unlocks a brand new single
+												dubbed, “Bolanle”, featuring Nigerian auto dealerIVD.
+
+												After a series of Social media outbursts about the trips, the said
+												“Bolanle” has got herself indulge in, the song is finally out. Enjoy!!
+
+												Listen &amp; Download “Zlatan x IVD – Bolanle” below:-
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+												Oluwakayode</a>
+											in
+											<a href="category/Music.html" class="text-capitalize">music</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('8')));
+												</script>
+												24
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="1 min read">1 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://res.cloudinary.com/naskko-technologies/image/upload/v1569340081/m1ah7nbttfkbnoi8rwlz.jpg">
+								</div>
+							</article>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<div class="capsSubtle mb-2">Editors' Pick</div>
+
+										<h3 class="entry-title mb-3">
+											<a
+												href="post/how-netflix-binges-and-google-translate-helped-me-find-love-0.html">How
+												Netflix Binges and Google Translate Helped Me Find Love
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												MY FIANCE FOUND ME THROUGH A HASHTAG ON INSTAGRAM — BUT THAT WAS ONLY
+												THE BEGINNING
+												Technology has revolutionized humanity right down to the most primitive
+												task of finding a mate. Withapps like Tinder
+												[https://onezero.medium.com/teaching-a-robot-to-like-27c5e8bf6f0],
+												happily ever after is possibly just a swipe and an awkward meeting away.
+
+												But what happens when couples find themselves in unconventional
+												predicaments? Such was my case when I began exchanging messages with
+												Mostafa on Instagram. We found each other through my very amateur nature
+												picture I had hashtagged #Germany, so our initial messages were in
+												German. His native language is Arabic and mine is English. We didn’t
+												have a shared fluent language, so after a month of discombobulated
+												Google Translate exchanges, we met for coffee and awkwardness. In true
+												American fashion, my bilingual skills only extended to ordering food
+												despite making my home in Germany. Since Mostafa was already fluent in
+												German, it became our middle ground.
+
+												There are also vast cultural differences that required research for me
+												to better understand Mostafa. From traditions to religion, so much about
+												him was a mystery to me. Having crossed paths in a country foreign to
+												both of us, we were on neutral ground when it came to what “normal” was
+												to each of us. Our journey together began and progressed because of
+												technology.
+
+												Having always taken for granted my luxury of free movement in the world,
+												my perspective was dramatically altered by the reality that Mostafa and
+												I don’t have the ability to visit each other’s home countries. He’s from
+												Syria, which effectively renders him blacklisted from entering the
+												United States. For obvious reasons, we are also unable to visit Syria
+												together. While we wait for technology to fix wars and terrible policy
+												by fostering communication and civilized advancement in leadership,
+												Google Earth offers an aerial view for us to reminisce with each other
+												and conduct virtual tours together. I won’t be able to introduce him to
+												the exciting world of Walmart superstores just yet, but harnessing
+												satellite technology makes for a fulfilling Saturday date night.
+
+												Progressing together on the linguistic front included many hours spent
+												frantically typing into translator apps to keep the serious conversation
+												flowing. My German improved through everyday interaction with Mostafa.
+												He also leveled up in English via our hybrid German/English discussions.
+												Somewhere in the mix, he began teaching me basic Arabic.
+
+												Enter the magic of YouTube and the bevy of language courses available
+												for absolutely free. These resources allowed for our comically formal
+												sweet-nothing texts to take a more conversational tone. Gone were the
+												days he reminded me by text, “Hello darling, he is now putting clothing
+												on his body and will lovingly operate a motor vehicle to your location,”
+												to let me know he was driving to me. My response of, “This pleases me.
+												When you arrive at my residence we will gather ingredients and make a
+												meal,” became human-sounding: “Yay! When you get here we’ll cook
+												dinner.” Although nothing takes the place of practicing in person via
+												daily necessity, language-learning resources available online were also
+												indispensable.
+
+												We eventually became engaged, which transpired through hilariously
+												translated conversations meant to be serious. Technical versions of our
+												declarations of love were mutually understood. Our wildly different
+												cultural and language backgrounds merged to reveal that we’re compatible
+												with the universal art of Netflix binges. I’d also finally managed to
+												find the movie soulmate I’d longed for who would sweep me off my feet
+												with cheesy horror films. Not all partners are cinematically compatible.
+												Since we’ve not yet conquered movie theater outings with our mishmashed
+												language skills, Netflix lovingly provides us with the choice of
+												subtitles and sometimes dubbed versions. We playfully argue over who
+												will read a movie, but this feature facilitates our ability to enjoy
+												routines together. Discovering Arabic language series and movies —
+												including Egyptian melodramas that manage to incorporate musical numbers
+												into movies about mobsters — has undoubtedly improved my cinema
+												experience.
+
+												We are both interested in politics and world policy as it relates to our
+												respective countries. Social media is a valuable tool for learning about
+												what’s happening on the ground in Mostafa’s city of Aleppo, Syria. I’ve
+												gotten a much better understanding of complexities in the Middle East
+												because of his patient explanations. I’ve never had occasion to date
+												someone from a conflict zone and I would tend to forget what was going
+												on in Syria because it isn’t my home and because our daily lives
+												continue uninterrupted and peaceful. Learning about what’s going on in
+												Syria through social media is often difficult and heart-wrenching, but I
+												don’t look away. I’ve gotten involved with supporting causes for
+												refugees through social media by locating organizations both online and
+												in Germany. This has impacted my relationship with Mostafa in ways I
+												didn’t anticipate, including his overwhelming love for my do-gooding.
+
+												Once we conquered each other and became engaged, it was time for Mostafa
+												and me to meet each other’s families. My mother traveled to Germany
+												where she met Mostafa for the first time when we went out to dinner. By
+												this point, my German was strong enough to translate between Mostafa and
+												my mother. Meeting his family was a bit more challenging because our
+												relationship transpired on our own terms, not conventional cultural
+												norms. Despite this fact, I was welcomed into his family with open arms.
+												Conversations between myself and Mostafa’s family are largely through
+												texting because we still need translation apps.
+
+												Technology has offered all of us an opportunity to enhance our
+												experiences. For my relationship, it made loving someone possible.
+												Without it, I would not have found Mostafa or pursued a relationship
+												that was against the odds from the start. Searching for connections is
+												human nature and something that can’t be outsourced to technology.
+												Relationships continue to thrive in the digital era. Though technology
+												helped us progress together quickly, but we love completely on our own.
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+												Oluwakayode</a>
+											in
+											<a href="category/top-stories.html" class="text-capitalize">top
+												stories</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('8')));
+												</script>
+												22
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="5 min read">5 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://res.cloudinary.com/naskko-technologies/image/upload/v1569113210/eul7wvsrrivripkrvl3e.jpg">
+								</div>
+							</article>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<h3 class="entry-title mb-3">
+											<a href="post/setting-up-a-node.html">Setting up a Node.js app on a Linux
+												AMI on an AWS EC2 instance with Nginx
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												INTRODUCTION
+												Node.js [https://nodejs.org/en/] is a JavaScript runtime environment
+												that allows one to run JS on the server. It is built on the open-source
+												V8 JavaScript engine [https://developers.google.com/v8/] used in Chrome
+												and written in C++ which executes JS in a standalone environment.
+
+												AWS [https://aws.amazon.com/] (Amazon Web Services), a subsidiary of
+												Amazon, is a cloud computing platform which provides resources for
+												computation such as EC2 instances, various database and storage
+												facilities as well as networking and content delivery options.
+
+												Nginx [https://www.nginx.com] is a free and open-source HTTP server
+												which doubles up as a reverse proxy server or as a mail proxy server. It
+												is a high performance server with simple configuration options and low
+												resource consumption.
+
+												EC2 [https://aws.amazon.com/ec2/] (Elastic Compute Cloud) is a web
+												service which provides computing power in the form of scalable server
+												instances. Multiple EC2 instances are run on the same machine inside
+												Amazon’s computing infrastructure. When an EC2 instance is initiated, a
+												set amount of resources (OS, RAM, Disk Space etc., chosen at the time of
+												initiation) are allotted to the user from the machine it runs on. This
+												allows sharing of resources between multiple users.
+
+												Linux AMI [https://aws.amazon.com/amazon-linux-ami/] is a copy of Linux
+												(image) provided by AWS which can be used for free on an EC2 instance as
+												an OS. It can contain pre-installed packages such as Python, MySQL,
+												Node.js etc., depending on the chosen AMI.
+
+												THINGS TO DO
+												1. Create an AWS account
+												2. Launch an EC2 instance
+												3. SSH into your instance
+												4. Install Node.js
+												5. Install Git and clone repository from GitHub
+												6. Start the node.js app
+												7. Keep the app running
+												8. Move the app to port 80 (not really)
+												9. Configure Nginx to autostart on instance reboot
+
+												CREATE AN AWS ACCOUNT
+												Go to AWS [https://aws.amazon.com], click on Create an AWS account. If
+												you are already registered, sign in, else create a new account. A new
+												account lets you try the free tier for 12 months. Choose Personal
+												Account unless you have a business setup for which you will need the
+												company details.
+
+												[https://miro.medium.com/max/60/1*y6Qmrx8juIZS2BFmiVWw_Q.png?q=20][https://miro.medium.com/max/993/1*y6Qmrx8juIZS2BFmiVWw_Q.png]Create
+												a personal AWS accountYou will have to enter your card details for a
+												small refundable charge to verify your identity. Once the registration
+												is confirmed, you can go to the console.
+
+												[https://miro.medium.com/max/60/1*qZuA5CjmI1DwtcXMoAxOdA.png?q=20][https://miro.medium.com/max/1330/1*qZuA5CjmI1DwtcXMoAxOdA.png]AWS
+												Service Dashboard (after registration)LAUNCH AN EC2 INSTANCE
+												Now that the account is setup, you are ready to launch an EC2 instance.
+												Select EC2 from the Services dropdown (top-left), click on Launch
+												Instance and select Free Tier Only.
+
+												[https://miro.medium.com/max/60/1*yqITa9p2Eo-5NKqn6eUJBw.png?q=20][https://miro.medium.com/max/1358/1*yqITa9p2Eo-5NKqn6eUJBw.png]Amazon
+												Linux AMI on an EC2 instance (Free tier)Select Amazon Linux AMI (which
+												is usually the first option). On the next screen, select t2.micro (will
+												be highlighted as Free tier eligible).
+
+												[https://miro.medium.com/max/60/1*oHSjU9HrxjA0nbdsxNusqg.png?q=20][https://miro.medium.com/max/1360/1*oHSjU9HrxjA0nbdsxNusqg.png]Free
+												tier t2 micro EC2 instance — 1 GB RAM and up to 30 GB free storage
+												spaceSelect Review and Launch (other settings can be configured later if
+												needed). The next screen might show a warning about the security of the
+												instance and changing security group settings. You can ignore this for
+												now. The only open port is 22 by default which is used for SSH access to
+												the instance. Go ahead and click Launch.
+
+												[https://miro.medium.com/max/60/1*WLMTWqq0l_R3TQau6czLPw.png?q=20][https://miro.medium.com/max/1352/1*WLMTWqq0l_R3TQau6czLPw.png]Warning
+												about security group settings — can be ignored and launchedOn the next
+												screen, you will be asked to create a key pair which allows you to SSH
+												into your instance. Follow the instructions to create a custom name key
+												pair and store it somewhere on your PC where you can access it later and
+												in the future too.
+
+												[https://miro.medium.com/max/60/1*3OGIOsdQrH5Y3oeqlPiDwA.png?q=20][https://miro.medium.com/max/1356/1*3OGIOsdQrH5Y3oeqlPiDwA.png]Create
+												a key pair for SSH accessSelect Launch Instances and wait for your
+												instance to be launched. On the final screen, you can select View
+												Instances to go to your EC2 dashboard where you will see the instance up
+												and running in a few minutes.
+
+												[https://miro.medium.com/max/60/1*6KSRky7KSTJbtThuqD2sXw.png?q=20][https://miro.medium.com/max/1359/1*6KSRky7KSTJbtThuqD2sXw.png]Instance
+												LaunchedYour EC2 instance will be running now and you will be
+												automatically assigned a Public DNS and an IPv4 Public IP which you will
+												use to SSH into the instance.
+
+												[https://miro.medium.com/max/60/1*_opNV5AHl2A3PTkTmi2xbA.png?q=20][https://miro.medium.com/max/1357/1*_opNV5AHl2A3PTkTmi2xbA.png]Instance
+												running on a Public IPSSH INTO YOUR INSTANCE
+												Depending on the OS you are using on your PC, there are different
+												methods to SSH into your instance. You can see the applicable method by
+												clicking on Connect in the above screen. Since I use Windows OS, I use a
+												third party SSH client called PuTTY to connect to the instance. You can
+												follow the official tutorial
+												[https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html] on AWS
+												docs for using PuTTY as the SSH client.
+
+												[https://miro.medium.com/max/60/1*YU1IfwwsOeV3_y-P3Jy-wA.png?q=20][https://miro.medium.com/max/694/1*YU1IfwwsOeV3_y-P3Jy-wA.png]Connect
+												to your instanceThe key pair that you saved while creating the EC2
+												instance will be used now to connect via SSH. Once you have established
+												the connection you will see a terminal similar to this.
+
+												[https://miro.medium.com/max/60/1*FetfhCxO51g4-U95qHnOkg.png?q=20][https://miro.medium.com/max/658/1*FetfhCxO51g4-U95qHnOkg.png]SSH
+												connection established with the EC2 instancePUTTY FREQUENT DISCONNECTION
+												/ TIMEOUT
+												If you use PuTTY, you will see that the terminal frequently becomes
+												non-responsive because of a session timeout. You can change the session
+												settings to keep the connection alive by going to the category
+												Connection of the loaded session and change the value of Seconds between
+												keepalives to 30. This will enable sending empty packets to the remote
+												server via SSH every 30 seconds to keep the session alive.
+
+												INSTALL NODE.JS
+												Now that we are connected to the instance, we can start installing the
+												required packages in the environment for your node.js app to work. We
+												will be using NVM [https://github.com/creationix/nvm](Node Version
+												Manager) to install node.js as it provides a neat way to manage multiple
+												node.js versions on the instance if required. Run the following code in
+												the terminal to get NVM and install it.
+
+												curl -o-
+												https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh |
+												bash
+
+												The script clones the nvm repository to ~/.nvm and adds the source line
+												to your profile (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
+												Now, run nvm --version. The terminal will show command not found as the
+												code has been added to your profile but hasn’t run yet. It runs on every
+												login, so login again by creating a new session. Run nvm --version again
+												and this time you should be able to see the installed version of NVM.
+
+												[https://miro.medium.com/max/60/1*TAUfBfL3wpbegfnF9h39AA.png?q=20][https://miro.medium.com/max/660/1*TAUfBfL3wpbegfnF9h39AA.png]NVM
+												installationTo install node, you can either use nvm install node to
+												install the latest version of node or use nvm install
+												&lt;node_version&gt; to install a specific version of node. Once node is
+												installed, you can check the installed version with node --version.
+
+												[https://miro.medium.com/max/60/1*__x_ULKOa2pQMOFk6DvGqg.png?q=20][https://miro.medium.com/max/659/1*__x_ULKOa2pQMOFk6DvGqg.png]Node.js
+												installationINSTALL GIT AND CLONE REPOSITORY FROM GITHUB
+												We will install Git to clone your node.js repository from your GitHub
+												account. To install Git, run the following command.
+
+												sudo yum install git
+
+												This will install the latest version of Git on the instance. Once
+												installation is done, you are ready to clone your repository. Run the
+												following command to clone your repository. Replace &lt;username&gt;with
+												your GitHub username, &lt;repository-name&gt;with the name of your
+												node.js app repository and &lt;folder-name&gt;with the name of the
+												folder you want to clone the repository into. This folder will be
+												created under /home/ec2-user/.
+
+												git clone
+												https://github.com/&lt;username&gt;/&lt;repository-name&gt;.git
+												&lt;folder-name&gt;
+
+												Run cd &lt;folder-name&gt; to move inside this folder and ls to see its
+												contents.
+
+												START THE NODE.JS APP
+												If your start script does not include npm install you should run it
+												manually first, otherwise you can directly issue the command to start
+												the app which should install the dependencies automatically. There are
+												several ways to start the app depending on how you have set it up.
+												Choose one which suits you.
+
+												node server.js
+												node app.js
+												node ./bin/www
+												npm start
+
+												The app will now run at the port number that you have specified in the
+												start script. It could be 3000, 8000, 8080 etc. Make a note of this port
+												number and enter the public DNS of the instance with the port number in
+												the browser to see the app output. I use port 3000, you can replace it
+												with yours.
+
+												http://ec2-54-191-104-59.us-west-2.compute.amazonaws.com:3000
+
+												As you will see, this will not work and there would be nothing to show
+												on the page and the browser connection will timeout. This is because we
+												haven’t opened port 3000 for access to public. This is where the
+												Security Group comes in. In the AWS management console, go to Security
+												Groups, select the one not named ‘default’ (launch-wizard-1 or similar)
+												and edit the Inbound rules.
+
+												[https://miro.medium.com/max/60/1*07PnlnkoK-24Yb2gbasLyw.png?q=20][https://miro.medium.com/max/1363/1*07PnlnkoK-24Yb2gbasLyw.png]Security
+												Groups for the EC2 instanceAdd a new custom TCP rule with port range
+												3000 and accessible from everywhere (0.0.0.0/0).
+
+												[https://miro.medium.com/max/60/1*iIlzYZXjFdVTOxYnCm5zWQ.png?q=20][https://miro.medium.com/max/997/1*iIlzYZXjFdVTOxYnCm5zWQ.png]Inbound
+												rules for the EC2 instanceAccess the URL again and you should be able to
+												see the app content now.
+
+												KEEP THE APP RUNNING
+												The app will run as long as you have the terminal open and you have not
+												stopped it manually. But as soon as you close the terminal or press
+												Ctrl-C or its equivalent, the app will stop as its process is not
+												running in the background, it’s tied to the active terminal. You can
+												write a script to run the process in the background but you will also
+												have to take care of restarting the process in the background in case it
+												crashes or if you perform a pull from the repository or if you update
+												the app in some other way. But there’s an easier way to do all this by
+												using a process manager for node called PM2 [http://pm2.keymetrics.io/].
+												We will focus on the auto-restart and background process functionalities
+												of PM2 here. More functionalities in a later article on continuous
+												integration.
+
+												Kill all the running node processes (if any) — killall -9 node. Install
+												PM2 globally with the following command:
+
+												npm install pm2 -g
+
+												Move to the cloned folder and execute one of the following commands
+												depending on how you had started the app before:
+
+												pm2 start server.js
+												pm2 start app.js
+												pm2 start ./bin/www
+												pm2 start npm --name
+												&#34;&lt;name_the_process_anything_you_want&gt;&#34; -- start
+
+												Now even if you close the terminal and check the url in the browser, the
+												app will be running. Sweet! For automatically running PM2 when the
+												server restarts, issue the following command:
+
+												pm2 startup
+
+												This will output a script in the terminal which you need to run, copy
+												the script that it outputs and run it in the terminal window. Now, save
+												all the currently running processes so that they can be run again
+												whenever PM2 restarts either manually or by a script with the following
+												command:
+
+												pm2 save
+
+												Now you can try rebooting the instance and visit the url and see if the
+												app works or not. To see a list of the currently active node processes
+												with their process names, run pm2 list and to monitor any one of the
+												processes run pm2 monit.
+
+												MOVE THE APP TO PORT 80 (NOT REALLY)
+												The URL for our app contains the port number 3000 which if you have
+												surfed the web a lot will appear a bit out of the place because you
+												don’t usually see such numbers in the URLs, reason being the websites
+												are generally served on the standard port 80 used for HTTP requests and
+												browsers assume it by default.
+
+												Currently our node server is running on a publicly open port which is
+												not a particularly brilliant idea as we are directly exposing the
+												application server to internet traffic and also reducing performance by
+												not taking advantages
+												[https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/]
+												of load balancing or serving static content efficiently.
+
+												A better way to manage this is to use Nginx as a reverse proxy server in
+												front of all other application servers. It will act as an efficient web
+												server routing multiple requests on port 80 to different application
+												servers based on the requested domain or even route high volume internet
+												traffic to the same domain on port 80 to multiple instances of the
+												application server listening on different private ports to perform load
+												balancing in case of application server overloading or crashing. Nginx
+												also takes care of SSL encryption
+												[https://www.nginx.com/resources/glossary/reverse-proxy-server/] instead
+												of letting Node do all the work.
+
+												[https://miro.medium.com/max/60/1*NFejJ5lJR3nyRLqGicdGbw.png?q=20][https://miro.medium.com/max/742/1*NFejJ5lJR3nyRLqGicdGbw.png]Setting
+												up Nginx in front of the application servers. Image courtesy - Floyd
+												Smith
+												[https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/]Let’s
+												install Nginx first:
+
+												sudo yum install nginx
+
+												and verify the installed version with nginx -v.
+
+												Open port 80 by adding another inbound rule to the security group.
+
+												[https://miro.medium.com/max/60/1*vEiEHoHc8Wpihh7DBDiffw.png?q=20][https://miro.medium.com/max/1003/1*vEiEHoHc8Wpihh7DBDiffw.png]Open
+												port 80 for public accessEnter the public DNS or the public IP of your
+												EC2 instance in the browser now without a port and you should see the
+												default Nginx welcome page.
+
+												http://ec2-54-191-104-59.us-west-2.compute.amazonaws.com
+
+												[https://miro.medium.com/max/60/1*RbcJHpPp3yYQwjZWRTrYRQ.png?q=20][https://miro.medium.com/max/1297/1*RbcJHpPp3yYQwjZWRTrYRQ.png]The
+												default Nginx welcome pageNow, we are not really going to move the app
+												to listen on port 80, the app will still be running on port 3000. We
+												will install Nginx in front of the application server, run it on port 80
+												so that it can intercept all internet traffic and route it to port 3000
+												where the required application server will be listening if the HTTP
+												headers match (more details in the next article on serving the site on
+												HTTPS). A nice explanation of why we should be doing this is available
+												here [https://stackoverflow.com/a/16770780].
+
+												To use port 80 to route requests to the application server on port 3000,
+												we will edit the nginx configuration file — nginx.conf as follows.
+
+												Open the nginx.conf file with an editor in the terminal:
+
+												sudo nano /etc/nginx/nginx.conf
+
+												If there’s no server block listening on port 80, add one or change it if
+												it already exists to look like this:
+
+												server {
+												listen 80 default_server;
+												listen [::]:80 default_server;
+												server_name localhost;
+												root /usr/share/nginx/html; location / {
+												proxy_pass http://127.0.0.1:3000;
+												proxy_http_version 1.1;
+												proxy_set_header Upgrade $http_upgrade;
+												proxy_set_header Connection &#39;upgrade&#39;;
+												proxy_set_header Host $host;
+												proxy_cache_bypass $http_upgrade;
+												}
+												}
+
+												Since we have a single server block listening on port 80, all traffic
+												will be routed from here itself regardless of the value of the
+												server_name directive. The location directive has been changed to point
+												to the resource from where the content has to be served, in our case it
+												is the node.js application server running on the private localhost IP
+												127.0.0.1 and port 3000. Ignore the other directives for now.
+
+												Save the configuration and restart the server with the following
+												command:
+
+												sudo service nginx restart
+
+												You will now have all HTTP traffic available on port 80 forwarded to
+												port 3000. You should close port 3000 to public access by removing it
+												from the security group settings. Visit the URL again in the browser
+												without the port and you will be able to see the app content now instead
+												of the default Nginx welcome page.
+
+												CONFIGURE NGINX TO AUTOSTART ON INSTANCE REBOOT
+												There’s just one last thing to take care of before we wrap up. We need
+												to configure Nginx to start automatically if the instance is rebooted.
+												Execute the following command to do this:
+
+												sudo chkconfig nginx on
+
+												You can close the session, reboot the instance and visit the URL again.
+												You should see the app being served on port 80.
+
+												And now we are done! Pheww!!
+
+
+
+
+												Since, we have the app being served on port 80 now, we will take care of
+												the following stuff in the next article:
+
+												1. Buy and register a domain name
+												2. Serve the website on the registered domain
+												3. Obtain an SSL certificate for the registered domain
+												4. Install the SSL certificate on the server
+												5. Run SSL test for the website
+												6. Update security parameters on the website
+												7. Automatically renew the certificate
+
+												If you are stuck at any point in the sections above or if I have made a
+												mistake somewhere or missed an essential point, do let me know in the
+												comments.
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/naskko_tech.html" class="text-capitalize">Olohundare
+												Nasirudeen</a>
+											in
+											<a href="category/Read%20Everything%20about%20technology.html"
+												class="text-capitalize">Tech</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('8')));
+												</script>
+												20
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="14 min read">14 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/nodejs-new-pantone-white-a965.png">
+								</div>
+							</article>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<h3 class="entry-title mb-3">
+											<a href="post/how-to-install-node-app-in-cpanel-of-godaddy.html">How to
+												install Node app in CPanel of GoDaddy
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												Most of us use share host for a very simple web host. Have you ever
+												think about how to host a server on the share host and make your node
+												app instead of using PHP application on GoDaddy?
+
+												# First thing to do:
+
+												wget -qO- https://cdn.rawgit.com/creationix/nvm/master/install.sh | bash
+
+												# Second validate your source file
+
+												source $HOME/.nvm/nvm.shnvm install stable
+
+												# Now check the version of your node and npm
+
+												nvm ls
+
+												You would see something like this:
+
+												[https://miro.medium.com/max/60/1*6IlNccY5MzdHuZ_ACbngiQ.png?q=20][https://miro.medium.com/max/544/1*6IlNccY5MzdHuZ_ACbngiQ.png]#
+												Then, go to public_html folder and create htaccess file and
+
+												cd ~/public_htmlnano .htaccess
+
+												# Copy information below, (3000) is the default port for express, change
+												whatever port that you are going to setu
+
+												RewriteEngine On
+												DirectoryIndex disabled
+												RewriteRule ^$ http://127.0.0.1:3000/ [http://127.0.0.1:3000/] [P,L]
+												RewriteCond %{REQUEST_FILENAME} !-f
+												RewriteCond %{REQUEST_FILENAME} !-d
+												RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [http://127.0.0.1:3000/$1]
+												[P,L]
+
+												# Now your folder should be contain those:
+
+												drwxr-x--- 3 abcdef nobody 4096 Feb 17 23:19 ./
+												drwx--x--x 19 abcdef abcdef 4096 Feb 17 23:17 ../
+												-rw-r--r-- 1 abcdef abcdef 1699 Jul 3 2014 404.shtml
+												drwxr-xr-x 2 abcdef abcdef 4096 Feb 17 23:05 cgi-bin/
+												-rw-r--r-- 1 abcdef abcdef 1963 Jul 3 2014 home.html
+												-rw-rw-r-- 1 abcdef abcdef 208 Feb 17 23:19 .htaccess
+												-rw-r--r-- 1 abcdef abcdef 4282 Jul 3 2014 layout-styles.css
+
+												Once your finish your installation, go to express site to copy some of
+												the startup code
+
+												Express &#34;Hello World&#34; exampleThe example above is actually a
+												working server: Go ahead and click on the URL shown. You&#39;ll get a
+												response, with…expressjs.commkdir myapp
+												cd myapp
+												npm init -y
+												npm install express --save
+												touch index.js
+
+												Don’t forget to copy this code to your index.js file:
+
+												const express = require(&#39;express&#39;)
+												const app = express()
+												const port = 3000app.get(&#39;/&#39;, (req, res) =&gt;
+												res.send(&#39;Hello World!&#39;))app.listen(port, () =&gt;
+												console.log(`Example app listening on port ${port}!`))
+
+												Now you are almost compete everything.
+
+												All you need is to make the server run all the time and no matter it
+												crash or update
+
+												# install the forever start package on your server
+
+												npm i pm2 -g
+
+												# since the pm2 is very handy tool, you just run this command to run the
+												server and restart by adding — watch tag
+
+												pm2 start index.js --watch
+
+												PM2 ·Advanced process manager for production Node.js applications. Load
+												balancer, logs facility, startup script,
+												micro…pm2.keymetrics.io[https://miro.medium.com/max/60/1*VJxla_93J9kjEURMAcCIVA.png?q=20][https://miro.medium.com/max/1234/1*VJxla_93J9kjEURMAcCIVA.png]
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/naskko_tech.html" class="text-capitalize">Olohundare
+												Nasirudeen</a>
+											in
+											<a href="category/Read%20Everything%20about%20technology.html"
+												class="text-capitalize">Tech</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('8')));
+												</script>
+												20
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="3 min read">3 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://nodepress.s3.amazonaws.com/cp-6e5a.png"></div>
+							</article>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<div class="capsSubtle mb-2">Editors' Pick</div>
+
+										<h3 class="entry-title mb-3">
+											<a href="post/basic-time-series-manipulation-with-pandas.html">Basic Time
+												Series Manipulation with Pandas
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												As someone who works with time series data on almost a daily basis, I
+												have found thepandas
+												[https://pandas.pydata.org/pandas-docs/stable/]Python package to be
+												extremely useful for time series manipulation and analysis.
+
+												This basic introduction to time series data manipulation with pandas
+												should allow you to get started in your time series analysis. Specific
+												objectives are to show you how to:
+
+												* create a date range
+												* work with timestamp data
+												* convert string data to a timestamp
+												* index and slice your time series data in a data frame
+												* resample your time series for different time period aggregates/summary
+												statistics
+												* compute a rolling statistic such as a rolling average
+												* work with missing data
+												* understand the basics of unix/epoch time
+												* understand common pitfalls of time series data analysis
+
+												Let’s get started. If you want to play with real data that you have, you
+												may want to start by usingpandas
+												[https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html]read_csv
+												[https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html]to
+												read in your file to a data frame, however we’re going to start by
+												playing with generated data.
+
+												First import the libraries we’ll be working with and then use them
+												tocreate a date range
+
+												import pandas as pd
+												from datetime import datetime
+												import numpy as npdate_rng = pd.date_range(start=&#39;1/1/2018&#39;,
+												end=&#39;1/08/2018&#39;, freq=&#39;H&#39;)
+
+												This date range has timestamps with an hourly frequency. If we
+												calldate_rngwe’ll see that it looks like the following:
+
+												DatetimeIndex([&#39;2018-01-01 00:00:00&#39;, &#39;2018-01-01
+												01:00:00&#39;,
+												&#39;2018-01-01 02:00:00&#39;, &#39;2018-01-01 03:00:00&#39;,
+												&#39;2018-01-01 04:00:00&#39;, &#39;2018-01-01 05:00:00&#39;,
+												&#39;2018-01-01 06:00:00&#39;, &#39;2018-01-01 07:00:00&#39;,
+												&#39;2018-01-01 08:00:00&#39;, &#39;2018-01-01 09:00:00&#39;,
+												...
+												&#39;2018-01-07 15:00:00&#39;, &#39;2018-01-07 16:00:00&#39;,
+												&#39;2018-01-07 17:00:00&#39;, &#39;2018-01-07 18:00:00&#39;,
+												&#39;2018-01-07 19:00:00&#39;, &#39;2018-01-07 20:00:00&#39;,
+												&#39;2018-01-07 21:00:00&#39;, &#39;2018-01-07 22:00:00&#39;,
+												&#39;2018-01-07 23:00:00&#39;, &#39;2018-01-08 00:00:00&#39;],
+												dtype=&#39;datetime64[ns]&#39;, length=169, freq=&#39;H&#39;)
+
+												We can check the type of the first element:
+
+												type(date_rng[0])#returnspandas._libs.tslib.Timestamp
+
+												Let’s create an example data frame with the timestamp data and look at
+												the first 15 elements:
+
+												df = pd.DataFrame(date_rng, columns=[&#39;date&#39;])df[&#39;data&#39;]
+												= np.random.randint(0,100,size=(len(date_rng)))df.head(15)
+
+												[https://miro.medium.com/max/14/1*iOWtUCR12XLt5IDDehxKnA.png?q=20][https://miro.medium.com/max/204/1*iOWtUCR12XLt5IDDehxKnA.png]Example
+												data frame — dfIf we want to do time series manipulation, we’ll need to
+												have a date time index so that our data frame is indexed on the
+												timestamp.
+
+												Convert the data frame index to a datetime indexthen show the first
+												elements:
+
+												df[&#39;datetime&#39;] = pd.to_datetime(df[&#39;date&#39;])df =
+												df.set_index(&#39;datetime&#39;)df.drop([&#39;date&#39;], axis=1,
+												inplace=True)df.head()
+
+												[https://miro.medium.com/max/26/1*9vbzx1FO87ZJapWwXKId2A.png?q=20][https://miro.medium.com/max/177/1*9vbzx1FO87ZJapWwXKId2A.png]df
+												with datetime indexWhat if our ‘time’ stamps in our data are actually
+												string type vs. numerical? Let’s convert ourdate_rngto a list of strings
+												and then convert the strings to timestamps.
+
+												string_date_rng = [str(x) for x in
+												date_rng]string_date_rng#returns[&#39;2018-01-01 00:00:00&#39;,
+												&#39;2018-01-01 01:00:00&#39;,
+												&#39;2018-01-01 02:00:00&#39;,
+												&#39;2018-01-01 03:00:00&#39;,
+												&#39;2018-01-01 04:00:00&#39;,
+												&#39;2018-01-01 05:00:00&#39;,
+												&#39;2018-01-01 06:00:00&#39;,
+												&#39;2018-01-01 07:00:00&#39;,
+												&#39;2018-01-01 08:00:00&#39;,
+												&#39;2018-01-01 09:00:00&#39;,...
+
+												We canconvert the strings to timestampsby inferring their format, then
+												look at the values:
+
+												timestamp_date_rng = pd.to_datetime(string_date_rng,
+												infer_datetime_format=True)timestamp_date_rng#returnsDatetimeIndex([&#39;2018-01-01
+												00:00:00&#39;, &#39;2018-01-01 01:00:00&#39;,
+												&#39;2018-01-01 02:00:00&#39;, &#39;2018-01-01 03:00:00&#39;,
+												&#39;2018-01-01 04:00:00&#39;, &#39;2018-01-01 05:00:00&#39;,
+												&#39;2018-01-01 06:00:00&#39;, &#39;2018-01-01 07:00:00&#39;,
+												&#39;2018-01-01 08:00:00&#39;, &#39;2018-01-01 09:00:00&#39;,
+												...
+												&#39;2018-01-07 15:00:00&#39;, &#39;2018-01-07 16:00:00&#39;,
+												&#39;2018-01-07 17:00:00&#39;, &#39;2018-01-07 18:00:00&#39;,
+												&#39;2018-01-07 19:00:00&#39;, &#39;2018-01-07 20:00:00&#39;,
+												&#39;2018-01-07 21:00:00&#39;, &#39;2018-01-07 22:00:00&#39;,
+												&#39;2018-01-07 23:00:00&#39;, &#39;2018-01-08 00:00:00&#39;],
+												dtype=&#39;datetime64[ns]&#39;, length=169, freq=None)
+
+												But what about if we need toconvert a unique string format?
+
+												Let’s create an arbitrary list of dates that are strings and convert
+												them to timestamps:
+
+												string_date_rng_2 = [&#39;June-01-2018&#39;, &#39;June-02-2018&#39;,
+												&#39;June-03-2018&#39;]timestamp_date_rng_2 =
+												[datetime.strptime(x,&#39;%B-%d-%Y&#39;) for x in
+												string_date_rng_2]timestamp_date_rng_2#returns[datetime.datetime(2018,
+												6, 1, 0, 0),
+												datetime.datetime(2018, 6, 2, 0, 0),
+												datetime.datetime(2018, 6, 3, 0, 0)]
+
+												What does it look like if we put this into a data frame?
+
+												df2 = pd.DataFrame(timestamp_date_rng_2, columns=[&#39;date&#39;])df2
+
+												[https://miro.medium.com/max/27/1*MD2S1B9hTlEPXjeLymyK5w.png?q=20][https://miro.medium.com/max/104/1*MD2S1B9hTlEPXjeLymyK5w.png]Going
+												back to our original data frame, let’slook at the data by parsing on
+												timestamp index:
+
+												Say we just want to see data where the date is the 2nd of the month, we
+												could use the index as per below.
+
+												df[df.index.day == 2]
+
+												The top of this looks like:
+
+												[https://miro.medium.com/max/14/1*QcnXFyXnNz7vVqYztH__aw.png?q=20][https://miro.medium.com/max/183/1*QcnXFyXnNz7vVqYztH__aw.png]We
+												could also directly call a date that we want to look at via the index of
+												the data frame:
+
+												df[&#39;2018-01-03&#39;]
+
+												[https://miro.medium.com/max/13/1*jM93ti4vsZaXLnCpWdPweQ.png?q=20][https://miro.medium.com/max/182/1*jM93ti4vsZaXLnCpWdPweQ.png]What
+												aboutselecting data between certain dates?
+
+												df[&#39;2018-01-04&#39;:&#39;2018-01-06&#39;]
+
+												[https://miro.medium.com/max/13/1*qeBhXKC_SzfAiItiZZopFQ.png?q=20][https://miro.medium.com/max/178/1*qeBhXKC_SzfAiItiZZopFQ.png]The
+												basic data frame that we’ve populated gives us data on an hourly
+												frequency, but we canresample the data at a different frequencyand
+												specify how we would like to compute the summary statistic for the new
+												sample frequency. We could take the min, max, average, sum, etc., of the
+												data at a daily frequency instead of an hourly frequency as per the
+												example below where we compute the daily average of the data:
+
+												df.resample(&#39;D&#39;).mean()
+
+												[https://miro.medium.com/max/16/1*EAMBuYLGbnQOssQ5iKhh7Q.png?q=20][https://miro.medium.com/max/155/1*EAMBuYLGbnQOssQ5iKhh7Q.png]What
+												aboutwindow statistics such as a rolling mean or a rolling sum?
+
+												Let’s create a new column in our original df that computes the rolling
+												sum over a 3 window period and then look at the top of the data frame:
+
+												df[&#39;rolling_sum&#39;] = df.rolling(3).sum()
+												df.head(10)
+
+												[https://miro.medium.com/max/23/1*tjMO67HZ4j2HA-d3VR063Q.png?q=20][https://miro.medium.com/max/253/1*tjMO67HZ4j2HA-d3VR063Q.png]We
+												can see that this is computing correctly and that it only starts having
+												valid values when there are three periods over which to look back.
+
+												This is a good chance to see how we can doforward or backfilling of data
+												when working with missing data values.
+
+												Here’s our df but with a new column that takes the rolling sum and
+												backfills the data:
+
+												df[&#39;rolling_sum_backfilled&#39;] =
+												df[&#39;rolling_sum&#39;].fillna(method=&#39;backfill&#39;)
+												df.head(10)
+
+												[https://miro.medium.com/max/30/1*8EtGaf4aiSBAay9lZfAl8A.png?q=20][https://miro.medium.com/max/401/1*8EtGaf4aiSBAay9lZfAl8A.png]It’s
+												often useful to be able to fill your missing data with realistic values
+												such as the average of a time period, but always remember that if you
+												are working with a time series problem and want your data to be
+												realistic, you shouldnotdo a backfill of your data as that’s like
+												looking into the future and getting information you would never have at
+												that time period. Likely you will want to forward fill your data more
+												frequently than you backfill.
+
+												When working with time series data, you may come across time values that
+												are in Unix time. Unix time, also called Epoch time is the number of
+												seconds that have elapsed since 00:00:00 Coordinated Universal Time
+												(UTC), Thursday, 1 January 1970. Using Unix time helps to disambiguate
+												time stamps so that we don’t get confused by time zones, daylight
+												savings time, etc.
+
+												Here’s an example of a time t that is in Epoch time andconverting
+												unix/epoch time to a regular time stamp in UTC:
+
+												epoch_t = 1529272655
+												real_t = pd.to_datetime(epoch_t,
+												unit=&#39;s&#39;)real_t#returnsTimestamp(&#39;2018-06-17 21:57:35&#39;)
+
+												If I wanted toconvert that time that is in UTC to my own time zone, I
+												could simply do the following:
+
+												real_t.tz_localize(&#39;UTC&#39;).tz_convert(&#39;US/Pacific&#39;)#returnsTimestamp(&#39;2018-06-17
+												14:57:35-0700&#39;, tz=&#39;US/Pacific&#39;)
+
+												With these basics, you should be all set to work with your time series
+												data.
+
+												Here are afew tips to keep in mind and common pitfalls to avoid when
+												working with time series data:
+
+												* Check for discrepanciesin your data that may be caused by region
+												specific time changes like daylight savings time.
+												* Keep track of time zonesmeticulously — let others going through your
+												code know what time zone your data is in, and think about converting to
+												UTC or a standardized value in order to keep your data standardized.
+												* Missing data can occur frequently — make sure youdocument your
+												cleaning rulesand think about not backfilling information you wouldn’t
+												have been able to have at the time of a sample.
+												* Remember that as you resample your data or fill in missing values,
+												you’re losing a certain amount of information about your original data
+												set. I’d suggestkeeping track of all of your data transformationsand
+												tracking the root cause of your data issues.
+												* When you resample your data, the best method (mean, min, max, sum,
+												etc.) will be dependent on the kind of data you have and how it was
+												sampled.Be thoughtful about how you resample your datafor your analysis.
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/naskko_tech.html" class="text-capitalize">Olohundare
+												Nasirudeen</a>
+											in
+											<a href="category/programming.html"
+												class="text-capitalize">programming</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('8')));
+												</script>
+												20
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="8 min read">8 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://nodepress.s3.amazonaws.com/med-5ec9.jpeg"></div>
+							</article>
+
+							<article class="row justify-content-between mb-5 mr-0">
+								<div class="col-md-9 ">
+									<div class="align-self-center">
+
+										<h3 class="entry-title mb-3">
+											<a
+												href="post/the-end-of-crypto-mining-is-just-the-beginning-of-crypto.html">The
+												End Of Crypto Mining Is Just The Beginning Of Crypto
+											</a>
+										</h3>
+										<div class="entry-excerpt">
+											<p class="entry-tit">
+												A soundbyte news item recently took the crypto community by storm: 85%
+												of the world’s Bitcoin supply has been mined.
+												It’s
+											</p>
+										</div>
+										<div class="entry-meta align-items-center">
+											<a href="author/naskko_tech.html" class="text-capitalize">Olohundare
+												Nasirudeen</a>
+											in
+											<a href="category/Read%20Everything%20about%20technology.html"
+												class="text-capitalize">Tech</a><br />
+											<span>
+												<script>
+													document.write(getmonth(parseInt('8')));
+												</script>
+												19
+											</span>
+											<span class="middotDivider"></span>
+											<span class="readingTime" title="1 min read">1 min read</span>
+											<span class="svgIcon svgIcon--star">
+												<svg class="svgIcon-use" width="15" height="15">
+													<path
+														d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+													</path>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 bgcover blur-up lazyload"
+									data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/m84z30f5-cb34-60be.jpeg">
+								</div>
+							</article>
+
+							<ul class="page-numbers heading">
+
+								<li><a class="disabled page-numbers" href="javascript:void(0);">First</a></li>
+
+								<li><span aria-current="page" class="page-numbers current">1</span></li>
+
+								<li><a class="page-numbers" href="index4658.html?page=2">2</a></li>
+
+								<li><a class="page-numbers" href="index9ba9.html?page=3">3</a></li>
+
+								<li><a class="page-numbers" href="index9ba9.html?page=3">Last</a></li>
+
+							</ul>
+
+						</div>
+						<!--col-md-8-->
+						<div class="col-md-4 pl-md-5 sticky-sidebar">
+							<div class="sidebar-widget latest-tpl-4">
+								<h4 class="spanborder">
+									<span>Featured Posts</span>
+								</h4>
+								<ol>
+
+									<li class="d-flex">
+										<div class="post-count">01</div>
+										<div class="post-content">
+											<h5 class="entry-title mb-3">
+												<a href="post/the-end-of-php.html">The End of PHP?</a>
+											</h5>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+													Oluwakayode</a>
+												in
+												<a href="category/Read%20Everything%20about%20technology.html"
+													class="text-capitalize">Tech</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('9')));
+													</script>
+													13
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="3 min read">3 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="d-flex">
+										<div class="post-count">02</div>
+										<div class="post-content">
+											<h5 class="entry-title mb-3">
+												<a
+													href="post/the-most-underrated-productivity-technique-is-also-the-simplest.html">The
+													Most Underrated Productivity Technique Is Also the Simplest</a>
+											</h5>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+													Oluwakayode</a>
+												in
+												<a href="category/top-stories.html" class="text-capitalize">top
+													stories</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('9')));
+													</script>
+													13
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="2 min read">2 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="d-flex">
+										<div class="post-count">03</div>
+										<div class="post-content">
+											<h5 class="entry-title mb-3">
+												<a href="post/%5bmusic%5d-zlatan-x-ivd-%e2%80%93-bolanle.html">[Music]
+													Zlatan x IVD – Bolanle</a>
+											</h5>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+													Oluwakayode</a>
+												in
+												<a href="category/Music.html" class="text-capitalize">music</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('8')));
+													</script>
+													24
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="1 min read">1 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="d-flex">
+										<div class="post-count">04</div>
+										<div class="post-content">
+											<h5 class="entry-title mb-3">
+												<a
+													href="post/how-netflix-binges-and-google-translate-helped-me-find-love-0.html">How
+													Netflix Binges and Google Translate Helped Me Find Love</a>
+											</h5>
+											<div class="entry-meta align-items-center">
+												<a href="author/Naskko_Tech-2.html" class="text-capitalize">Olohundare
+													Oluwakayode</a>
+												in
+												<a href="category/top-stories.html" class="text-capitalize">top
+													stories</a><br />
+												<span>
+													<script>
+														document.write(getmonth(parseInt('8')));
+													</script>
+													22
+												</span>
+												<span class="middotDivider"></span>
+												<span class="readingTime" title="5 min read">5 min read</span>
+												<span class="svgIcon svgIcon--star">
+													<svg class="svgIcon-use" width="15" height="15">
+														<path
+															d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z">
+														</path>
+													</svg>
+												</span>
+											</div>
+										</div>
+									</li>
+
+								</ol>
+							</div>
+						</div>
+						<!--col-md-4-->
+					</div>
+				</div>
+				<!--content-widget-->
+			</div>
+
+			<div class="content-widget">
+				<div class="container">
+					<div class="sidebar-widget ads m-auto text-center">
+
+						<a href="#"><img
+								style="width: 600px !important; height: 70px !important; object-fit: cover !important;"
+								alt="Nodepress"
+								data-src="http://nodepress.com.ng/media/84641bef867e62245360314223d27d36e05417681571396424037.png"
+								class="blur-up lazyload img-fluid"></a>
+
+						<div class="hr"></div>
+					</div>
+				</div>
+				<!--content-widget-->
+		</main>
+
+		<footer class="mt-5">
+			<div class="container">
+				<div class="divider"></div>
+				<div class="row">
+					<div class="col-md-6 copyright text-xs-center">
+						<p>Copyright by Naskkotech. Powered by Nodepress.</a></p>
+					</div>
+					<div class="col-md-6">
+						<ul class="social-network inline text-md-right text-sm-center">
+							<li class="list-inline-item"><a href="https://www.facebook.com/dev-nasirudeen"><i
+										class="icon-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.twitter.com/iamnasirudeen"><i
+										class="icon-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="icon-behance"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!--#wrapper-->
+
+	<a href="#" class="back-to-top heading"><i class="icon-left-open-big"></i><span
+			class="d-lg-inline d-md-none">Top</span></a>
+
+	<!--Scripts-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135022290-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-135022290-2');
+	</script>
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/popper.min.js"></script>
+	<script src="static/js/bootstrap.js"></script>
+	<script src="static/js/jquery-scrolltofixed-min.js"></script>
+	<script src="static/js/theia-sticky-sidebar.js"></script>
+	<script src="static/js/owl-carousel.2.3.0.min.js"></script>
+	<script src="static/js/sweetalert.min.js"></script>
+	<script src="static/js/lazy.min.js"></script>
+	<script src="static/js/lazy-hooks.min.js"></script>
+	<script src="static/js/scripts.js"></script>
+</body>
+
+
+</html>

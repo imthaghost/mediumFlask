@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from nodepress.com.ng/author/naskko_tech?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jan 2020 17:31:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<!-- Meta tags -->
+		<title>Nodepress</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog." />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS PNG-e88b.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="canonical" href="../index.html" />
+		<link rel="alternate" href="../index.html" hreflang="en-US" />
+		<link rel="shortcut icon" href="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS ICON-2c44.png" type="image/x-icon">
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "WebSite",
+				"name": "Nodepress",
+				"url": "http://nodepress.com.ng",
+				"description": "Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog.",
+				"image": "https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png"
+			}
+		</script>
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Nodepress" />
+		<meta property="og:url" content="http://nodepress.com.ng" />
+		<meta property="og:image" content="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" />
+		<meta property="og:description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog." />
+		<meta property="og:site_name" content="Nodepress" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@Nodepress" />
+		<meta name="twitter:creator" content="@Nodepress" />
+		<meta name="twitter:title" content="Nodepress" />
+		<meta name="twitter:description" content="Nodepress is a Nodejs, Jquery, Bootstrap HMTL Script inspired by Medium’s latest design. Nodepress is a great idea for blogs and magazines.
+
+With its neat and minimal approach, Nodepress puts all the emphasis on your compelling content. No matter what niche you are in or even if creating a general blog, Nodepress easily adapts to your requirements. On top of that, you can adjust the layout and brand it accordingly.
+
+Nodepress is 100% responsive and cross-browser compatible, retina screen friendly and based on Bootstrap Framework. Your page will easily stand the test of time, always looking refreshing and delivering outstanding performance. Get the word out with Nodpress and enter the online world with a banging news blog." />
+		<meta name="twitter:image" content="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" />
+		<meta name="twitter:domain" content="http://nodepress.com.ng" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Bootstrap, Font Awesome, Aminate, Owl Carausel, Normalize CSS -->
+		<link href="../css/bootstrap.css" rel="stylesheet" />
+		<link href="../css/owl.carousel.min.css" rel="stylesheet" />
+		<link href="../css/owl.theme.default.min.css" rel="stylesheet" />
+
+		<!-- Site CSS -->
+		<link href="../css/style.css" rel="stylesheet" />
+		<link href="../css/widgets.css" rel="stylesheet" />
+		<link href="../css/color-default.css" rel="stylesheet" />
+		<link href="../css/responsive.css" rel="stylesheet" />
+		<link href="../icofont/icofont.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../assets/css/vendor/font-awesome.min.css">
+		<!-- Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Cabin:400,700&amp;display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=B612+Mono&amp;display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;display=swap" rel="stylesheet" />
+
+		<!-- Icons fonts-->
+		<link href="../css/fontello.css" rel="stylesheet" />
+		
+	</head>
+	<body class="single">
+		<div class="top-scroll-bar"></div>
+		<!--Mobile navigation-->
+		<div class="sticky-header fixed d-lg-none d-md-block">
+			<div class="text-right">
+				<div class="container mobile-menu-fixed pr-5">
+					
+					<h1 class="logo-small navbar-brand">
+						<a href="../index.html" class="logo text-capitalize">
+							<img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="blur-up lazyload" alt="Nodepress" />
+						</a>
+					</h1>
+					 
+
+					<ul class="social-network heading navbar-nav d-lg-flex align-items-center" 
+						style="margin-right: 1rem !important;">
+						<li>
+							<a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a>
+						</li>
+					</ul>
+
+					<a href="javascript:void(0)" class="menu-toggle-icon">
+						<span class="lines"></span>
+					</a>
+				</div>
+			</div>
+
+			<div class="mobi-menu">
+				<div class="mobi-menu__logo">
+					<h1 class="logo navbar-brand"><a href="../index.html" class="logo text-capitalize">
+						
+							<img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="img-fluid blur-up lazyload">
+						
+					</a></h1>
+				</div>
+				<form action="https://nodepress.com.ng/search" method="get" class="menu-search-form d-lg-flex">
+					<input type="text" class="search_field" placeholder="Search..." value="" name="q" />
+				</form>
+				<nav>
+					<ul>
+					
+						<li class=""><a href="../index.html">Home</a></li>
+					
+						<li class=""><a href="../category/Read%20Everything%20about%20technology.html">Tech</a></li>
+					
+						<li class=""><a href="../category/programming.html">Programming</a></li>
+					
+						<li class=""><a href="../category/personal.html">Personal</a></li>
+					
+						<li class=""><a href="../category/top-stories.html">Top Stories</a></li>
+					
+						<li class=""><a href="../category/Health.html">Health</a></li>
+					
+						<li class=""><a href="../category/world.html">World</a></li>
+					
+						<li class=""><a href="../pages/about-us.html">About us</a></li>
+					
+						<li class=""><a href="naskko_tech.html">Admin</a></li>
+					
+						<li class=""><a href="../contact.html">Contact</a></li>
+					
+					
+									<li class=""><a href="../login.html">Login</a></li>
+									
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!--Mobile navigation-->
+		<div id="wrapper" style="overflow: hidden;">
+			<header id="header" class="d-lg-block d-none">
+				<div class="container">
+					<div class="align-items-center w-100">
+						<h1 class="logo float-left navbar-brand">
+							<a href="../index.html" class="logo">
+								
+								<img data-src="https://nodepress.s3.eu-west-2.amazonaws.com/NODEPRESS%20PNG-e88b.png" class="blur-up lazyload" alt="Nodepress" />
+								
+							</a>
+						</h1>
+						<div class="header-right float-right w-50">
+							<div class="d-inline-flex float-right text-right align-items-center">
+								<ul class="social-network heading navbar-nav d-lg-flex align-items-center">
+									<li>
+										<a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a>
+									</li>
+								</ul>
+								<ul class="top-menu heading navbar-nav w-100 d-lg-flex align-items-center">
+									<li><a href="../contact.html" class="btn">Contact</a></li>
+								</ul>
+								
+								<a href="../login.html" class="author-avatar">Login</a>
+								
+							</div>
+							<form action="https://nodepress.com.ng/search" method="get" class="search-form d-lg-flex float-right">
+								<a href="javascript:void(0)" class="searh-toggle">
+									<i class="icon-search"></i>
+								</a>
+								<input type="text" class="search_field" placeholder="Search..." value="" name="q" />
+							</form>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<nav id="main-menu" class="stick d-lg-block d-none">
+					<div class="container">
+						<div class="menu-primary">
+							<ul>
+								
+									<li class=""><a href="../index.html">Home</a></li>
+								
+									<li class=""><a href="../category/Read%20Everything%20about%20technology.html">Tech</a></li>
+								
+									<li class=""><a href="../category/programming.html">Programming</a></li>
+								
+									<li class=""><a href="../category/personal.html">Personal</a></li>
+								
+									<li class=""><a href="../category/top-stories.html">Top Stories</a></li>
+								
+									<li class=""><a href="../category/Health.html">Health</a></li>
+								
+									<li class=""><a href="../category/world.html">World</a></li>
+								
+									<li class=""><a href="../pages/about-us.html">About us</a></li>
+								
+									<li class=""><a href="naskko_tech.html">Admin</a></li>
+								
+									<li class=""><a href="../contact.html">Contact</a></li>
+								
+								
+							</ul>
+							<span></span>
+						</div>
+					</div>
+				</nav>
+			</header>
+<script>
+	function getmonth(data) {
+		switch (data) {
+			case 0:
+				return 'Jan';
+				break;
+			case 1:
+				return 'Feb';
+				break;
+			case 2:
+				return 'March';
+				break;
+			case 3:
+				return 'Apr';
+				break;
+			case 4:
+				return 'May';
+				break;
+			case 5:
+				return 'Jun';
+				break;
+			case 6:
+				return 'Jul';
+				break;
+			case 7:
+				return 'Aug';
+				break;
+			case 8:
+				return 'Sep';
+				break;
+			case 9:
+				return 'Oct';
+				break;
+			case 10:
+				return 'Nov';
+				break;
+			case 11:
+				return 'Dec';
+				break;
+			default:
+				break;
+		}
+	}
+</script>
+<main id="content">
+	<div class="content-widget">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="box box-author m_b_2rem">
+						<div class="post-author row-flex">
+							<div class="author-img">
+								<svg width="82" height="92" viewBox="0 0 82 92" class="fo ef mj mk ml mm ej">
+									<path
+										d="M1.58 26.29C8.86 11.67 23.78 1.65 41 1.65V.35C23.26.35 7.9 10.67.42 25.71l1.16.58zM41 1.65c17.22 0 32.14 10.02 39.42 24.64l1.16-.58C74.1 10.67 58.74.35 41 .35v1.3zm39.42 64.06C73.14 80.33 58.22 90.35 41 90.35v1.3c17.74 0 33.1-10.32 40.58-25.36l-1.16-.58zM41 90.35c-17.22 0-32.14-10.02-39.42-24.64l-1.16.58C7.9 81.33 23.26 91.65 41 91.65v-1.3z"
+									></path>
+								</svg>
+								<img
+									alt="Olohundare Nasirudeen"
+									data-src="https://gravatar.com/avatar/09dc6e9745b56c0d044fe211605d6138?s=200&amp;d=retro"
+									class="blur-up avatar lazyload"
+								/>
+							</div>
+							<div class="author-content">
+								<div class="top-author">
+									<h5 class="heading-font">
+										<a
+											href="javascript:void(0);"
+											title="Olohundare Nasirudeen"
+											rel="author"
+											class="text-capitalize"
+											>Olohundare Nasirudeen</a
+										>
+									</h5>
+								</div>
+								
+								<p class="d-none d-md-block">
+									Hello, my name is nasirudeen and i love coding
+								</p>
+								 
+								<div class="content-social-author">
+									<a
+										target="_blank"
+										class="author-social"
+										href="https://www.facebook.com/dev-nasirudeen"
+										><i class="icofont-facebook"></i>
+									</a>
+									<a target="_blank" class="author-social" href="https://www.twitter.com/iamnasirudeen"
+										><i class="icofont-twitter"></i>
+									</a>
+									<a
+										target="_blank"
+										class="author-social"
+										href="https://www.instagram.com/naskko_tech"
+									>
+										<i class="icofont-instagram"></i>
+									</a>
+									<a
+										target="_blank"
+										class="author-social"
+										href="https://www.pinterest.com/"
+									>
+										<i class="icofont-pinterest"></i>
+									</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<h4 class="spanborder">
+						<span>Latest Posts</span>
+					</h4>
+					 
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/the-power-of-flexibility.html"
+										>The Power of Flexibility
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 Unfitting hey eel excluding fetchingly quail together well read yet this well hence next absolute touched and foresaw llama vengeful 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/top-stories.html" class="text-capitalize"
+										>top stories</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/nemo-img-4-4e55.jpg"></div>
+					</article>
+					
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<div class="capsSubtle mb-2">Editors' Pick</div>
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/shallow-work-and-physician-burnout.html"
+										>Shallow work and physician burnout
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 Orgave criminal anteater parrot much fallible goodness hence fluent ahead much waked some thus strived interwove unanimous one hugged o 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/Sport.html" class="text-capitalize"
+										>sport</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.amazonaws.com/nemo-img-8-7f2f.jpg"></div>
+					</article>
+					
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<div class="capsSubtle mb-2">Editors' Pick</div>
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/scientists-are-working-on-a-pill-for-loneliness.html"
+										>Scientists Are Working on a Pill for Loneliness
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 We know the brain can get into its downtime state very quickly, and the education research suggests just a few minutes — five 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/Health.html" class="text-capitalize"
+										>health</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/nemo-img-3-3d7a.png"></div>
+					</article>
+					
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/you-can%e2%80%99t-connect-the-dots-looking-forward%3b-you-can-only-connect-them-looking-backward.-so-you-have-to-trust-that-the-dots-will-somehow-connect-in-your-future.html"
+										>You can’t connect the dots looking forward; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future.
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 Altered pill the forceful the ouch compactly dear and hit unbound so ouch clumsily forbidding fish aboard returned scurrilously far and blit 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/world.html" class="text-capitalize"
+										>world</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/nemo-img-12-776e.jpg"></div>
+					</article>
+					
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<div class="capsSubtle mb-2">Editors' Pick</div>
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/the-ten-most-important-books-to-expand-your-brain.html"
+										>The ten most important books to expand your brain
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 Jadedly swankily overcast yikes to put since conscientiously goldfinch avariciously and dear less majestically across far some power 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/Health.html" class="text-capitalize"
+										>health</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/img-11-47e7-ca99.jpg"></div>
+					</article>
+					
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<div class="capsSubtle mb-2">Editors' Pick</div>
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/the-future-of-wine_-no-corks%2c-no-vintages.html"
+										>The future of wine: No Corks, No Vintages
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 N but toucan komodo alas more up jeez dug loaded ravingly porcupine exuberant fortuitous unstinting lizard benignly sniffled behind hotly te 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/Health.html" class="text-capitalize"
+										>health</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.amazonaws.com/nemo-img-10-47f5.jpg"></div>
+					</article>
+					
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<div class="capsSubtle mb-2">Editors' Pick</div>
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/the-highest-quote-for-this-week-0.html"
+										>The highest quote for this week
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 You can’t connect the dots looking forward; you can only connect them looking backward. So you have to trust that the dots will someho 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/world.html" class="text-capitalize"
+										>world</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.amazonaws.com/steven-229b.jpg"></div>
+					</article>
+					
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<div class="capsSubtle mb-2">Editors' Pick</div>
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/fully-automated-luxury-communism-isn%e2%80%99t-our-future.html"
+										>Fully Automated Luxury Communism Isn’t Our Future
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 Intuitive as antelope completely natural hey more sorely belated in modest where yikes poor far where this much through in nudged ba 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/top-stories.html" class="text-capitalize"
+										>top stories</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.eu-west-2.amazonaws.com/nemo-img-1-238e.jpg"></div>
+					</article>
+					
+					<article class="row justify-content-between mb-5 mr-0">
+						<div class="col-md-9 ">
+							<div class="align-self-center">
+								
+								<div class="capsSubtle mb-2">Editors' Pick</div>
+								
+								<h3 class="entry-title mb-3">
+									<a href="../post/coffee-vs.html"
+										>Coffee vs. beer: which drink makes you more creative?
+									</a>
+								</h3>
+								<div class="entry-excerpt">
+									<p class="entry-tit">
+										 Mong emphatic normal cowered busted athletically some noticeably while and inside near towards unexpected much some off up diligently much k 
+									</p>
+								</div>
+								<div class="entry-meta align-items-center">
+									<a href="naskko_tech.html"
+										>Olohundare Nasirudeen</a
+									>
+									in
+									<a href="../category/Health.html" class="text-capitalize"
+										>health</a
+									><br />
+									<span>
+										<script>
+											document.write(getmonth(parseInt('8')));
+										</script>
+										19</span
+									>
+									<span class="middotDivider"></span>
+									<span class="readingTime" title="1 min read"
+										>1 min read</span
+									>
+									<span class="svgIcon svgIcon--star">
+										<svg class="svgIcon-use" width="15" height="15">
+											<path
+												d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+											></path>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 bgcover blur-up lazyload" data-bg="https://nodepress.s3.amazonaws.com/nemo-img-6-9129.jpg"></div>
+					</article>
+					 
+					<ul class="page-numbers heading">
+						
+						<li><a class="page-numbers" href="naskko_tech2679.html?page=1">First</a></li>
+						    
+						<li><a class="page-numbers" href="naskko_tech2679.html?page=1">1</a></li>
+						   
+						<li><span aria-current="page" class="page-numbers current">2</span></li>
+						   
+						<li><a class="disabled page-numbers" href="javascript:void(0);">Last</a></li>
+						
+					</ul>
+					
+				</div>
+				<!--col-md-8-->
+				<div class="col-md-4 pl-md-5 sticky-sidebar">
+					<div class="sidebar-widget latest-tpl-4">
+						<h5 class="spanborder widget-title">
+							<span>Featured posts</span>
+						</h5>
+						<ol>
+							
+							<li class="d-flex">
+								<div class="post-count">01</div>
+								<div class="post-content">
+									<h5 class="entry-title mb-3">
+										<a href="../post/the-end-of-php.html"
+											>The End of PHP?</a
+										>
+									</h5>
+									<div class="entry-meta align-items-center">
+										<a href="Naskko_Tech-2.html" class="text-capitalize"
+											>Olohundare Oluwakayode</a
+										>
+										in
+										<a href="../category/Read%20Everything%20about%20technology.html" class="text-capitalize"
+											>Tech</a
+										><br />
+										<span>
+											<script>
+												document.write(getmonth(parseInt('9')));
+											</script>
+											13</span
+										>
+										<span class="middotDivider"></span>
+										<span class="readingTime" title="3 min read"
+											>3 min read</span
+										>
+										<span class="svgIcon svgIcon--star">
+											<svg class="svgIcon-use" width="15" height="15">
+												<path
+													d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+												></path>
+											</svg>
+										</span>
+									</div>
+								</div>
+							</li>
+							
+							<li class="d-flex">
+								<div class="post-count">02</div>
+								<div class="post-content">
+									<h5 class="entry-title mb-3">
+										<a href="../post/the-most-underrated-productivity-technique-is-also-the-simplest.html"
+											>The Most Underrated Productivity Technique Is Also the Simplest</a
+										>
+									</h5>
+									<div class="entry-meta align-items-center">
+										<a href="Naskko_Tech-2.html" class="text-capitalize"
+											>Olohundare Oluwakayode</a
+										>
+										in
+										<a href="../category/top-stories.html" class="text-capitalize"
+											>top stories</a
+										><br />
+										<span>
+											<script>
+												document.write(getmonth(parseInt('9')));
+											</script>
+											13</span
+										>
+										<span class="middotDivider"></span>
+										<span class="readingTime" title="2 min read"
+											>2 min read</span
+										>
+										<span class="svgIcon svgIcon--star">
+											<svg class="svgIcon-use" width="15" height="15">
+												<path
+													d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+												></path>
+											</svg>
+										</span>
+									</div>
+								</div>
+							</li>
+							
+							<li class="d-flex">
+								<div class="post-count">03</div>
+								<div class="post-content">
+									<h5 class="entry-title mb-3">
+										<a href="../post/%5bmusic%5d-zlatan-x-ivd-%e2%80%93-bolanle.html"
+											>[Music] Zlatan x IVD – Bolanle</a
+										>
+									</h5>
+									<div class="entry-meta align-items-center">
+										<a href="Naskko_Tech-2.html" class="text-capitalize"
+											>Olohundare Oluwakayode</a
+										>
+										in
+										<a href="../category/Music.html" class="text-capitalize"
+											>music</a
+										><br />
+										<span>
+											<script>
+												document.write(getmonth(parseInt('8')));
+											</script>
+											24</span
+										>
+										<span class="middotDivider"></span>
+										<span class="readingTime" title="1 min read"
+											>1 min read</span
+										>
+										<span class="svgIcon svgIcon--star">
+											<svg class="svgIcon-use" width="15" height="15">
+												<path
+													d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+												></path>
+											</svg>
+										</span>
+									</div>
+								</div>
+							</li>
+							
+							<li class="d-flex">
+								<div class="post-count">04</div>
+								<div class="post-content">
+									<h5 class="entry-title mb-3">
+										<a href="../post/how-netflix-binges-and-google-translate-helped-me-find-love-0.html"
+											>How Netflix Binges and Google Translate Helped Me Find Love</a
+										>
+									</h5>
+									<div class="entry-meta align-items-center">
+										<a href="Naskko_Tech-2.html" class="text-capitalize"
+											>Olohundare Oluwakayode</a
+										>
+										in
+										<a href="../category/top-stories.html" class="text-capitalize"
+											>top stories</a
+										><br />
+										<span>
+											<script>
+												document.write(getmonth(parseInt('8')));
+											</script>
+											22</span
+										>
+										<span class="middotDivider"></span>
+										<span class="readingTime" title="5 min read"
+											>5 min read</span
+										>
+										<span class="svgIcon svgIcon--star">
+											<svg class="svgIcon-use" width="15" height="15">
+												<path
+													d="M7.438 2.324c.034-.099.09-.099.123 0l1.2 3.53a.29.29 0 0 0 .26.19h3.884c.11 0 .127.049.038.111L9.8 8.327a.271.271 0 0 0-.099.291l1.2 3.53c.034.1-.011.131-.098.069l-3.142-2.18a.303.303 0 0 0-.32 0l-3.145 2.182c-.087.06-.132.03-.099-.068l1.2-3.53a.271.271 0 0 0-.098-.292L2.056 6.146c-.087-.06-.071-.112.038-.112h3.884a.29.29 0 0 0 .26-.19l1.2-3.52z"
+												></path>
+											</svg>
+										</span>
+									</div>
+								</div>
+							</li>
+							
+						</ol>
+					</div>
+				</div>
+				<!--col-md-4-->
+			</div>
+		</div>
+		<!--content-widget-->
+	</div>
+
+	<div class="content-widget">
+		<div class="container">
+			<div class="sidebar-widget ads">
+					
+						<a href="#"><img style="width: 600px !important; height: 70px !important; object-fit: cover !important;" alt="Nodepress" data-src="http://nodepress.com.ng/media/627ba6ff177bf6bfd73f95bd0f8e2cc1a78694791571396931230.png" class="blur-up lazyload img-fluid"></a>
+					
+			</div>
+			<div class="hr"></div>
+		</div>
+	</div>
+	<!--content-widget-->
+</main>
+
+        <footer class="mt-5">
+                <div class="container">
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col-md-6 copyright text-xs-center">            
+                            <p>Copyright by Naskkotech. Powered by Nodepress.</a></p>
+                        </div>
+                        <div class="col-md-6">           
+                            <ul class="social-network inline text-md-right text-sm-center">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/dev-nasirudeen"><i class="icon-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.twitter.com/iamnasirudeen"><i class="icon-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="icon-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </footer>
+        </div> <!--#wrapper-->
+
+        <a href="#" class="back-to-top heading"><i class="icon-left-open-big"></i><span  class="d-lg-inline d-md-none">Top</span></a>
+        
+        <!--Scripts-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135022290-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135022290-2');
+</script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/jquery-scrolltofixed-min.js"></script>
+        <script src="../js/theia-sticky-sidebar.js"></script>
+		<script src="../js/owl-carousel.2.3.0.min.js"></script>
+        <script src="../js/sweetalert.min.js"></script>
+        <script src="../js/lazy.min.js"></script>
+        <script src="../js/lazy-hooks.min.js"></script>
+        <script src="../js/scripts.js"></script>
+    </body>
+
+<!-- Mirrored from nodepress.com.ng/author/naskko_tech?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Jan 2020 17:31:40 GMT -->
+</html>
